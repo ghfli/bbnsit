@@ -1,7 +1,7 @@
 {
   "name": "hyinsit-bbui",
   "description": "A UI solution used in the different Budibase projects.",
-  "version": "0.1.2-alpha.0",
+  "version": "0.1.2",
   "license": "MPL-2.0",
   "svelte": "src/index.js",
   "module": "dist/bbui.es.js",
@@ -81,7 +81,7 @@
     "@spectrum-css/vars": "^3.0.1",
     "dayjs": "^1.10.4",
     "easymde": "^2.16.1",
-    "hyinsit-string-templates": "^0.1.2-alpha.0",
+    "hyinsit-string-templates": "^0.1.2",
     "svelte-flatpickr": "^3.2.3",
     "svelte-portal": "^1.0.0"
   },

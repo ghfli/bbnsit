@@ -1,6 +1,6 @@
 {
   "name": "hyinsit-builder",
-  "version": "0.1.2-alpha.0",
+  "version": "0.1.2",
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
@@ -77,10 +77,10 @@
     "codemirror": "^5.59.0",
     "dayjs": "^1.11.2",
     "downloadjs": "1.4.7",
-    "hyinsit-bbui": "^0.1.2-alpha.0",
-    "hyinsit-client": "^0.1.2-alpha.0",
-    "hyinsit-frontend-core": "^0.1.2-alpha.0",
-    "hyinsit-string-templates": "^0.1.2-alpha.0",
+    "hyinsit-bbui": "^0.1.2",
+    "hyinsit-client": "^0.1.2",
+    "hyinsit-frontend-core": "^0.1.2",
+    "hyinsit-string-templates": "^0.1.2",
     "lodash": "4.17.21",
     "posthog-js": "1.4.5",
     "remixicon": "2.5.0",
