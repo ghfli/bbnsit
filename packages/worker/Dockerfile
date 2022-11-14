@@ -1,8 +1,12 @@
-FROM node:19-alpine3.15
+FROM node:19-alpine
 
 WORKDIR /bbworker
 
-COPY release ./
+COPY . ./
+
+# handle node-gyp
+RUN apk update && apk add --no-cache python3 make g++ \
+    && yarn --ignore-engines && yarn build
 
 EXPOSE 4001
 
