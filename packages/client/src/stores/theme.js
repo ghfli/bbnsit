@@ -1,7 +1,7 @@
 import { derived } from "svelte/store"
 import { appStore } from "./app"
 import { builderStore } from "./builder"
-import { Constants } from "@budibase/frontend-core"
+import { Constants } from "hyinsit-frontend-core"
 
 // This is the good old acorn bug where having the word "g l o b a l" makes it
 // think that this is not ES6 compatible and starts throwing errors when using

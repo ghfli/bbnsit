@@ -1,5 +1,5 @@
 <script>
-  import { Body, Button, Heading, Layout } from "@budibase/bbui"
+  import { Body, Button, Heading, Layout } from "hyinsit-bbui"
   import KeyValueBuilder from "components/integration/KeyValueBuilder.svelte"
   import { getUserBindings } from "builderStore/dataBinding"
   export let bindable = true

@@ -9,7 +9,7 @@ import {
   QueryImportedEvent,
   QueryPreviewedEvent,
   QueriesRunEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 /* eslint-disable */
 

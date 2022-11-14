@@ -1,5 +1,5 @@
 import PostHog from "posthog-node"
-import { Event, Identity, Group, BaseEvent } from "@budibase/types"
+import { Event, Identity, Group, BaseEvent } from "hyinsit-types"
 import { EventProcessor } from "../types"
 import env from "../../../environment"
 import * as context from "../../../context"

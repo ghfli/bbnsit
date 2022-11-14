@@ -23,13 +23,13 @@ const automations = require("./automations/index")
 const Sentry = require("@sentry/node")
 const fileSystem = require("./utilities/fileSystem")
 const bullboard = require("./automations/bullboard")
-const { logAlert } = require("@budibase/backend-core/logging")
-const { pinoSettings } = require("@budibase/backend-core")
+const { logAlert } = require("hyinsit-backend-core/logging")
+const { pinoSettings } = require("hyinsit-backend-core")
 const { Thread } = require("./threads")
 const fs = require("fs")
 import redis from "./utilities/redis"
 import * as migrations from "./migrations"
-import { events, installation, tenancy } from "@budibase/backend-core"
+import { events, installation, tenancy } from "hyinsit-backend-core"
 import {
   createAdminUser,
   generateApiKey,

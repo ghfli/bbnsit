@@ -10,7 +10,7 @@
     Body,
     Layout,
     ActionButton,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount, createEventDispatcher } from "svelte"
   import { FIELDS } from "constants/backend"
   import { generate } from "builderStore/schemaGenerator"

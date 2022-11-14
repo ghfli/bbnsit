@@ -1,6 +1,6 @@
 <script>
   import { goto } from "@roxi/routify"
-  import { Layout, Page, notifications, ActionButton } from "@budibase/bbui"
+  import { Layout, Page, notifications, ActionButton } from "hyinsit-bbui"
   import TemplateDisplay from "components/common/TemplateDisplay.svelte"
   import { onMount } from "svelte"
   import { templates } from "stores/portal"

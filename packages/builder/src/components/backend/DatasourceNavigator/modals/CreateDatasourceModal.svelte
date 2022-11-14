@@ -7,7 +7,7 @@
     Detail,
     Heading,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import ICONS from "../icons"
   import { API } from "api"

@@ -8,7 +8,7 @@
     Body,
     ActionButton,
     Modal,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { goto } from "@roxi/routify"
   import { API } from "api"
   import { admin, auth } from "stores/portal"

@@ -1,7 +1,7 @@
 const { EMPTY_LAYOUT } = require("../../constants/layouts")
 const { generateLayoutID, getScreenParams } = require("../../db/utils")
-const { getAppDB } = require("@budibase/backend-core/context")
-const { events } = require("@budibase/backend-core")
+const { getAppDB } = require("hyinsit-backend-core/context")
+const { events } = require("hyinsit-backend-core")
 
 exports.save = async function (ctx) {
   const db = getAppDB()

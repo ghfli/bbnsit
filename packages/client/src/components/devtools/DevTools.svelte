@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte"
-  import { Layout, Heading, Tabs, Tab, Icon } from "@budibase/bbui"
+  import { Layout, Heading, Tabs, Tab, Icon } from "hyinsit-bbui"
   import DevToolsStatsTab from "./DevToolsStatsTab.svelte"
   import DevToolsComponentTab from "./DevToolsComponentTab.svelte"
   import { devToolsStore } from "stores"

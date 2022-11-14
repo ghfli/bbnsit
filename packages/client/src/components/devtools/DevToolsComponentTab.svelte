@@ -1,5 +1,5 @@
 <script>
-  import { Body, Layout, Heading, Button, Tabs, Tab } from "@budibase/bbui"
+  import { Body, Layout, Heading, Button, Tabs, Tab } from "hyinsit-bbui"
   import { builderStore, devToolsStore, componentStore } from "stores"
   import DevToolsStat from "./DevToolsStat.svelte"
   import DevToolsComponentSettingsTab from "./DevToolsComponentSettingsTab.svelte"

@@ -1,11 +1,11 @@
-import { utils } from "@budibase/backend-core"
+import { utils } from "hyinsit-backend-core"
 import {
   SMTPConfig,
   OIDCConfig,
   GoogleConfig,
   SettingsConfig,
   ConfigType,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export const oidc = (conf?: OIDCConfig): OIDCConfig => {
   return {

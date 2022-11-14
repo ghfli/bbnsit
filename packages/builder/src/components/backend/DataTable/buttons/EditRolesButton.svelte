@@ -1,5 +1,5 @@
 <script>
-  import { Button, Modal } from "@budibase/bbui"
+  import { Button, Modal } from "hyinsit-bbui"
   import EditRolesModal from "../modals/EditRoles.svelte"
 
   let modal

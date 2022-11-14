@@ -1,6 +1,6 @@
-import { events } from "@budibase/backend-core"
+import { events } from "hyinsit-backend-core"
 import { getQueryParams } from "../../../../db/utils"
-import { Query, Datasource, SourceName } from "@budibase/types"
+import { Query, Datasource, SourceName } from "hyinsit-types"
 
 const getQueries = async (appDb: any): Promise<Query[]> => {
   const response = await appDb.allDocs(

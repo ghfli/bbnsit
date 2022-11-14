@@ -1,5 +1,5 @@
 <script>
-  import { Heading, Body, Layout, Button, Modal } from "@budibase/bbui"
+  import { Heading, Body, Layout, Button, Modal } from "hyinsit-bbui"
   import { automationStore } from "builderStore"
   import AutomationPanel from "components/automation/AutomationPanel/AutomationPanel.svelte"
   import CreateAutomationModal from "components/automation/AutomationPanel/CreateAutomationModal.svelte"

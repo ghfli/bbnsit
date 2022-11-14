@@ -7,7 +7,7 @@
     Body,
     Heading,
     ActionButton,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { organisation, auth } from "stores/portal"
   import Logo from "assets/bb-emblem.svg"
   import { onMount } from "svelte"

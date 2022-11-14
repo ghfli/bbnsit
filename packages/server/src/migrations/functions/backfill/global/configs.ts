@@ -1,11 +1,11 @@
-import { events, db as dbUtils } from "@budibase/backend-core"
+import { events, db as dbUtils } from "hyinsit-backend-core"
 import {
   Config,
   isSMTPConfig,
   isGoogleConfig,
   isOIDCConfig,
   isSettingsConfig,
-} from "@budibase/types"
+} from "hyinsit-types"
 import env from "./../../../../environment"
 
 const getConfigs = async (globalDb: any): Promise<Config[]> => {

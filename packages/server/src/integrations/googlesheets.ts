@@ -6,16 +6,16 @@ import {
   QueryType,
   Table,
   TableSchema,
-} from "@budibase/types"
+} from "hyinsit-types"
 import { OAuth2Client } from "google-auth-library"
 import { buildExternalTableId } from "./utils"
 import { DataSourceOperation, FieldTypes } from "../constants"
 import { GoogleSpreadsheet } from "google-spreadsheet"
 import env from "../environment"
 
-const { getGlobalDB } = require("@budibase/backend-core/tenancy")
-const { getScopedConfig } = require("@budibase/backend-core/db")
-const { Configs } = require("@budibase/backend-core/constants")
+const { getGlobalDB } = require("hyinsit-backend-core/tenancy")
+const { getScopedConfig } = require("hyinsit-backend-core/db")
+const { Configs } = require("hyinsit-backend-core/constants")
 const fetch = require("node-fetch")
 
 interface GoogleSheetsConfig {

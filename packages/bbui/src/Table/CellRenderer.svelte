@@ -6,7 +6,7 @@
   import AttachmentRenderer from "./AttachmentRenderer.svelte"
   import ArrayRenderer from "./ArrayRenderer.svelte"
   import InternalRenderer from "./InternalRenderer.svelte"
-  import { processStringSync } from "@budibase/string-templates"
+  import { processStringSync } from "hyinsit-string-templates"
 
   export let row
   export let schema

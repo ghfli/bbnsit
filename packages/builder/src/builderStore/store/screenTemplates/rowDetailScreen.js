@@ -2,7 +2,7 @@ import sanitizeUrl from "./utils/sanitizeUrl"
 import { rowListUrl } from "./rowListScreen"
 import { Screen } from "./utils/Screen"
 import { Component } from "./utils/Component"
-import { makePropSafe } from "@budibase/string-templates"
+import { makePropSafe } from "hyinsit-string-templates"
 import {
   makeBreadcrumbContainer,
   makeTitleContainer,
@@ -27,7 +27,7 @@ export const rowDetailUrl = table => sanitizeUrl(`/${table.name}/:id`)
 
 function generateTitleContainer(table, title, formId, repeaterId) {
   const saveButton = makeSaveButton(table, formId)
-  const deleteButton = new Component("@budibase/standard-components/button")
+  const deleteButton = new Component("hyinsit-standard-components/button")
     .text("Delete")
     .customProps({
       type: "secondary",
@@ -53,7 +53,7 @@ function generateTitleContainer(table, title, formId, repeaterId) {
     })
     .instanceName("Delete Button")
 
-  const buttons = new Component("@budibase/standard-components/container")
+  const buttons = new Component("hyinsit-standard-components/container")
     .instanceName("Button Container")
     .customProps({
       direction: "row",
@@ -69,7 +69,7 @@ function generateTitleContainer(table, title, formId, repeaterId) {
 }
 
 const createScreen = table => {
-  const provider = new Component("@budibase/standard-components/dataprovider")
+  const provider = new Component("hyinsit-standard-components/dataprovider")
     .instanceName(`Data Provider`)
     .customProps({
       dataSource: {
@@ -91,7 +91,7 @@ const createScreen = table => {
       paginate: false,
     })
 
-  const repeater = new Component("@budibase/standard-components/repeater")
+  const repeater = new Component("hyinsit-standard-components/repeater")
     .instanceName("Repeater")
     .customProps({
       dataProvider: `{{ literal ${makePropSafe(provider._json._id)} }}`,
@@ -110,7 +110,7 @@ const createScreen = table => {
       },
     })
 
-  const fieldGroup = new Component("@budibase/standard-components/fieldgroup")
+  const fieldGroup = new Component("hyinsit-standard-components/fieldgroup")
     .instanceName("Field Group")
     .customProps({
       labelPosition: "left",

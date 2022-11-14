@@ -1,5 +1,5 @@
 <script>
-  import { Button, Heading, Body, Layout, Modal, Divider } from "@budibase/bbui"
+  import { Button, Heading, Body, Layout, Modal, Divider } from "hyinsit-bbui"
   import CreateTableModal from "components/backend/TableNavigator/modals/CreateTableModal.svelte"
   import ICONS from "components/backend/DatasourceNavigator/icons"
   import { tables } from "stores/backend"

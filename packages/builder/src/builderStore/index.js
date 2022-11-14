@@ -4,7 +4,7 @@ import { getTemporalStore } from "./store/temporal"
 import { getThemeStore } from "./store/theme"
 import { derived } from "svelte/store"
 import { findComponent, findComponentPath } from "./componentUtils"
-import { RoleUtils } from "@budibase/frontend-core"
+import { RoleUtils } from "hyinsit-frontend-core"
 
 export const store = getFrontendStore()
 export const automationStore = getAutomationStore()

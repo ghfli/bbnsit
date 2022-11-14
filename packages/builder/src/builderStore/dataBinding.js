@@ -17,9 +17,9 @@ import {
   isJSBinding,
   decodeJSBinding,
   encodeJSBinding,
-} from "@budibase/string-templates"
+} from "hyinsit-string-templates"
 import { TableNames } from "../constants"
-import { JSONUtils } from "@budibase/frontend-core"
+import { JSONUtils } from "hyinsit-frontend-core"
 import ActionDefinitions from "components/design/settings/controls/ButtonActionEditor/manifest.json"
 
 // Regex to match all instances of template strings

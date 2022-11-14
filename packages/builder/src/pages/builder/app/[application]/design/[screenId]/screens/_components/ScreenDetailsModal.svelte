@@ -1,5 +1,5 @@
 <script>
-  import { ModalContent, Input } from "@budibase/bbui"
+  import { ModalContent, Input } from "hyinsit-bbui"
   import sanitizeUrl from "builderStore/store/screenTemplates/utils/sanitizeUrl"
   import { get } from "svelte/store"
   import { store } from "builderStore"

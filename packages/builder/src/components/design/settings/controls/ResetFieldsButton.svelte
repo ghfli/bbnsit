@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, notifications } from "@budibase/bbui"
+  import { ActionButton, notifications } from "hyinsit-bbui"
   import { currentAsset, store } from "builderStore"
   import { findClosestMatchingComponent } from "builderStore/componentUtils"
   import { makeDatasourceFormComponents } from "builderStore/store/screenTemplates/utils/commonComponents"

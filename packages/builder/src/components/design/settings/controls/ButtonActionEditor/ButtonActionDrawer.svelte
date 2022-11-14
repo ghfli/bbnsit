@@ -8,7 +8,7 @@
     DrawerContent,
     ActionButton,
     Search,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { getAvailableActions } from "./index"
   import { generate } from "shortid"
   import { getEventContextBindings } from "builderStore/dataBinding"

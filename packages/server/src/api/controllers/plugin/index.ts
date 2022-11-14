@@ -1,11 +1,11 @@
 import { npmUpload, urlUpload, githubUpload, fileUpload } from "./uploaders"
-import { getGlobalDB } from "@budibase/backend-core/tenancy"
-import { validate } from "@budibase/backend-core/plugins"
-import { PluginType, FileType, PluginSource } from "@budibase/types"
+import { getGlobalDB } from "hyinsit-backend-core/tenancy"
+import { validate } from "hyinsit-backend-core/plugins"
+import { PluginType, FileType, PluginSource } from "hyinsit-types"
 import env from "../../../environment"
 import { ClientAppSocket } from "../../../websocket"
-import { db as dbCore } from "@budibase/backend-core"
-import { plugins } from "@budibase/pro"
+import { db as dbCore } from "hyinsit-backend-core"
+// import { plugins } from "hyinsit-pro"
 
 export async function getPlugins(type?: PluginType) {
   const db = getGlobalDB()
@@ -85,6 +85,7 @@ export async function create(ctx: any) {
       )
     }
 
+    /*
     const doc = await plugins.storePlugin(metadata, directory, source)
 
     ClientAppSocket.emit("plugins-update", { name, hash: doc.hash })
@@ -93,6 +94,7 @@ export async function create(ctx: any) {
       plugins: [doc],
     }
     ctx.body = { plugin: doc }
+    */
   } catch (err: any) {
     const errMsg = err?.message ? err?.message : err
 
@@ -108,7 +110,8 @@ export async function destroy(ctx: any) {
   const { pluginId } = ctx.params
 
   try {
-    await plugins.deletePlugin(pluginId)
+    // await plugins.deletePlugin(pluginId)
+    console.log("skipping await plugins.deletePlugin(pluginId)")
 
     ctx.body = { message: `Plugin ${ctx.params.pluginId} deleted.` }
   } catch (err: any) {
@@ -128,7 +131,7 @@ export async function processUploadedPlugin(
     throw new Error("Only component plugins are supported outside of self-host")
   }
 
-  const doc = await plugins.storePlugin(metadata, directory, source)
-  ClientAppSocket.emit("plugin-update", { name: doc.name, hash: doc.hash })
-  return doc
+  // const doc = await plugins.storePlugin(metadata, directory, source)
+  // ClientAppSocket.emit("plugin-update", { name: doc.name, hash: doc.hash })
+  // return doc
 }

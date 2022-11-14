@@ -14,7 +14,7 @@
     customQueryText,
   } from "helpers/data/utils"
   import IntegrationIcon from "./IntegrationIcon.svelte"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
 
   let openDataSources = []
   $: enrichedDataSources = Array.isArray($datasources.list)

@@ -9,8 +9,8 @@ const {
   isProdAppID,
   getProdAppID,
   dbExists,
-} = require("@budibase/backend-core/db")
-const { getAppId } = require("@budibase/backend-core/context")
+} = require("hyinsit-backend-core/db")
+const { getAppId } = require("hyinsit-backend-core/context")
 const { InternalTables } = require("../../db/utils")
 
 const BASE_AUTO_ID = 1

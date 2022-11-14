@@ -8,7 +8,7 @@
   import ScreenslotDropdownMenu from "./ScreenslotDropdownMenu.svelte"
   import DNDPositionIndicator from "./DNDPositionIndicator.svelte"
   import { DropPosition } from "./dndStore"
-  import { notifications, Button } from "@budibase/bbui"
+  import { notifications, Button } from "hyinsit-bbui"
   import ComponentKeyHandler from "./ComponentKeyHandler.svelte"
   import ComponentScrollWrapper from "./ComponentScrollWrapper.svelte"
 

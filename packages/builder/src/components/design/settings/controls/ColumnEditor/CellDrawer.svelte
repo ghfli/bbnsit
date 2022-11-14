@@ -6,7 +6,7 @@
     DrawerContent,
     Layout,
     Label,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { store } from "builderStore"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"
 

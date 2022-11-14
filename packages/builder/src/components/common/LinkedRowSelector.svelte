@@ -1,7 +1,7 @@
 <script>
   import { tables } from "stores/backend"
   import { API } from "api"
-  import { Select, Label, Multiselect } from "@budibase/bbui"
+  import { Select, Label, Multiselect } from "hyinsit-bbui"
   import { capitalise } from "../../helpers"
 
   export let schema

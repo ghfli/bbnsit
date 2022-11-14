@@ -1,6 +1,6 @@
 <script>
   import { fade } from "svelte/transition"
-  import { Icon } from "@budibase/bbui"
+  import { Icon } from "hyinsit-bbui"
 
   export let top
   export let left

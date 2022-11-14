@@ -1,6 +1,6 @@
-import { events } from "@budibase/backend-core"
+import { events } from "hyinsit-backend-core"
 import { getDatasourceParams } from "../../../../db/utils"
-import { Datasource } from "@budibase/types"
+import { Datasource } from "hyinsit-types"
 
 const getDatasources = async (appDb: any): Promise<Datasource[]> => {
   const response = await appDb.allDocs(

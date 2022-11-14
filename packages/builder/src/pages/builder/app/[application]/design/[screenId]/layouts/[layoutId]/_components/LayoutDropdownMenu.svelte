@@ -1,8 +1,8 @@
 <script>
   import { store } from "builderStore"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import ConfirmDialog from "components/common/ConfirmDialog.svelte"
-  import { ActionMenu, MenuItem, Icon } from "@budibase/bbui"
+  import { ActionMenu, MenuItem, Icon } from "hyinsit-bbui"
 
   export let layout
 

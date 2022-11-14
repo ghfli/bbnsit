@@ -8,7 +8,7 @@ import {
   QueryType,
   SqlQuery,
   DatasourcePlus,
-} from "@budibase/types"
+} from "hyinsit-types"
 import {
   getSqlQuery,
   buildExternalTableId,

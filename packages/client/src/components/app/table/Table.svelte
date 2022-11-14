@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte"
-  import { Table } from "@budibase/bbui"
+  import { Table } from "hyinsit-bbui"
   import SlotRenderer from "./SlotRenderer.svelte"
   import { UnsortableTypes } from "../../../constants"
   import { onDestroy } from "svelte"

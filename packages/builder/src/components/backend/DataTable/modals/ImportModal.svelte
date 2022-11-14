@@ -5,7 +5,7 @@
     notifications,
     Body,
     Layout,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import TableDataImport from "../../TableNavigator/TableDataImport.svelte"
   import { API } from "api"
   import { createEventDispatcher } from "svelte"

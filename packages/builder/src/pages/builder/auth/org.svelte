@@ -7,7 +7,7 @@
     Input,
     Layout,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { goto } from "@roxi/routify"
   import { auth, admin } from "stores/portal"
   import Logo from "assets/bb-emblem.svg"

@@ -1,6 +1,6 @@
 <script>
   import { automationStore } from "builderStore"
-  import { ModalContent } from "@budibase/bbui"
+  import { ModalContent } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import WebhookDisplay from "../automation/Shared/WebhookDisplay.svelte"
   import { TriggerStepID } from "constants/backend/automations"

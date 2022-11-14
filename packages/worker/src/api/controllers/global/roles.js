@@ -1,13 +1,13 @@
-const { getAllRoles } = require("@budibase/backend-core/roles")
+const { getAllRoles } = require("hyinsit-backend-core/roles")
 const {
   getAllApps,
   getProdAppID,
   getDevAppID,
   DocumentType,
-} = require("@budibase/backend-core/db")
-const { doInAppContext, getAppDB } = require("@budibase/backend-core/context")
-const { user: userCache } = require("@budibase/backend-core/cache")
-const { getGlobalDB } = require("@budibase/backend-core/tenancy")
+} = require("hyinsit-backend-core/db")
+const { doInAppContext, getAppDB } = require("hyinsit-backend-core/context")
+const { user: userCache } = require("hyinsit-backend-core/cache")
+const { getGlobalDB } = require("hyinsit-backend-core/tenancy")
 const { allUsers } = require("../../../sdk/users")
 
 exports.fetch = async ctx => {

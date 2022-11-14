@@ -2,7 +2,7 @@ import {
   MigrationType,
   MigrationName,
   MigrationDefinition,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export const DEFINITIONS: MigrationDefinition[] = [
   {

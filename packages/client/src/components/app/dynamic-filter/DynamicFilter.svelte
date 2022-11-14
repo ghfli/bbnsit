@@ -1,9 +1,9 @@
 <script>
   import { get } from "svelte/store"
   import { getContext, onDestroy } from "svelte"
-  import { ModalContent, Modal } from "@budibase/bbui"
+  import { ModalContent, Modal } from "hyinsit-bbui"
   import FilterModal from "./FilterModal.svelte"
-  import { LuceneUtils } from "@budibase/frontend-core"
+  import { LuceneUtils } from "hyinsit-frontend-core"
   import Button from "../Button.svelte"
 
   export let dataProvider

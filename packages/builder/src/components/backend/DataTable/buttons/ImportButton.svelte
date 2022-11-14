@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, Modal } from "@budibase/bbui"
+  import { ActionButton, Modal } from "hyinsit-bbui"
   import ImportModal from "../modals/ImportModal.svelte"
 
   export let tableId

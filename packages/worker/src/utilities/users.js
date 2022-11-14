@@ -1,5 +1,5 @@
-const { getGlobalDB } = require("@budibase/backend-core/tenancy")
-const { getGlobalUserParams } = require("@budibase/backend-core/db")
+const { getGlobalDB } = require("hyinsit-backend-core/tenancy")
+const { getGlobalUserParams } = require("hyinsit-backend-core/db")
 
 exports.checkAnyUserExists = async () => {
   try {

@@ -1,6 +1,6 @@
-import { Account, AuthType, Hosting, CloudAccount } from "@budibase/types"
+import { Account, AuthType, Hosting, CloudAccount } from "hyinsit-types"
 import { v4 as uuid } from "uuid"
-import { utils } from "@budibase/backend-core"
+import { utils } from "hyinsit-backend-core"
 
 export const account = (): Account => {
   return {

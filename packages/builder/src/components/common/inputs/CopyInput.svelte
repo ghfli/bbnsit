@@ -1,5 +1,5 @@
 <script>
-  import { Input, Icon, notifications } from "@budibase/bbui"
+  import { Input, Icon, notifications } from "hyinsit-bbui"
 
   export let label = null
   export let value

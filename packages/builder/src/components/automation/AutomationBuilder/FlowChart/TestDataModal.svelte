@@ -6,7 +6,7 @@
     TextArea,
     Label,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { automationStore } from "builderStore"
   import AutomationBlockSetup from "../../SetupPanel/AutomationBlockSetup.svelte"
   import { cloneDeep } from "lodash/fp"

@@ -2,7 +2,7 @@ import generator from "../TestConfiguration/generator"
 import {
   Application,
   CreateApplicationParams,
-} from "@budibase/server/api/controllers/public/mapping/types"
+} from "hyinsit-server/api/controllers/public/mapping/types"
 
 const generate = (
   overrides: Partial<Application> = {}

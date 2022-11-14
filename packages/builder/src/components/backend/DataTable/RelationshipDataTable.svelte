@@ -2,7 +2,7 @@
   import { API } from "api"
   import Table from "./Table.svelte"
   import { tables } from "stores/backend"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
 
   export let tableId
   export let rowId

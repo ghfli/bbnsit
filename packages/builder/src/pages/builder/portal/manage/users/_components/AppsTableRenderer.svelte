@@ -1,5 +1,5 @@
 <script>
-  import { Icon } from "@budibase/bbui"
+  import { Icon } from "hyinsit-bbui"
   import { apps } from "stores/portal"
 
   export let value

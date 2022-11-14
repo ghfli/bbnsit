@@ -1,4 +1,4 @@
-import { User } from "@budibase/types"
+import { User } from "hyinsit-types"
 import sdk from "../../sdk"
 
 /**

@@ -1,6 +1,6 @@
 <script>
-  import { Select, ModalContent } from "@budibase/bbui"
-  import { RoleUtils } from "@budibase/frontend-core"
+  import { Select, ModalContent } from "hyinsit-bbui"
+  import { RoleUtils } from "hyinsit-frontend-core"
   import { roles } from "stores/backend"
   import { get } from "svelte/store"
   import { store } from "builderStore"

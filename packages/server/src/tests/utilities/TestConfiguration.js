@@ -1,5 +1,5 @@
 require("../../db").init()
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
 const env = require("../../environment")
 const {
   basicTable,
@@ -16,15 +16,15 @@ const {
 const controllers = require("./controllers")
 const supertest = require("supertest")
 const { cleanup } = require("../../utilities/fileSystem")
-const { Cookies, Headers } = require("@budibase/backend-core/constants")
-const { jwt } = require("@budibase/backend-core/auth")
-const { doInTenant, doWithGlobalDB } = require("@budibase/backend-core/tenancy")
-const { createASession } = require("@budibase/backend-core/sessions")
-const { user: userCache } = require("@budibase/backend-core/cache")
+const { Cookies, Headers } = require("hyinsit-backend-core/constants")
+const { jwt } = require("hyinsit-backend-core/auth")
+const { doInTenant, doWithGlobalDB } = require("hyinsit-backend-core/tenancy")
+const { createASession } = require("hyinsit-backend-core/sessions")
+const { user: userCache } = require("hyinsit-backend-core/cache")
 const newid = require("../../db/newid")
-const context = require("@budibase/backend-core/context")
-const { generateDevInfoID, SEPARATOR } = require("@budibase/backend-core/db")
-const { encrypt } = require("@budibase/backend-core/encryption")
+const context = require("hyinsit-backend-core/context")
+const { generateDevInfoID, SEPARATOR } = require("hyinsit-backend-core/db")
+const { encrypt } = require("hyinsit-backend-core/encryption")
 const { DocumentType } = require("../../db/utils")
 
 const GLOBAL_USER_ID = "us_uuid1"

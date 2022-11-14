@@ -1,5 +1,5 @@
 import { publishEvent } from "../events"
-import { Event } from "@budibase/types"
+import { Event } from "hyinsit-types"
 
 export async function nameUpdated(timestamp?: string | number) {
   const properties = {}

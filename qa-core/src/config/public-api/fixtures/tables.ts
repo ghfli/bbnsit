@@ -3,7 +3,7 @@ import {
   CreateTableParams,
   Row,
   Table,
-} from "@budibase/server/api/controllers/public/mapping/types"
+} from "hyinsit-server/api/controllers/public/mapping/types"
 import generator from "../TestConfiguration/generator"
 
 export const generateTable = (

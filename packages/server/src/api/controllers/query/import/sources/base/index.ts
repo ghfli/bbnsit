@@ -1,4 +1,4 @@
-import { Query, QueryParameter } from "@budibase/types"
+import { Query, QueryParameter } from "hyinsit-types"
 import { URL } from "url"
 
 export interface ImportInfo {

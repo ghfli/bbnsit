@@ -1,8 +1,8 @@
 <script>
-  import { Table, Modal, Layout, ActionButton } from "@budibase/bbui"
+  import { Table, Modal, Layout, ActionButton } from "hyinsit-bbui"
   import AuthTypeRenderer from "./AuthTypeRenderer.svelte"
   import RestAuthenticationModal from "./RestAuthenticationModal.svelte"
-  import { Helpers } from "@budibase/bbui"
+  import { Helpers } from "hyinsit-bbui"
 
   export let configs = []
 

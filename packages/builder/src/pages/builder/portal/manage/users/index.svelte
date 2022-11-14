@@ -12,7 +12,7 @@
     notifications,
     Pagination,
     Divider,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import AddUserModal from "./_components/AddUserModal.svelte"
   import { users, groups, auth, licensing } from "stores/portal"
   import { onMount } from "svelte"
@@ -25,7 +25,7 @@
   import PasswordModal from "./_components/PasswordModal.svelte"
   import ImportUsersModal from "./_components/ImportUsersModal.svelte"
   import { get } from "svelte/store"
-  import { Constants, Utils, fetchData } from "@budibase/frontend-core"
+  import { Constants, Utils, fetchData } from "hyinsit-frontend-core"
   import { API } from "api"
 
   const fetch = fetchData({

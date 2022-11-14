@@ -1,5 +1,5 @@
 const setup = require("./utilities")
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 function priceTable() {
   return {

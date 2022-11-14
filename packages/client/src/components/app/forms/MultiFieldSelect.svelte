@@ -1,5 +1,5 @@
 <script>
-  import { CoreMultiselect, CoreCheckboxGroup } from "@budibase/bbui"
+  import { CoreMultiselect, CoreCheckboxGroup } from "hyinsit-bbui"
   import Field from "./Field.svelte"
   import { getOptions } from "./optionsParser"
   export let field

@@ -5,7 +5,7 @@ import {
   RelationshipsJson,
   SearchFilters,
   SortDirection,
-} from "@budibase/types"
+} from "hyinsit-types"
 import { QueryOptions } from "../../definitions/datasource"
 import { isIsoDateString, SqlClient } from "../utils"
 import SqlTableQueryBuilder from "./sqlTable"

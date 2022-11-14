@@ -4,7 +4,7 @@ import {
   GLOBAL_OWNER,
 } from "../../../constants"
 import { getTemplates } from "../../../constants/templates"
-import { tenancy, db as dbCore } from "@budibase/backend-core"
+import { tenancy, db as dbCore } from "hyinsit-backend-core"
 
 export async function save(ctx: any) {
   const db = tenancy.getGlobalDB()

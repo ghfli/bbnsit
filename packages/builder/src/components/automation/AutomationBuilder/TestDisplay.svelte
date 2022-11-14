@@ -1,5 +1,5 @@
 <script>
-  import { Icon, Divider, Tabs, Tab, TextArea, Label } from "@budibase/bbui"
+  import { Icon, Divider, Tabs, Tab, TextArea, Label } from "hyinsit-bbui"
   import FlowItemHeader from "./FlowChart/FlowItemHeader.svelte"
   import { ActionStepID } from "constants/backend/automations"
 

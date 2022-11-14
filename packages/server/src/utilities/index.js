@@ -1,9 +1,9 @@
 const env = require("../environment")
 const { OBJ_STORE_DIRECTORY } = require("../constants")
-const { sanitizeKey } = require("@budibase/backend-core/objectStore")
+const { sanitizeKey } = require("hyinsit-backend-core/objectStore")
 const { generateMetadataID } = require("../db/utils")
 const Readable = require("stream").Readable
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 const BB_CDN = "https://cdn.budi.live"
 

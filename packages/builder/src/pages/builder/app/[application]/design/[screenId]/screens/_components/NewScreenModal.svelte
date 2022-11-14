@@ -1,6 +1,6 @@
 <script>
   import { tables } from "stores/backend"
-  import { ModalContent, Body, Layout, Icon, Heading } from "@budibase/bbui"
+  import { ModalContent, Body, Layout, Icon, Heading } from "hyinsit-bbui"
 
   export let onConfirm
   export let onCancel

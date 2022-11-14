@@ -1,6 +1,6 @@
-import { events } from "@budibase/backend-core"
+import { events } from "hyinsit-backend-core"
 import { getScreenParams } from "../../../../db/utils"
-import { Screen } from "@budibase/types"
+import { Screen } from "hyinsit-types"
 
 const getScreens = async (appDb: any): Promise<Screen[]> => {
   const response = await appDb.allDocs(

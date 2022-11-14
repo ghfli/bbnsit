@@ -1,12 +1,12 @@
 <script>
   import Panel from "components/design/Panel.svelte"
   import { store, selectedLayout } from "builderStore"
-  import { Layout, Body, Button, Banner, notifications } from "@budibase/bbui"
+  import { Layout, Body, Button, Banner, notifications } from "hyinsit-bbui"
   import { Component } from "builderStore/store/screenTemplates/utils/Component"
 
   const copyLayout = () => {
     // Build an outer container component to put layout contents inside
-    let container = new Component("@budibase/standard-components/container")
+    let container = new Component("hyinsit-standard-components/container")
       .instanceName($selectedLayout.name)
       .customProps({
         gap: "M",
@@ -24,8 +24,8 @@
     // simply removing it as it still shows its position.
     container = JSON.parse(
       JSON.stringify(container).replace(
-        "@budibase/standard-components/screenslot",
-        "@budibase/standard-components/container"
+        "hyinsit-standard-components/screenslot",
+        "hyinsit-standard-components/container"
       )
     )
 

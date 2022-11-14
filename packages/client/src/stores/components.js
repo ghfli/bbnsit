@@ -7,7 +7,7 @@ import { builderStore } from "./builder"
 import Router from "../components/Router.svelte"
 import * as AppComponents from "../components/app/index.js"
 
-const budibasePrefix = "@budibase/standard-components/"
+const budibasePrefix = "hyinsit-standard-components/"
 
 const createComponentStore = () => {
   const store = writable({

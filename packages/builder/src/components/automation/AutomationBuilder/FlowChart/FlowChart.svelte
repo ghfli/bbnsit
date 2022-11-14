@@ -11,7 +11,7 @@
     ActionButton,
     notifications,
     Modal,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { ActionStepID } from "constants/backend/automations"
 
   export let automation

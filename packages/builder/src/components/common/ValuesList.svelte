@@ -1,6 +1,6 @@
 <script>
   import { join } from "lodash/fp"
-  import { TextArea } from "@budibase/bbui"
+  import { TextArea } from "hyinsit-bbui"
 
   export let values
   export let label

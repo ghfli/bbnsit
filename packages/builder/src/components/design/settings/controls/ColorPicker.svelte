@@ -1,5 +1,5 @@
 <script>
-  import { ColorPicker } from "@budibase/bbui"
+  import { ColorPicker } from "hyinsit-bbui"
   import { store } from "builderStore"
 
   export let value

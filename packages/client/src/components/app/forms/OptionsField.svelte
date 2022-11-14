@@ -1,5 +1,5 @@
 <script>
-  import { CoreSelect, CoreRadioGroup } from "@budibase/bbui"
+  import { CoreSelect, CoreRadioGroup } from "hyinsit-bbui"
   import Field from "./Field.svelte"
   import { getOptions } from "./optionsParser"
   export let field

@@ -15,12 +15,12 @@
     ActionMenu,
     MenuItem,
     Modal,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import UserGroupPicker from "components/settings/UserGroupPicker.svelte"
   import { createPaginationStore } from "helpers/pagination"
   import { users, apps, groups } from "stores/portal"
   import { onMount } from "svelte"
-  import { RoleUtils } from "@budibase/frontend-core"
+  import { RoleUtils } from "hyinsit-frontend-core"
   import { roles } from "stores/backend"
   import ConfirmDialog from "components/common/ConfirmDialog.svelte"
   import CreateEditGroupModal from "./_components/CreateEditGroupModal.svelte"

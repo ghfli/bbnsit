@@ -14,7 +14,7 @@ const { getMultiIDParams, USER_METDATA_PREFIX } = require("../../db/utils")
 const { partition } = require("lodash")
 const { getGlobalUsersFromMetadata } = require("../../utilities/global")
 const { processFormulas } = require("../../utilities/rowProcessor/utils")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 /**
  * This functionality makes sure that when rows with links are created, updated or deleted they are processed

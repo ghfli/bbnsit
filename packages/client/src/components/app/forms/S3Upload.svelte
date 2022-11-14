@@ -1,6 +1,6 @@
 <script>
   import Field from "./Field.svelte"
-  import { CoreDropzone, ProgressCircle } from "@budibase/bbui"
+  import { CoreDropzone, ProgressCircle } from "hyinsit-bbui"
   import { getContext, onMount, onDestroy } from "svelte"
 
   export let datasourceId

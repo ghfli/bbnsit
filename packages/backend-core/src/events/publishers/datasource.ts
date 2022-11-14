@@ -6,7 +6,7 @@ import {
   DatasourceUpdatedEvent,
   DatasourceDeletedEvent,
   SourceName,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 function isCustom(datasource: Datasource) {
   const sources = Object.values(SourceName)

@@ -1,5 +1,5 @@
 <script>
-  import { Label, Layout, Input } from "@budibase/bbui"
+  import { Label, Layout, Input } from "hyinsit-bbui"
   import Editor from "./QueryEditor.svelte"
   import KeyValueBuilder from "./KeyValueBuilder.svelte"
   import { capitalise } from "helpers"

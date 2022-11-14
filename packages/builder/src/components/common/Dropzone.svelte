@@ -1,5 +1,5 @@
 <script>
-  import { Dropzone, notifications } from "@budibase/bbui"
+  import { Dropzone, notifications } from "hyinsit-bbui"
   import { API } from "api"
 
   export let value = []

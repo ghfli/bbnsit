@@ -9,7 +9,7 @@
   import ExportButton from "./buttons/ExportButton.svelte"
   import ManageAccessButton from "./buttons/ManageAccessButton.svelte"
   import HideAutocolumnButton from "./buttons/HideAutocolumnButton.svelte"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
 
   export let view = {}
 

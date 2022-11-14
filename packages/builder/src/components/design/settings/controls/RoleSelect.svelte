@@ -1,7 +1,7 @@
 <script>
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
   import { roles } from "stores/backend"
-  import { RoleUtils } from "@budibase/frontend-core"
+  import { RoleUtils } from "hyinsit-frontend-core"
 
   export let value
   export let error

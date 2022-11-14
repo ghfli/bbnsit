@@ -5,7 +5,7 @@
     DatePicker,
     Multiselect,
     TextArea,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import LinkedRowSelector from "components/common/LinkedRowSelector.svelte"
   import DrawerBindableInput from "../../common/bindings/DrawerBindableInput.svelte"
   import ModalBindableInput from "../../common/bindings/ModalBindableInput.svelte"

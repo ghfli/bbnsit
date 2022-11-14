@@ -1,4 +1,4 @@
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 import { isExternalTable } from "../../../integrations/utils"
 import { APP_PREFIX, DocumentType } from "../../../db/utils"
 

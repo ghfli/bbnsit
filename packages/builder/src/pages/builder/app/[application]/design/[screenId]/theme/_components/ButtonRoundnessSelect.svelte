@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte"
-  import { Slider, Button } from "@budibase/bbui"
+  import { Slider, Button } from "hyinsit-bbui"
 
   export let customTheme
 

@@ -1,7 +1,7 @@
 const setup = require("./utilities")
 const { basicScreen } = setup.structures
 const { checkBuilderEndpoint, runInProd } = require("./utilities/TestFunctions")
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
 
 const route = "/test"
 

@@ -5,7 +5,7 @@ import { paramResource, paramSubResource } from "../../middleware/resourceId"
 const {
   PermissionLevels,
   PermissionTypes,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 const { internalSearchValidator } = require("./utils/validators")
 
 const router = new Router()

@@ -1,4 +1,4 @@
-import { LuceneUtils } from "@budibase/frontend-core"
+import { LuceneUtils } from "hyinsit-frontend-core"
 
 export const getActiveConditions = conditions => {
   if (!conditions?.length) {

@@ -1,5 +1,5 @@
 <script>
-  import { Icon } from "@budibase/bbui"
+  import { Icon } from "hyinsit-bbui"
   import { builderStore, componentStore } from "stores"
   import { createEventDispatcher } from "svelte"
 

@@ -12,7 +12,7 @@ export function spectrumColor(number) {
 }
 
 export function makeLinkComponent(tableName) {
-  return new Component("@budibase/standard-components/link")
+  return new Component("hyinsit-standard-components/link")
     .text(tableName)
     .customProps({
       url: `/${tableName.toLowerCase()}`,
@@ -24,7 +24,7 @@ export function makeLinkComponent(tableName) {
 }
 
 export function makeMainForm() {
-  return new Component("@budibase/standard-components/form")
+  return new Component("hyinsit-standard-components/form")
     .normalStyle({
       width: "600px",
     })
@@ -34,7 +34,7 @@ export function makeMainForm() {
 export function makeBreadcrumbContainer(tableName, text) {
   const link = makeLinkComponent(tableName).instanceName("Back Link")
 
-  const arrowText = new Component("@budibase/standard-components/text")
+  const arrowText = new Component("hyinsit-standard-components/text")
     .type("none")
     .normalStyle({
       "margin-right": "4px",
@@ -48,7 +48,7 @@ export function makeBreadcrumbContainer(tableName, text) {
       align: "left",
     })
 
-  const identifierText = new Component("@budibase/standard-components/text")
+  const identifierText = new Component("hyinsit-standard-components/text")
     .text(text)
     .instanceName("Identifier")
     .customProps({
@@ -57,7 +57,7 @@ export function makeBreadcrumbContainer(tableName, text) {
       align: "left",
     })
 
-  return new Component("@budibase/standard-components/container")
+  return new Component("hyinsit-standard-components/container")
     .customProps({
       gap: "N",
       direction: "row",
@@ -72,7 +72,7 @@ export function makeBreadcrumbContainer(tableName, text) {
 }
 
 export function makeSaveButton(table, formId) {
-  return new Component("@budibase/standard-components/button")
+  return new Component("hyinsit-standard-components/button")
     .text("Save")
     .customProps({
       type: "primary",
@@ -103,7 +103,7 @@ export function makeSaveButton(table, formId) {
 }
 
 export function makeTitleContainer(title) {
-  const heading = new Component("@budibase/standard-components/heading")
+  const heading = new Component("hyinsit-standard-components/heading")
     .instanceName("Title")
     .text(title)
     .customProps({
@@ -111,7 +111,7 @@ export function makeTitleContainer(title) {
       align: "left",
     })
 
-  return new Component("@budibase/standard-components/container")
+  return new Component("hyinsit-standard-components/container")
     .normalStyle({
       "margin-top": "32px",
       "margin-bottom": "32px",
@@ -155,7 +155,7 @@ export function makeDatasourceFormComponents(datasource) {
     const fieldType =
       typeof fieldSchema === "object" ? fieldSchema.type : fieldSchema
     const componentType = fieldTypeToComponentMap[fieldType]
-    const fullComponentType = `@budibase/standard-components/${componentType}`
+    const fullComponentType = `hyinsit-standard-components/${componentType}`
     if (componentType) {
       const component = new Component(fullComponentType)
         .instanceName(field)

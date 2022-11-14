@@ -1,6 +1,6 @@
 <script>
   import Field from "./Field.svelte"
-  import { CoreDropzone } from "@budibase/bbui"
+  import { CoreDropzone } from "hyinsit-bbui"
   import { getContext } from "svelte"
 
   export let field

@@ -1,5 +1,5 @@
 import { IntegrationTypes } from "constants/backend"
-import { findHBSBlocks } from "@budibase/string-templates"
+import { findHBSBlocks } from "hyinsit-string-templates"
 
 export function schemaToFields(schema) {
   const response = {}

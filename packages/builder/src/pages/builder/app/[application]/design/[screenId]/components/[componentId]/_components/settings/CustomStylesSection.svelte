@@ -5,7 +5,7 @@
     Drawer,
     Button,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { selectedScreen, store } from "builderStore"
   import ClientBindingPanel from "components/common/bindings/ClientBindingPanel.svelte"
   import {

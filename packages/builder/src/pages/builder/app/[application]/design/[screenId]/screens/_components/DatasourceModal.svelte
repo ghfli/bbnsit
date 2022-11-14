@@ -1,12 +1,6 @@
 <script>
   import { store } from "builderStore"
-  import {
-    ModalContent,
-    Layout,
-    notifications,
-    Icon,
-    Body,
-  } from "@budibase/bbui"
+  import { ModalContent, Layout, notifications, Icon, Body } from "hyinsit-bbui"
   import { tables, datasources } from "stores/backend"
   import getTemplates from "builderStore/store/screenTemplates"
   import ICONS from "components/backend/DatasourceNavigator/icons"

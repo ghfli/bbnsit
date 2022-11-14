@@ -8,9 +8,9 @@ import {
   utils,
   cache,
   encryption,
-} from "@budibase/backend-core"
+} from "hyinsit-backend-core"
 import env from "../../../environment"
-import { groups } from "@budibase/pro"
+// import { groups } from "hyinsit-pro"
 const { hash, platformLogout, getCookie, clearCookie, newid } = utils
 const { user: userCache } = cache
 
@@ -117,7 +117,9 @@ export async function getSelf(ctx: any) {
 
   // get the main body of the user
   const user = await sdk.users.getUser(userId)
-  ctx.body = await groups.enrichUserRolesFromGroups(user)
+  // ctx.body = await groups.enrichUserRolesFromGroups(user)
+  ctx.body = user
+  console.log("skipping groups.enrichUserRolesFromGroups()")
 
   // add the feature flags for this tenant
   const tenantId = tenancy.getTenantId()

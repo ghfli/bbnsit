@@ -11,11 +11,11 @@
     Layout,
     Select,
     Label,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"
   import ClientBindingPanel from "components/common/bindings/ClientBindingPanel.svelte"
   import { generate } from "shortid"
-  import { LuceneUtils, Constants } from "@budibase/frontend-core"
+  import { LuceneUtils, Constants } from "hyinsit-frontend-core"
   import { getFields } from "helpers/searchFields"
   import { createEventDispatcher, onMount } from "svelte"
 

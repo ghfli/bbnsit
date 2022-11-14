@@ -1,10 +1,10 @@
 const { FieldTypes, FormulaTypes } = require("../../../constants")
 const { getAllInternalTables, clearColumns } = require("./utils")
-const { doesContainStrings } = require("@budibase/string-templates")
+const { doesContainStrings } = require("hyinsit-string-templates")
 const { cloneDeep } = require("lodash/fp")
 const { isEqual, uniq } = require("lodash")
 const { updateAllFormulasInTable } = require("../row/staticFormula")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 function isStaticFormula(column) {
   return (

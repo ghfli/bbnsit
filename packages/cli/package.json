@@ -1,6 +1,6 @@
 {
-  "name": "@budibase/cli",
-  "version": "2.0.29",
+  "name": "hyinsit-cli",
+  "version": "0.1.0",
   "description": "Budibase CLI, for developers, self hosting and migrations.",
   "main": "src/index.js",
   "bin": {
@@ -20,15 +20,15 @@
       "node16-macos"
     ],
     "assets": [
-      "node_modules/@budibase/backend-core/dist/**/*",
+      "node_modules/hyinsit-backend-core/dist/**/*",
       "prebuilds/**/*"
     ],
     "outputPath": "build"
   },
   "dependencies": {
-    "@budibase/backend-core": "^2.0.29",
-    "@budibase/string-templates": "^2.0.29",
-    "@budibase/types": "^2.0.29",
+    "hyinsit-backend-core": "^0.1.0",
+    "hyinsit-string-templates": "^0.1.0",
+    "hyinsit-types": "^0.1.0",
     "axios": "0.21.2",
     "chalk": "4.1.0",
     "cli-progress": "3.11.2",

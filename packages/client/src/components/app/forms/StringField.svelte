@@ -1,5 +1,5 @@
 <script>
-  import { CoreTextField } from "@budibase/bbui"
+  import { CoreTextField } from "hyinsit-bbui"
   import Field from "./Field.svelte"
 
   export let field

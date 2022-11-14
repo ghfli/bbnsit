@@ -1,11 +1,11 @@
 <script>
-  import { Combobox } from "@budibase/bbui"
+  import { Combobox } from "hyinsit-bbui"
   import {
     readableToRuntimeBinding,
     runtimeToReadableBinding,
   } from "builderStore/dataBinding"
   import { createEventDispatcher } from "svelte"
-  import { isJSBinding } from "@budibase/string-templates"
+  import { isJSBinding } from "hyinsit-string-templates"
 
   export let value = ""
   export let bindings = []

@@ -2,7 +2,7 @@ jest.mock("../../../utilities/fileSystem/utilities")
 
 const { checkBuilderEndpoint } = require("./utilities/TestFunctions")
 const setup = require("./utilities")
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 describe("/backups", () => {
   let request = setup.getRequest()

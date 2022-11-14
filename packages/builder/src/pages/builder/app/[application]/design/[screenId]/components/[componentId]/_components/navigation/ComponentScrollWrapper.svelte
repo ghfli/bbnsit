@@ -1,7 +1,7 @@
 <script>
   import { setContext } from "svelte"
   import { dndStore } from "./dndStore"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
 
   let scrollRef
 

@@ -1,7 +1,7 @@
 <script>
   import AutomationList from "./AutomationList.svelte"
   import CreateAutomationModal from "./CreateAutomationModal.svelte"
-  import { Icon, Modal, Tabs, Tab } from "@budibase/bbui"
+  import { Icon, Modal, Tabs, Tab } from "hyinsit-bbui"
 
   export let modal
   export let webhookModal

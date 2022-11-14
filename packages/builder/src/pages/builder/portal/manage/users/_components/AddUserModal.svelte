@@ -7,9 +7,9 @@
     InputDropdown,
     Layout,
     Icon,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { groups, licensing } from "stores/portal"
-  import { Constants } from "@budibase/frontend-core"
+  import { Constants } from "hyinsit-frontend-core"
   import { emailValidator } from "helpers/validation"
 
   export let showOnboardingTypeModal

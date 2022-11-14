@@ -6,9 +6,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@budibase/types": ["../types/src"],
-      "@budibase/backend-core": ["../backend-core/src"],
-      "@budibase/backend-core/*": ["../backend-core/*"]
+      "hyinsit-types": ["../types/src"],
+      "hyinsit-backend-core": ["../backend-core/src"],
+      "hyinsit-backend-core/*": ["../backend-core/*"]
     }
   },
   "ts-node": {

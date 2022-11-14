@@ -19,7 +19,7 @@
   // to render this part of the block, taking advantage of binding enrichment
   $: id = `${block.id}-${context ?? rand}`
   $: instance = {
-    _component: `@budibase/standard-components/${type}`,
+    _component: `hyinsit-standard-components/${type}`,
     _id: id,
     _styles: {
       normal: {

@@ -10,7 +10,7 @@ import {
   FieldSchema,
   Row,
   Table,
-} from "@budibase/types"
+} from "hyinsit-types"
 import {
   breakRowIdField,
   generateRowIdField,
@@ -24,7 +24,7 @@ import {
   RelationshipTypes,
 } from "../../../constants"
 import { breakExternalTableId, isSQL } from "../../../integrations/utils"
-import { processObjectSync } from "@budibase/string-templates"
+import { processObjectSync } from "hyinsit-string-templates"
 // @ts-ignore
 import { cloneDeep } from "lodash/fp"
 import {
@@ -32,7 +32,7 @@ import {
   processDates,
 } from "../../../utilities/rowProcessor/utils"
 // @ts-ignore
-import { getAppDB } from "@budibase/backend-core/context"
+import { getAppDB } from "hyinsit-backend-core/context"
 
 interface ManyRelationship {
   tableId?: string

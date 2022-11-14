@@ -1,5 +1,5 @@
 import { BaseStructure } from "./BaseStructure"
-import { Helpers } from "@budibase/bbui"
+import { Helpers } from "hyinsit-bbui"
 
 export class Screen extends BaseStructure {
   constructor() {
@@ -9,7 +9,7 @@ export class Screen extends BaseStructure {
       width: "Large",
       props: {
         _id: Helpers.uuid(),
-        _component: "@budibase/standard-components/container",
+        _component: "hyinsit-standard-components/container",
         _styles: {
           normal: {},
           hover: {},

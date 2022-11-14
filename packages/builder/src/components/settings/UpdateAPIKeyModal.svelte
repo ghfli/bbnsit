@@ -1,5 +1,5 @@
 <script>
-  import { ModalContent, Body, notifications } from "@budibase/bbui"
+  import { ModalContent, Body, notifications } from "hyinsit-bbui"
   import { auth } from "stores/portal"
   import { onMount } from "svelte"
   import CopyInput from "components/common/inputs/CopyInput.svelte"

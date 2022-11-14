@@ -1,4 +1,4 @@
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
 const { BASE_LAYOUT_PROP_IDS } = require("./layouts")
 
 exports.createHomeScreen = () => ({
@@ -7,7 +7,7 @@ exports.createHomeScreen = () => ({
   layoutId: BASE_LAYOUT_PROP_IDS.PRIVATE,
   props: {
     _id: "d834fea2-1b3e-4320-ab34-f9009f5ecc59",
-    _component: "@budibase/standard-components/container",
+    _component: "hyinsit-standard-components/container",
     _styles: {
       normal: {},
       hover: {},
@@ -18,7 +18,7 @@ exports.createHomeScreen = () => ({
     _children: [
       {
         _id: "ef60083f-4a02-4df3-80f3-a0d3d16847e7",
-        _component: "@budibase/standard-components/heading",
+        _component: "hyinsit-standard-components/heading",
         _styles: {
           hover: {},
           active: {},

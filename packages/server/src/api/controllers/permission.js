@@ -1,18 +1,18 @@
-const { getBuiltinPermissions } = require("@budibase/backend-core/permissions")
+const { getBuiltinPermissions } = require("hyinsit-backend-core/permissions")
 const {
   isBuiltin,
   getDBRoleID,
   getExternalRoleID,
   getBuiltinRoles,
   checkForRoleResourceArray,
-} = require("@budibase/backend-core/roles")
+} = require("hyinsit-backend-core/roles")
 const { getRoleParams } = require("../../db/utils")
 const {
   CURRENTLY_SUPPORTED_LEVELS,
   getBasePermissions,
 } = require("../../utilities/security")
 const { removeFromArray } = require("../../utilities")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 const PermissionUpdateType = {
   REMOVE: "remove",

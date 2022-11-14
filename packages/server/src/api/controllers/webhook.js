@@ -3,8 +3,8 @@ const toJsonSchema = require("to-json-schema")
 const validate = require("jsonschema").validate
 const { WebhookType } = require("../../constants")
 const triggers = require("../../automations/triggers")
-const { getProdAppID } = require("@budibase/backend-core/db")
-const { getAppDB, updateAppId } = require("@budibase/backend-core/context")
+const { getProdAppID } = require("hyinsit-backend-core/db")
+const { getAppDB, updateAppId } = require("hyinsit-backend-core/context")
 
 const AUTOMATION_DESCRIPTION = "Generated from Webhook Schema"
 

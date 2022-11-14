@@ -1,7 +1,7 @@
 <script>
   import { fade } from "svelte/transition"
   import { goto, params } from "@roxi/routify"
-  import { Table, Modal, Heading, notifications, Layout } from "@budibase/bbui"
+  import { Table, Modal, Heading, notifications, Layout } from "hyinsit-bbui"
   import { API } from "api"
   import Spinner from "components/common/Spinner.svelte"
   import DeleteRowsButton from "./buttons/DeleteRowsButton.svelte"

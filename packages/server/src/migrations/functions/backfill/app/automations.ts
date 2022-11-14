@@ -1,6 +1,6 @@
-import { events } from "@budibase/backend-core"
+import { events } from "hyinsit-backend-core"
 import { getAutomationParams } from "../../../../db/utils"
-import { Automation } from "@budibase/types"
+import { Automation } from "hyinsit-types"
 
 const getAutomations = async (appDb: any): Promise<Automation[]> => {
   const response = await appDb.allDocs(

@@ -1,5 +1,5 @@
 <script>
-  import { Layout } from "@budibase/bbui"
+  import { Layout } from "hyinsit-bbui"
   import { authStore, appStore, screenStore, componentStore } from "stores"
   import DevToolsStat from "./DevToolsStat.svelte"
 </script>

@@ -1,7 +1,7 @@
 <script>
-  import { Layout, Heading, Body, Divider, Label, Select } from "@budibase/bbui"
+  import { Layout, Heading, Body, Divider, Label, Select } from "hyinsit-bbui"
   import { themeStore } from "builderStore"
-  import { Constants } from "@budibase/frontend-core"
+  import { Constants } from "hyinsit-frontend-core"
 </script>
 
 <Layout noPadding>

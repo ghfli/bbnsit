@@ -1,8 +1,8 @@
 const { checkBuilderEndpoint } = require("./utilities/TestFunctions")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 const setup = require("./utilities")
 const { basicTable } = setup.structures
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 describe("/tables", () => {
   let request = setup.getRequest()

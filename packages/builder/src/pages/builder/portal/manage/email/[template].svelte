@@ -10,7 +10,7 @@
     notifications,
     Tabs,
     Tab,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { goto } from "@roxi/routify"
   import { email } from "stores/portal"
   import Editor from "components/integration/QueryEditor.svelte"

@@ -3,7 +3,7 @@ const compose = require("docker-compose")
 const path = require("path")
 const fs = require("fs")
 const isWsl = require("is-wsl")
-const { processStringSync } = require("@budibase/string-templates")
+const { processStringSync } = require("hyinsit-string-templates")
 
 function isLinux() {
   return !isWsl && process.platform !== "darwin" && process.platform !== "win32"
@@ -59,7 +59,8 @@ async function init() {
       BB_ADMIN_USER_EMAIL: "",
       BB_ADMIN_USER_PASSWORD: "",
       PLUGINS_DIR: "",
-      TENANT_FEATURE_FLAGS: "*:LICENSING,*:USER_GROUPS",
+      // TENANT_FEATURE_FLAGS: "*:LICENSING,*:USER_GROUPS",
+      TENANT_FEATURE_FLAGS: "",
     }
     let envFile = ""
     Object.keys(envFileJson).forEach(key => {

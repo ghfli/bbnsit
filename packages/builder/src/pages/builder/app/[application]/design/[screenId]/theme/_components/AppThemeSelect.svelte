@@ -1,7 +1,7 @@
 <script>
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import { store } from "builderStore"
-  import { Constants } from "@budibase/frontend-core"
+  import { Constants } from "hyinsit-frontend-core"
 
   const onChangeTheme = async theme => {
     try {

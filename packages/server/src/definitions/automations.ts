@@ -3,7 +3,7 @@ import {
   AutomationResults,
   AutomationStep,
   Document,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export enum LoopStepType {
   ARRAY = "Array",

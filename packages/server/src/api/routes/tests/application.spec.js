@@ -19,7 +19,7 @@ const {
 const setup = require("./utilities")
 const { basicScreen, basicLayout } = setup.structures
 const { AppStatus } = require("../../../db/utils")
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 describe("/applications", () => {
   let request = setup.getRequest()

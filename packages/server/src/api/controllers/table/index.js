@@ -3,9 +3,9 @@ const external = require("./external")
 const csvParser = require("../../../utilities/csvParser")
 const { isExternalTable, isSQL } = require("../../../integrations/utils")
 const { getDatasourceParams } = require("../../../db/utils")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 const { getTable, getAllInternalTables } = require("./utils")
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 function pickApi({ tableId, table }) {
   if (table && !tableId) {

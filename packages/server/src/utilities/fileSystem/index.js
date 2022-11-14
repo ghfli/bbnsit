@@ -2,11 +2,7 @@ const { budibaseTempDir } = require("../budibaseDir")
 const fs = require("fs")
 const { join } = require("path")
 const uuid = require("uuid/v4")
-const {
-  doWithDB,
-  dangerousGetDB,
-  closeDB,
-} = require("@budibase/backend-core/db")
+const { doWithDB, dangerousGetDB, closeDB } = require("hyinsit-backend-core/db")
 const { ObjectStoreBuckets } = require("../../constants")
 const {
   upload,
@@ -27,7 +23,7 @@ const {
   TABLE_ROW_PREFIX,
 } = require("../../db/utils")
 const MemoryStream = require("memorystream")
-const { getAppId } = require("@budibase/backend-core/context")
+const { getAppId } = require("hyinsit-backend-core/context")
 const tar = require("tar")
 const fetch = require("node-fetch")
 
@@ -61,7 +57,7 @@ exports.init = () => {
   }
   const clientLibPath = join(budibaseTempDir(), "budibase-client.js")
   if (env.isTest() && !fs.existsSync(clientLibPath)) {
-    fs.copyFileSync(require.resolve("@budibase/client"), clientLibPath)
+    fs.copyFileSync(require.resolve("hyinsit-client"), clientLibPath)
   }
 }
 
@@ -293,7 +289,7 @@ exports.getComponentLibraryManifest = async library => {
     const path = require.resolve(library).split(lib)[0]
     return require(join(path, lib, filename))
   } else if (env.isDev()) {
-    const path = join(NODE_MODULES_PATH, "@budibase", "client", filename)
+    const path = join(NODE_MODULES_PATH, "hyinsit", "client", filename)
     // always load from new so that updates are refreshed
     delete require.cache[require.resolve(path)]
     return require(path)

@@ -1,5 +1,5 @@
 <script>
-  import { Label, ActionButton, Button, Select, Input } from "@budibase/bbui"
+  import { Label, ActionButton, Button, Select, Input } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"
 

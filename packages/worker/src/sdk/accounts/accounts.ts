@@ -1,11 +1,11 @@
-import { AccountMetadata } from "@budibase/types"
+import { AccountMetadata } from "hyinsit-types"
 import {
   db,
   StaticDatabases,
   HTTPError,
   DocumentType,
   SEPARATOR,
-} from "@budibase/backend-core"
+} from "hyinsit-backend-core"
 
 export const formatAccountMetadataId = (accountId: string) => {
   return `${DocumentType.ACCOUNT_METADATA}${SEPARATOR}${accountId}`

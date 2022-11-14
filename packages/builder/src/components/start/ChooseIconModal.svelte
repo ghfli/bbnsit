@@ -6,7 +6,7 @@
     ColorPicker,
     Label,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { apps } from "stores/portal"
 
   export let app

@@ -3,11 +3,11 @@ const env = require("../../environment")
 const { checkSlashesInUrl } = require("../../utilities")
 const { request } = require("../../utilities/workerRequests")
 const { clearLock } = require("../../utilities/redis")
-const { Replication, getProdAppID } = require("@budibase/backend-core/db")
+const { Replication, getProdAppID } = require("hyinsit-backend-core/db")
 const { DocumentType } = require("../../db/utils")
-const { app: appCache } = require("@budibase/backend-core/cache")
-const { getProdAppDB, getAppDB } = require("@budibase/backend-core/context")
-const { events } = require("@budibase/backend-core")
+const { app: appCache } = require("hyinsit-backend-core/cache")
+const { getProdAppDB, getAppDB } = require("hyinsit-backend-core/context")
+const { events } = require("hyinsit-backend-core")
 
 async function redirect(ctx, method, path = "global") {
   const { devPath } = ctx.params

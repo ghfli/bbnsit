@@ -1,5 +1,5 @@
 <script>
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
   import { builderStore, componentStore } from "stores"
 
   export let prop

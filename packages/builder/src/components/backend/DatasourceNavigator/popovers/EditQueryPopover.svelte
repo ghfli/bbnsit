@@ -1,6 +1,6 @@
 <script>
   import { goto } from "@roxi/routify"
-  import { ActionMenu, MenuItem, Icon, notifications } from "@budibase/bbui"
+  import { ActionMenu, MenuItem, Icon, notifications } from "hyinsit-bbui"
   import ConfirmDialog from "components/common/ConfirmDialog.svelte"
   import { datasources, queries } from "stores/backend"
 

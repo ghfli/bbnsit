@@ -1,5 +1,5 @@
 <script>
-  import { Body, Menu, MenuItem, Detail } from "@budibase/bbui"
+  import { Body, Menu, MenuItem, Detail } from "hyinsit-bbui"
 
   export let bindings
   export let onBindingClick = () => {}

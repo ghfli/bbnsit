@@ -4,7 +4,7 @@
     "composite": true,
     "baseUrl": ".",
     "paths": {
-      "@budibase/types": ["../types/src"]
+      "hyinsit-types": ["../types/src"]
     }
   },
   "references": [

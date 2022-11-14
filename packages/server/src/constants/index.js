@@ -1,6 +1,6 @@
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
-const { UserStatus } = require("@budibase/backend-core/constants")
-const { ObjectStoreBuckets } = require("@budibase/backend-core/objectStore")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
+const { UserStatus } = require("hyinsit-backend-core/constants")
+const { ObjectStoreBuckets } = require("hyinsit-backend-core/objectStore")
 
 exports.JobQueues = {
   AUTOMATIONS: "automationQueue",

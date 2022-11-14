@@ -1,12 +1,12 @@
 <script>
-  import { Icon, Combobox, Drawer, Button } from "@budibase/bbui"
+  import { Icon, Combobox, Drawer, Button } from "hyinsit-bbui"
   import {
     readableToRuntimeBinding,
     runtimeToReadableBinding,
   } from "builderStore/dataBinding"
   import ClientBindingPanel from "components/common/bindings/ClientBindingPanel.svelte"
   import { createEventDispatcher } from "svelte"
-  import { isJSBinding } from "@budibase/string-templates"
+  import { isJSBinding } from "hyinsit-string-templates"
 
   export let panel = ClientBindingPanel
   export let value = ""

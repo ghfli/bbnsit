@@ -1,5 +1,5 @@
 const setup = require("./utilities")
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 const version = require("../../../../package.json").version
 
 describe("/dev", () => {

@@ -1,5 +1,5 @@
 <script>
-  import { Body, ModalContent, Select } from "@budibase/bbui"
+  import { Body, ModalContent, Select } from "hyinsit-bbui"
   import { apps, groups } from "stores/portal"
   import { roles } from "stores/backend"
   import RoleSelect from "components/common/RoleSelect.svelte"

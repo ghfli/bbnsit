@@ -5,11 +5,11 @@
     notifications,
     ModalContent,
     Layout,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { API } from "api"
   import analytics, { Events, EventSource } from "analytics"
   import { store } from "builderStore"
-  import { ProgressCircle } from "@budibase/bbui"
+  import { ProgressCircle } from "hyinsit-bbui"
   import CopyInput from "components/common/inputs/CopyInput.svelte"
 
   let feedbackModal

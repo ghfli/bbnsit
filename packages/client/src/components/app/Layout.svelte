@@ -1,10 +1,10 @@
 <script>
   import { getContext, setContext } from "svelte"
   import { writable } from "svelte/store"
-  import { Heading, Icon } from "@budibase/bbui"
+  import { Heading, Icon } from "hyinsit-bbui"
   import { FieldTypes } from "constants"
   import active from "svelte-spa-router/active"
-  import { RoleUtils } from "@budibase/frontend-core"
+  import { RoleUtils } from "hyinsit-frontend-core"
   import FreeLogo from "../FreeLogo.svelte"
   import licensing from "../../licensing"
 

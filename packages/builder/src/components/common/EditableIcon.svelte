@@ -1,5 +1,5 @@
 <script>
-  import { Icon } from "@budibase/bbui"
+  import { Icon } from "hyinsit-bbui"
   import ChooseIconModal from "components/start/ChooseIconModal.svelte"
 
   export let name

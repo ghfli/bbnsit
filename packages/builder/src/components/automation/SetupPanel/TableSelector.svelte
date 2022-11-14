@@ -1,6 +1,6 @@
 <script>
   import { tables } from "stores/backend"
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
   import { TableNames } from "constants"
 

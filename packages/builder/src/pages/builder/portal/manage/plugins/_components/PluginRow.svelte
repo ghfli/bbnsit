@@ -7,7 +7,7 @@
     Button,
     Label,
     Input,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import DeletePluginModal from "../_components/DeletePluginModal.svelte"
 
   export let plugin

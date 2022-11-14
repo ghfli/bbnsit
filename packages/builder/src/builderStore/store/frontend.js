@@ -18,8 +18,8 @@ import {
   getComponentSettings,
   makeComponentUnique,
 } from "../componentUtils"
-import { Helpers } from "@budibase/bbui"
-import { Utils } from "@budibase/frontend-core"
+import { Helpers } from "hyinsit-bbui"
+import { Utils } from "hyinsit-frontend-core"
 
 const INITIAL_FRONTEND_STATE = {
   apps: [],

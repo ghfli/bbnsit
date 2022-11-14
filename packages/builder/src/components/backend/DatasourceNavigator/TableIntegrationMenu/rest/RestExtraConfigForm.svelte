@@ -6,7 +6,7 @@
     Badge,
     Body,
     Layout,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import KeyValueBuilder from "components/integration/KeyValueBuilder.svelte"
   import RestAuthenticationBuilder from "./auth/RestAuthenticationBuilder.svelte"
   import ViewDynamicVariables from "./variables/ViewDynamicVariables.svelte"

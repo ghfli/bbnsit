@@ -13,7 +13,7 @@ import {
   UserPermissionAssignedEvent,
   UserPermissionRemovedEvent,
   UserUpdatedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(user: User, timestamp?: number) {
   const properties: UserCreatedEvent = {

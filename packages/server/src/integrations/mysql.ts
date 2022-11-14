@@ -7,7 +7,7 @@ import {
   Table,
   TableSchema,
   DatasourcePlus,
-} from "@budibase/types"
+} from "hyinsit-types"
 import {
   getSqlQuery,
   SqlClient,

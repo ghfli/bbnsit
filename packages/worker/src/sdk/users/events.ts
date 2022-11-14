@@ -1,7 +1,7 @@
 import env from "../../environment"
-import { events, accounts, tenancy } from "@budibase/backend-core"
-import { User, UserRoles, CloudAccount } from "@budibase/types"
-import { users as pro } from "@budibase/pro"
+import { events, accounts, tenancy } from "hyinsit-backend-core"
+import { User, UserRoles, CloudAccount } from "hyinsit-types"
+// import { users as pro } from "hyinsit-pro"
 
 export const handleDeleteEvents = async (user: any) => {
   await events.user.deleted(user)

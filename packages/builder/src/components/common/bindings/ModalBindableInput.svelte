@@ -1,12 +1,12 @@
 <script>
-  import { Icon, Input, Modal, Body, ModalContent } from "@budibase/bbui"
+  import { Icon, Input, Modal, Body, ModalContent } from "hyinsit-bbui"
   import {
     readableToRuntimeBinding,
     runtimeToReadableBinding,
   } from "builderStore/dataBinding"
   import ServerBindingPanel from "components/common/bindings/ServerBindingPanel.svelte"
   import { createEventDispatcher } from "svelte"
-  import { isJSBinding } from "@budibase/string-templates"
+  import { isJSBinding } from "hyinsit-string-templates"
 
   export let panel = ServerBindingPanel
   export let value = ""

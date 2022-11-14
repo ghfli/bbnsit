@@ -17,10 +17,10 @@ const {
   getAppDB,
   getProdAppDB,
   doInAppContext,
-} = require("@budibase/backend-core/context")
-const { events } = require("@budibase/backend-core")
-const { app } = require("@budibase/backend-core/cache")
-const { automations } = require("@budibase/pro")
+} = require("hyinsit-backend-core/context")
+const { events } = require("hyinsit-backend-core")
+const { app } = require("hyinsit-backend-core/cache")
+// const { automations } = require("hyinsit-pro")
 
 const ACTION_DEFS = removeDeprecated(actions.ACTION_DEFINITIONS)
 const TRIGGER_DEFS = removeDeprecated(triggers.TRIGGER_DEFINITIONS)
@@ -193,8 +193,8 @@ exports.destroy = async function (ctx) {
   await events.automation.deleted(oldAutomation)
 }
 
-exports.logSearch = async function (ctx) {
-  ctx.body = await automations.logs.logSearch(ctx.request.body)
+exports.logSearch = function (ctx) {
+  ctx.body = {}
 }
 
 exports.clearLogError = async function (ctx) {

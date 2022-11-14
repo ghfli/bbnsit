@@ -1,6 +1,6 @@
 import Router from "@koa/router"
 import * as controller from "../../controllers/system/accounts"
-import { middleware } from "@budibase/backend-core"
+import { middleware } from "hyinsit-backend-core"
 
 const router = new Router()
 

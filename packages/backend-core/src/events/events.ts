@@ -1,4 +1,4 @@
-import { Event } from "@budibase/types"
+import { Event } from "hyinsit-types"
 import { processors } from "./processors"
 import * as identification from "./identification"
 import * as backfill from "./backfill"

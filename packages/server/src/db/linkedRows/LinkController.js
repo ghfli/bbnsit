@@ -6,7 +6,7 @@ const {
 } = require("../utils")
 const Sentry = require("@sentry/node")
 const { FieldTypes, RelationshipTypes } = require("../../constants")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 /**
  * Creates a new link document structure which can be put to the database. It is important to

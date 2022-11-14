@@ -2,7 +2,7 @@
   import { goto } from "@roxi/routify"
   import { database } from "stores/backend"
   import { automationStore } from "builderStore"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import {
     Input,
     InlineAlert,
@@ -10,7 +10,7 @@
     Layout,
     Body,
     Icon,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { TriggerStepID } from "constants/backend/automations"
 
   let name

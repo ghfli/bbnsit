@@ -1,7 +1,7 @@
 {
-  "name": "@budibase/worker",
-  "email": "hi@budibase.com",
-  "version": "2.0.29",
+  "name": "hyinsit-worker",
+  "email": "hihyinsit.com",
+  "version": "0.1.0",
   "description": "Budibase background service",
   "main": "src/index.ts",
   "repository": {
@@ -19,7 +19,7 @@
     "run:docker": "node dist/index.js",
     "debug": "yarn build && node --expose-gc --inspect=9223 dist/index.js",
     "run:docker:cluster": "pm2-runtime start pm2.config.js",
-    "build:docker": "docker build . -t worker-service --label version=$BUDIBASE_RELEASE_VERSION",
+    "build:docker": "docker build . --platform linux/amd64 -t worker-service --label version=$BUDIBASE_RELEASE_VERSION",
     "dev:stack:init": "node ./scripts/dev/manage.js init",
     "dev:builder": "npm run dev:stack:init && nodemon",
     "test": "jest --runInBand",
@@ -36,10 +36,9 @@
   "author": "Budibase",
   "license": "GPL-3.0",
   "dependencies": {
-    "@budibase/backend-core": "^2.0.29",
-    "@budibase/pro": "2.0.28",
-    "@budibase/string-templates": "^2.0.29",
-    "@budibase/types": "^2.0.29",
+    "hyinsit-backend-core": "0.1.0",
+    "hyinsit-string-templates": "0.1.0",
+    "hyinsit-types": "0.1.0",
     "@koa/router": "8.0.8",
     "@sentry/node": "6.17.7",
     "@techpass/passport-openidconnect": "0.3.2",
@@ -96,9 +95,9 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "@budibase/backend-core/(.*)": "<rootDir>/../backend-core/$1",
-      "@budibase/backend-core": "<rootDir>/../backend-core/src",
-      "@budibase/types": "<rootDir>/../types/src"
+      "hyinsit-backend-core/(.*)": "<rootDir>/../backend-core/$1",
+      "hyinsit-backend-core": "<rootDir>/../backend-core/src",
+      "hyinsit-types": "<rootDir>/../types/src"
     },
     "setupFiles": [
       "./scripts/jestSetup.js"

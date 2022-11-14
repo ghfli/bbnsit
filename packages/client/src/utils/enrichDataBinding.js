@@ -1,5 +1,5 @@
-import { Helpers } from "@budibase/bbui"
-import { processString, processObjectSync } from "@budibase/string-templates"
+import { Helpers } from "hyinsit-bbui"
+import { processString, processObjectSync } from "hyinsit-string-templates"
 
 // Regex to test inputs with to see if they are likely candidates for template strings
 const looksLikeTemplate = /{{.*}}/

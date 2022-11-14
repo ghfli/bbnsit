@@ -1,5 +1,5 @@
 import TestConfiguration from "../TestConfiguration"
-import { User } from "@budibase/types"
+import { User } from "hyinsit-types"
 
 export class SelfAPI {
   config: TestConfiguration

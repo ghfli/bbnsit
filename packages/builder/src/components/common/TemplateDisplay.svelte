@@ -7,7 +7,7 @@
     Modal,
     ActionGroup,
     ActionButton,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import TemplateCard from "components/common/TemplateCard.svelte"
   import CreateAppModal from "components/start/CreateAppModal.svelte"
   import { licensing } from "stores/portal"

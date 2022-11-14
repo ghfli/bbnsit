@@ -1,5 +1,5 @@
 <script>
-  import { Helpers } from "@budibase/bbui"
+  import { Helpers } from "hyinsit-bbui"
   import { notificationStore } from "stores"
 
   export let label

@@ -10,7 +10,7 @@
     Notification,
     Body,
     Search,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import TemplateDisplay from "components/common/TemplateDisplay.svelte"
   import Spinner from "components/common/Spinner.svelte"
   import CreateAppModal from "components/start/CreateAppModal.svelte"
@@ -237,6 +237,7 @@
           "There was a problem loading quick start templates."
         )
       }
+
       // If the portal is loaded from an external URL with a template param
       const initInfo = await auth.getInitInfo()
       if (initInfo?.init_template) {
@@ -245,7 +246,7 @@
         return
       }
     } catch (error) {
-      notifications.error("Error loading apps and templates")
+      notifications.error("Error loading apps and templates: " + error)
     }
     loaded = true
   })

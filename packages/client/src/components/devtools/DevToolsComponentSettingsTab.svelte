@@ -1,5 +1,5 @@
 <script>
-  import { Layout, Toggle } from "@budibase/bbui"
+  import { Layout, Toggle } from "hyinsit-bbui"
   import DevToolsStat from "./DevToolsStat.svelte"
   import { componentStore } from "stores/index.js"
   import { getSettingsDefinition } from "utils/componentProps.js"

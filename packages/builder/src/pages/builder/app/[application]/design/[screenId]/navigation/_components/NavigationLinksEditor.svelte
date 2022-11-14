@@ -1,5 +1,5 @@
 <script>
-  import { Button, Drawer } from "@budibase/bbui"
+  import { Button, Drawer } from "hyinsit-bbui"
   import NavigationLinksDrawer from "./NavigationLinksDrawer.svelte"
   import { cloneDeep } from "lodash/fp"
   import { store } from "builderStore"

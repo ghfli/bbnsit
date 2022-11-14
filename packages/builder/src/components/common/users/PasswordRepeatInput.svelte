@@ -1,5 +1,5 @@
 <script>
-  import { Layout, Input } from "@budibase/bbui"
+  import { Layout, Input } from "hyinsit-bbui"
   import {
     createValidationStore,
     requiredValidator,

@@ -5,9 +5,9 @@ import {
   tenancy,
   db as dbCore,
   roles,
-} from "@budibase/backend-core"
+} from "hyinsit-backend-core"
 import { updateAppPackage } from "./application"
-import { Plugin, ScreenProps } from "@budibase/types"
+import { Plugin, ScreenProps } from "hyinsit-types"
 
 exports.fetch = async (ctx: any) => {
   const db = context.getAppDB()

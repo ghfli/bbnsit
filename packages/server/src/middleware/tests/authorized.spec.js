@@ -9,8 +9,8 @@ jest.mock("../../environment", () => ({
 )
 const authorizedMiddleware = require("../authorized")
 const env = require("../../environment")
-const { PermissionTypes, PermissionLevels } = require("@budibase/backend-core/permissions")
-const { doInAppContext } = require("@budibase/backend-core/context")
+const { PermissionTypes, PermissionLevels } = require("hyinsit-backend-core/permissions")
+const { doInAppContext } = require("hyinsit-backend-core/context")
 
 const APP_ID = ""
 

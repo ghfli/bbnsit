@@ -1,6 +1,6 @@
 <script>
   import { notificationStore } from "stores"
-  import { Notification } from "@budibase/bbui"
+  import { Notification } from "hyinsit-bbui"
   import { fly } from "svelte/transition"
 </script>
 

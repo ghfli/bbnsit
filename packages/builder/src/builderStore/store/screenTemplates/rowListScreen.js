@@ -2,7 +2,7 @@ import sanitizeUrl from "./utils/sanitizeUrl"
 import { newRowUrl } from "./newRowScreen"
 import { Screen } from "./utils/Screen"
 import { Component } from "./utils/Component"
-import { makePropSafe } from "@budibase/string-templates"
+import { makePropSafe } from "hyinsit-string-templates"
 
 export default function (tables) {
   return tables.map(table => {
@@ -19,7 +19,7 @@ export const ROW_LIST_TEMPLATE = "ROW_LIST_TEMPLATE"
 export const rowListUrl = table => sanitizeUrl(`/${table.name}`)
 
 function generateTitleContainer(table) {
-  const newButton = new Component("@budibase/standard-components/button")
+  const newButton = new Component("hyinsit-standard-components/button")
     .text("Create New")
     .customProps({
       size: "M",
@@ -35,7 +35,7 @@ function generateTitleContainer(table) {
     })
     .instanceName("New Button")
 
-  const heading = new Component("@budibase/standard-components/heading")
+  const heading = new Component("hyinsit-standard-components/heading")
     .instanceName("Title")
     .text(table.name)
     .customProps({
@@ -43,7 +43,7 @@ function generateTitleContainer(table) {
       align: "left",
     })
 
-  return new Component("@budibase/standard-components/container")
+  return new Component("hyinsit-standard-components/container")
     .customProps({
       direction: "row",
       hAlign: "stretch",
@@ -57,7 +57,7 @@ function generateTitleContainer(table) {
 }
 
 const createScreen = table => {
-  const provider = new Component("@budibase/standard-components/dataprovider")
+  const provider = new Component("hyinsit-standard-components/dataprovider")
     .instanceName(`Data Provider`)
     .customProps({
       dataSource: {
@@ -71,7 +71,7 @@ const createScreen = table => {
       limit: 8,
     })
 
-  const spectrumTable = new Component("@budibase/standard-components/table")
+  const spectrumTable = new Component("hyinsit-standard-components/table")
     .customProps({
       dataProvider: `{{ literal ${makePropSafe(provider._json._id)} }}`,
       showAutoColumns: false,
@@ -82,7 +82,7 @@ const createScreen = table => {
 
   const safeTableId = makePropSafe(spectrumTable._json._id)
   const safeRowId = makePropSafe("_id")
-  const viewLink = new Component("@budibase/standard-components/link")
+  const viewLink = new Component("hyinsit-standard-components/link")
     .customProps({
       text: "View",
       url: `${rowListUrl(table)}/{{ ${safeTableId}.${safeRowId} }}`,

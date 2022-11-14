@@ -1,5 +1,5 @@
 import filterTests from "../support/filterTests"
-import clientPackage from "@budibase/client/package.json"
+import clientPackage from "hyinsit-client/package.json"
 
 filterTests(["all"], () => {
   context("Application Overview screen", () => {

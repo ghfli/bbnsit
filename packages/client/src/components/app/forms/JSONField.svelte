@@ -1,5 +1,5 @@
 <script>
-  import { CoreTextArea } from "@budibase/bbui"
+  import { CoreTextArea } from "hyinsit-bbui"
   import Field from "./Field.svelte"
   import { getContext } from "svelte"
 

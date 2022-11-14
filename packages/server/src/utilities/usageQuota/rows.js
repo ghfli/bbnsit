@@ -3,7 +3,7 @@ const {
   isDevAppID,
   getDevelopmentAppID,
   doWithDB,
-} = require("@budibase/backend-core/db")
+} = require("hyinsit-backend-core/db")
 
 const ROW_EXCLUSIONS = [USER_METDATA_PREFIX]
 

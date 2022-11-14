@@ -1,4 +1,4 @@
-const { Client, utils } = require("@budibase/backend-core/redis")
+const { Client, utils } = require("hyinsit-backend-core/redis")
 const { getGlobalIDFromUserMetadataID } = require("../db/utils")
 
 const APP_DEV_LOCK_SECONDS = 600

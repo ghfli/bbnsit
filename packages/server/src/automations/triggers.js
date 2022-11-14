@@ -8,8 +8,8 @@ const { queue } = require("./bullboard")
 const { checkTestFlag } = require("../utilities/redis")
 const utils = require("./utils")
 const env = require("../environment")
-const { doInAppContext, getAppDB } = require("@budibase/backend-core/context")
-const { getAllApps } = require("@budibase/backend-core/db")
+const { doInAppContext, getAppDB } = require("hyinsit-backend-core/context")
+const { getAllApps } = require("hyinsit-backend-core/db")
 
 const TRIGGER_DEFINITIONS = definitions
 const JOB_OPTS = {

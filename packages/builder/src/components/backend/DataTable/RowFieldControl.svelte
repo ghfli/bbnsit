@@ -8,7 +8,7 @@
     Label,
     RichTextField,
     TextArea,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import Dropzone from "components/common/Dropzone.svelte"
   import { capitalise } from "helpers"
   import LinkedRowSelector from "components/common/LinkedRowSelector.svelte"

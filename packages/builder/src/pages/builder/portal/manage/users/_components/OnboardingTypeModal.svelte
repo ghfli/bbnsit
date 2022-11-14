@@ -1,5 +1,5 @@
 <script>
-  import { ModalContent, Body, Layout, Icon } from "@budibase/bbui"
+  import { ModalContent, Body, Layout, Icon } from "hyinsit-bbui"
 
   export let chooseCreationType
   let emailOnboardingKey = "emailOnboarding"

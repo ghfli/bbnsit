@@ -3,7 +3,7 @@
   import { selectedComponent, selectedScreen, store } from "builderStore"
   import { findComponent } from "builderStore/componentUtils"
   import { goto, isActive } from "@roxi/routify"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import ConfirmDialog from "components/common/ConfirmDialog.svelte"
 
   let confirmDeleteDialog

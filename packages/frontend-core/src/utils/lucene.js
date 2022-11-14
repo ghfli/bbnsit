@@ -1,4 +1,4 @@
-import { Helpers } from "@budibase/bbui"
+import { Helpers } from "hyinsit-bbui"
 import { OperatorOptions, SqlNumberTypeRangeMap } from "../constants"
 
 const HBS_REGEX = /{{([^{].*?)}}/g

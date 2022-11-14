@@ -1,10 +1,10 @@
 import * as rowController from "../../../controllers/row"
 import * as appController from "../../../controllers/application"
 import { AppStatus } from "../../../../db/utils"
-import { BUILTIN_ROLE_IDS } from "@budibase/backend-core/roles"
-import { doInTenant } from "@budibase/backend-core/tenancy"
+import { BUILTIN_ROLE_IDS } from "hyinsit-backend-core/roles"
+import { doInTenant } from "hyinsit-backend-core/tenancy"
 import { TENANT_ID } from "../../../../tests/utilities/structures"
-import { getAppDB, doInAppContext } from "@budibase/backend-core/context"
+import { getAppDB, doInAppContext } from "hyinsit-backend-core/context"
 import * as env from "../../../../environment"
 
 class Request {

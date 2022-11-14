@@ -1,5 +1,5 @@
 <script>
-  import { Select, ModalContent, notifications } from "@budibase/bbui"
+  import { Select, ModalContent, notifications } from "hyinsit-bbui"
   import download from "downloadjs"
   import { API } from "api"
 

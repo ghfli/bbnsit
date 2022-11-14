@@ -1,12 +1,12 @@
 const Router = require("@koa/router")
 const controller = require("../../controllers/global/users")
-const { joiValidator } = require("@budibase/backend-core/auth")
-const { adminOnly } = require("@budibase/backend-core/auth")
+const { joiValidator } = require("hyinsit-backend-core/auth")
+const { adminOnly } = require("hyinsit-backend-core/auth")
 const Joi = require("joi")
 const cloudRestricted = require("../../../middleware/cloudRestricted")
 const { users } = require("../validation")
 const selfController = require("../../controllers/global/self")
-const { builderOrAdmin } = require("@budibase/backend-core/auth")
+const { builderOrAdmin } = require("hyinsit-backend-core/auth")
 
 const router = new Router()
 

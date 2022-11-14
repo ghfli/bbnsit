@@ -7,15 +7,15 @@ import {
   getTable,
   handleDataImport,
 } from "./utils"
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 import { isTest } from "../../../environment"
 import {
   cleanupAttachments,
   fixAutoColumnSubType,
 } from "../../../utilities/rowProcessor"
 import { runStaticFormulaChecks } from "./bulkFormula"
-import { Table } from "@budibase/types"
-import { quotas } from "@budibase/pro"
+import { Table } from "hyinsit-types"
+// import { quotas } from "hyinsit-pro"
 import { isEqual } from "lodash"
 import { cloneDeep } from "lodash/fp"
 
@@ -153,7 +153,7 @@ export async function destroy(ctx: any) {
   await db.bulkDocs(
     rows.rows.map((row: any) => ({ ...row.doc, _deleted: true }))
   )
-  await quotas.removeRows(rows.rows.length)
+  // await quotas.removeRows(rows.rows.length)
 
   // update linked rows
   await updateLinks({

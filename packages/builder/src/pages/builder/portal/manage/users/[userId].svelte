@@ -21,7 +21,7 @@
     Divider,
     Banner,
     StatusLight,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import { users, auth, groups, apps, licensing } from "stores/portal"
   import { roles } from "stores/backend"
@@ -29,7 +29,7 @@
   import UserGroupPicker from "components/settings/UserGroupPicker.svelte"
   import DeleteUserModal from "./_components/DeleteUserModal.svelte"
   import GroupIcon from "../groups/_components/GroupIcon.svelte"
-  import { Constants, RoleUtils } from "@budibase/frontend-core"
+  import { Constants, RoleUtils } from "hyinsit-frontend-core"
 
   export let userId
 

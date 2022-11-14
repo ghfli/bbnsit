@@ -8,7 +8,7 @@
     Detail,
     Link,
     TooltipWrapper,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import { admin, auth, licensing } from "../../../../stores/portal"
   import { PlanType } from "../../../../constants"

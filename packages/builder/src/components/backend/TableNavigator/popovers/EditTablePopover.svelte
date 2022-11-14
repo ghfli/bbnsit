@@ -10,7 +10,7 @@
     Modal,
     ModalContent,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import ConfirmDialog from "components/common/ConfirmDialog.svelte"
 
   export let table

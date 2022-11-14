@@ -5,7 +5,7 @@ import {
   PluginDeletedEvent,
   PluginImportedEvent,
   PluginInitEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function init(plugin: Plugin) {
   const properties: PluginInitEvent = {

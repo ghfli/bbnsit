@@ -5,7 +5,7 @@ const {
   BUILDER,
   PermissionLevels,
   PermissionTypes,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 const {
   datasourceValidator,
   datasourceQueryValidator,

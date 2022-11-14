@@ -1,5 +1,5 @@
 <script>
-  import { CoreDatePicker } from "@budibase/bbui"
+  import { CoreDatePicker } from "hyinsit-bbui"
   import Field from "./Field.svelte"
 
   export let field

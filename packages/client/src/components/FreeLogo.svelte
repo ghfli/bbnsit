@@ -1,5 +1,5 @@
 <script>
-  import { Link } from "@budibase/bbui"
+  import { Link } from "hyinsit-bbui"
 </script>
 
 <Link

@@ -1,8 +1,8 @@
 const { SearchIndexes } = require("../../../db/utils")
 const { removeKeyNumbering } = require("./utils")
 const fetch = require("node-fetch")
-const { getCouchInfo } = require("@budibase/backend-core/db")
-const { getAppId } = require("@budibase/backend-core/context")
+const { getCouchInfo } = require("hyinsit-backend-core/db")
+const { getAppId } = require("hyinsit-backend-core/context")
 
 /**
  * Class to build lucene query URLs.

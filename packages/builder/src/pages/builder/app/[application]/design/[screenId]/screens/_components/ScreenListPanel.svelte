@@ -1,5 +1,5 @@
 <script>
-  import { Search, Layout, Select, Body, Button } from "@budibase/bbui"
+  import { Search, Layout, Select, Body, Button } from "hyinsit-bbui"
   import Panel from "components/design/Panel.svelte"
   import { roles } from "stores/backend"
   import { store, sortedScreens } from "builderStore"
@@ -7,7 +7,7 @@
   import ScreenDropdownMenu from "./ScreenDropdownMenu.svelte"
   import ScreenWizard from "./ScreenWizard.svelte"
   import RoleIndicator from "./RoleIndicator.svelte"
-  import { RoleUtils } from "@budibase/frontend-core"
+  import { RoleUtils } from "hyinsit-frontend-core"
 
   let searchString
   let accessRole = "all"

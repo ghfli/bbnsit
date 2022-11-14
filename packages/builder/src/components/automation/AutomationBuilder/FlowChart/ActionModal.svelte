@@ -7,7 +7,7 @@
     Icon,
     Tooltip,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { automationStore } from "builderStore"
   import { admin } from "stores/portal"
   import { externalActions } from "./ExternalActions"

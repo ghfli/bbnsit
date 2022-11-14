@@ -1,5 +1,5 @@
 <script>
-  import { Body, Table, BoldRenderer, CodeRenderer } from "@budibase/bbui"
+  import { Body, Table, BoldRenderer, CodeRenderer } from "hyinsit-bbui"
   import { queries as queriesStore } from "stores/backend"
   import { goto } from "@roxi/routify"
 

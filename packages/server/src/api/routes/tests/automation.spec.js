@@ -8,7 +8,7 @@ const setup = require("./utilities")
 const { basicAutomation, newAutomation, automationTrigger, automationStep } = setup.structures
 const MAX_RETRIES = 4
 const { TRIGGER_DEFINITIONS, ACTION_DEFINITIONS } = require("../../../automations")
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 describe("/automations", () => {
   let request = setup.getRequest()

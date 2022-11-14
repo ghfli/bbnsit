@@ -1,5 +1,5 @@
 <script>
-  import { Body } from "@budibase/bbui"
+  import { Body } from "hyinsit-bbui"
 </script>
 
 <div class="root">

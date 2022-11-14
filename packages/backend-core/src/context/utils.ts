@@ -5,7 +5,7 @@ import {
   updateTenantId,
 } from "./index"
 import cls from "./FunctionContext"
-import { IdentityContext } from "@budibase/types"
+import { IdentityContext } from "hyinsit-types"
 import { ContextKey } from "./constants"
 import { dangerousGetDB, closeDB } from "../db"
 import { isEqual } from "lodash"

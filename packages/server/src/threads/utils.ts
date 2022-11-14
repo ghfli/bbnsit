@@ -1,8 +1,8 @@
 import { QueryVariable } from "./definitions"
 const env = require("../environment")
 const db = require("../db")
-const redis = require("@budibase/backend-core/redis")
-const { SEPARATOR } = require("@budibase/backend-core/db")
+const redis = require("hyinsit-backend-core/redis")
+const { SEPARATOR } = require("hyinsit-backend-core/db")
 
 const VARIABLE_TTL_SECONDS = 3600
 let client: any

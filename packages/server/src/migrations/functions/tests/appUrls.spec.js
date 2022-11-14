@@ -1,4 +1,4 @@
-const {  DocumentType, doWithDB } = require("@budibase/backend-core/db")
+const {  DocumentType, doWithDB } = require("hyinsit-backend-core/db")
 const TestConfig = require("../../../tests/utilities/TestConfiguration")
 
 const migration = require("../appUrls")

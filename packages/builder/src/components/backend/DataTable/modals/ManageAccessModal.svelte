@@ -7,7 +7,7 @@
     notifications,
     Body,
     ModalContent,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { capitalise } from "helpers"
 
   export let resourceId

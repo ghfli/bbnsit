@@ -1,5 +1,5 @@
 import DataFetch from "./DataFetch.js"
-import { Helpers } from "@budibase/bbui"
+import { Helpers } from "hyinsit-bbui"
 import { get } from "svelte/store"
 
 export default class QueryFetch extends DataFetch {

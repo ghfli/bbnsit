@@ -1,5 +1,5 @@
 <script>
-  import { Layout, Heading, Body, Button, notifications } from "@budibase/bbui"
+  import { Layout, Heading, Body, Button, notifications } from "hyinsit-bbui"
   import { goto, params } from "@roxi/routify"
   import { users, organisation } from "stores/portal"
   import PasswordRepeatInput from "components/common/users/PasswordRepeatInput.svelte"

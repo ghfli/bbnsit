@@ -6,7 +6,7 @@
     routeStore,
     stateStore,
   } from "stores"
-  import { Modal, ModalContent, ActionButton } from "@budibase/bbui"
+  import { Modal, ModalContent, ActionButton } from "hyinsit-bbui"
   import { onDestroy } from "svelte"
 
   const MessageTypes = {

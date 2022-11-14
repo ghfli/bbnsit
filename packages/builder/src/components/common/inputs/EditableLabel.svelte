@@ -1,5 +1,5 @@
 <script>
-  import { Heading, Icon, Input, Label, Body } from "@budibase/bbui"
+  import { Heading, Icon, Input, Label, Body } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
 
   let dispatch = createEventDispatcher()

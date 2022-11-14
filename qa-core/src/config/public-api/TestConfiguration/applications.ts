@@ -3,7 +3,7 @@ import {
   Application,
   SearchInputParams,
   CreateApplicationParams,
-} from "@budibase/server/api/controllers/public/mapping/types"
+} from "hyinsit-server/api/controllers/public/mapping/types"
 import { Response } from "node-fetch"
 import generateApp from "../fixtures/applications"
 

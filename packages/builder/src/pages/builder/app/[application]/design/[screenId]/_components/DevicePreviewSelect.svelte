@@ -1,5 +1,5 @@
 <script>
-  import { ActionGroup, ActionButton } from "@budibase/bbui"
+  import { ActionGroup, ActionButton } from "hyinsit-bbui"
   import { store } from "builderStore"
 </script>
 

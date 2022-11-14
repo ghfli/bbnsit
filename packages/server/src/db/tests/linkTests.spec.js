@@ -1,8 +1,8 @@
 const TestConfig = require("../../tests/utilities/TestConfiguration")
 const { basicTable } = require("../../tests/utilities/structures")
 const linkUtils = require("../linkedRows/linkUtils")
-const { getAppDB } = require("@budibase/backend-core/context")
-const { doWithDB } = require("@budibase/backend-core/db")
+const { getAppDB } = require("hyinsit-backend-core/context")
+const { doWithDB } = require("hyinsit-backend-core/db")
 
 describe("test link functionality", () => {
   const config = new TestConfig(false)

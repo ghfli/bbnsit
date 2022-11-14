@@ -5,7 +5,7 @@ import {
   AccountCreatedEvent,
   AccountDeletedEvent,
   AccountVerifiedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(account: Account) {
   const properties: AccountCreatedEvent = {

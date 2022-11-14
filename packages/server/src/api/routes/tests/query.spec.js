@@ -4,7 +4,7 @@ jest.mock("node-fetch")
 
 // Mock isProdAppID to we can later mock the implementation and pretend we are
 // using prod app IDs
-const authDb = require("@budibase/backend-core/db")
+const authDb = require("hyinsit-backend-core/db")
 const { isProdAppID } = authDb
 const mockIsProdAppID = jest.fn(isProdAppID)
 authDb.isProdAppID = mockIsProdAppID
@@ -13,7 +13,7 @@ const setup = require("./utilities")
 const { checkBuilderEndpoint } = require("./utilities/TestFunctions")
 const { checkCacheForDynamicVariable } = require("../../../threads/utils")
 const { basicQuery, basicDatasource } = setup.structures
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 describe("/queries", () => {
   let request = setup.getRequest()

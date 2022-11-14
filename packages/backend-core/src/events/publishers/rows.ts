@@ -5,7 +5,7 @@ import {
   RowsCreatedEvent,
   RowImportFormat,
   Table,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 /* eslint-disable */
 

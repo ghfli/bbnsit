@@ -1,5 +1,5 @@
 <script>
-  import { Layout, Table, Select, Pagination } from "@budibase/bbui"
+  import { Layout, Table, Select, Pagination } from "hyinsit-bbui"
   import DateTimeRenderer from "components/common/renderers/DateTimeRenderer.svelte"
   import StatusRenderer from "./StatusRenderer.svelte"
   import HistoryDetailsPanel from "./HistoryDetailsPanel.svelte"

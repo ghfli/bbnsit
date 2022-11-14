@@ -1,5 +1,5 @@
 <script>
-  import { Body, Button, Heading, Icon, Input, Layout } from "@budibase/bbui"
+  import { Body, Button, Heading, Icon, Input, Layout } from "hyinsit-bbui"
   import {
     readableToRuntimeBinding,
     runtimeToReadableBinding,

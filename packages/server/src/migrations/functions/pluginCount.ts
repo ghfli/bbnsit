@@ -1,7 +1,8 @@
-import { tenancy, logging } from "@budibase/backend-core"
-import { plugins } from "@budibase/pro"
+// import { tenancy, logging } from "hyinsit-backend-core"
+// import { plugins } from "hyinsit-pro"
 
 export const run = async () => {
+  /*
   try {
     await tenancy.doInTenant(tenancy.DEFAULT_TENANT_ID, async () => {
       await plugins.checkPluginQuotas()
@@ -9,4 +10,5 @@ export const run = async () => {
   } catch (err) {
     logging.logAlert("Failed to update plugin quotas", err)
   }
+  */
 }

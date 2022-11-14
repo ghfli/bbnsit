@@ -2,7 +2,7 @@ import { derived } from "svelte/store"
 import { routeStore } from "./routes"
 import { builderStore } from "./builder"
 import { appStore } from "./app"
-import { RoleUtils } from "@budibase/frontend-core"
+import { RoleUtils } from "hyinsit-frontend-core"
 
 const createScreenStore = () => {
   const store = derived(
@@ -86,7 +86,7 @@ const createScreenStore = () => {
         activeLayout = {
           _id: "layout",
           props: {
-            _component: "@budibase/standard-components/layout",
+            _component: "hyinsit-standard-components/layout",
             _children: [
               {
                 _component: "screenslot",

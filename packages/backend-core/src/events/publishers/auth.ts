@@ -9,7 +9,7 @@ import {
   SSODeactivatedEvent,
   SSOType,
   SSOUpdatedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 import { identification } from ".."
 
 export async function login(source: LoginSource) {

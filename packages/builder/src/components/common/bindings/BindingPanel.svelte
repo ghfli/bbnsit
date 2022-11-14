@@ -12,13 +12,13 @@
     ActionButton,
     Icon,
     Popover,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { createEventDispatcher, onMount } from "svelte"
   import {
     isValid,
     decodeJSBinding,
     encodeJSBinding,
-  } from "@budibase/string-templates"
+  } from "hyinsit-string-templates"
   import {
     readableToRuntimeBinding,
     runtimeToReadableBinding,
@@ -26,7 +26,7 @@
   import { handlebarsCompletions } from "constants/completions"
   import { addHBSBinding, addJSBinding } from "./utils"
   import CodeMirrorEditor from "components/common/CodeMirrorEditor.svelte"
-  import { convertToJS } from "@budibase/string-templates"
+  import { convertToJS } from "hyinsit-string-templates"
   import { admin } from "stores/portal"
 
   const dispatch = createEventDispatcher()

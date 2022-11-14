@@ -1,4 +1,4 @@
-import { api } from "@budibase/pro"
+// import { api } from "hyinsit-pro"
 import userRoutes from "./global/users"
 import configRoutes from "./global/configs"
 import workspaceRoutes from "./global/workspaces"
@@ -14,7 +14,7 @@ import licenseRoutes from "./global/license"
 import migrationRoutes from "./system/migrations"
 import accountRoutes from "./system/accounts"
 
-let userGroupRoutes = api.groups
+// let userGroupRoutes = api.groups
 export const routes = [
   configRoutes,
   userRoutes,
@@ -28,7 +28,7 @@ export const routes = [
   statusRoutes,
   selfRoutes,
   licenseRoutes,
-  userGroupRoutes,
+  // userGroupRoutes,
   migrationRoutes,
   accountRoutes,
 ]

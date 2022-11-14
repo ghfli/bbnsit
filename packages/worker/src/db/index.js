@@ -1,4 +1,4 @@
-const core = require("@budibase/backend-core")
+const core = require("hyinsit-backend-core")
 const env = require("../environment")
 
 exports.init = () => {

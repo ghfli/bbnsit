@@ -1,5 +1,5 @@
 <script>
-  import { Multiselect } from "@budibase/bbui"
+  import { Multiselect } from "hyinsit-bbui"
   import {
     getDatasourceForProvider,
     getSchemaForDatasource,

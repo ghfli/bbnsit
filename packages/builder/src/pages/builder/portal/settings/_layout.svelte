@@ -1,5 +1,5 @@
 <script>
-  import { Page } from "@budibase/bbui"
+  import { Page } from "hyinsit-bbui"
 </script>
 
 <Page maxWidth="90ch">

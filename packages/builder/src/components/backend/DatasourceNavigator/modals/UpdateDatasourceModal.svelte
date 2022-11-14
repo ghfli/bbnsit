@@ -1,7 +1,7 @@
 <script>
   import { datasources } from "stores/backend"
-  import { notifications } from "@budibase/bbui"
-  import { Input, ModalContent, Modal } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
+  import { Input, ModalContent, Modal } from "hyinsit-bbui"
 
   let error = ""
   let modal

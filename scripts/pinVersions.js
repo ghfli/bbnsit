@@ -15,7 +15,7 @@ function getPackages() {
 
 function pinDeps(dependencies) {
   for (let dependency in dependencies) {
-    if (dependency.startsWith("@budibase")) {
+    if (dependency.startsWith("hyinsit")) {
       dependencies[dependency] = dependencies[dependency].replace("^", "")
     }
   }

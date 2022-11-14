@@ -1,5 +1,5 @@
-const { getAllApps } = require("@budibase/backend-core/db")
-const { doInAppContext } = require("@budibase/backend-core/context")
+const { getAllApps } = require("hyinsit-backend-core/db")
+const { doInAppContext } = require("hyinsit-backend-core/context")
 import { search as stringSearch, addRev } from "./utils"
 import * as controller from "../application"
 import { Application } from "../../../definitions/common"

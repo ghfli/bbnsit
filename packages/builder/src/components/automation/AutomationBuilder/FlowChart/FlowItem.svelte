@@ -11,7 +11,7 @@
     ActionButton,
     notifications,
     Label,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import AutomationBlockSetup from "../../SetupPanel/AutomationBlockSetup.svelte"
   import CreateWebhookModal from "components/automation/Shared/CreateWebhookModal.svelte"
   import ActionModal from "./ActionModal.svelte"

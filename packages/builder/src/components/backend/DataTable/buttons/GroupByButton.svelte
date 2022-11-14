@@ -1,5 +1,5 @@
 <script>
-  import { Modal, Button } from "@budibase/bbui"
+  import { Modal, Button } from "hyinsit-bbui"
   import GroupByModal from "../modals/GroupByModal.svelte"
 
   export let view = {}

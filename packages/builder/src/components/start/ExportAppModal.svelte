@@ -1,5 +1,5 @@
 <script>
-  import { ModalContent, Toggle, Body } from "@budibase/bbui"
+  import { ModalContent, Toggle, Body } from "hyinsit-bbui"
 
   export let app
   export let published

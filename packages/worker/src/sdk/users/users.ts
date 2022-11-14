@@ -15,7 +15,7 @@ import {
   users as usersCore,
   utils,
   ViewName,
-} from "@budibase/backend-core"
+} from "hyinsit-backend-core"
 import {
   AccountMetadata,
   AllDocsResponse,
@@ -28,10 +28,10 @@ import {
   PlatformUserByEmail,
   RowResponse,
   User,
-} from "@budibase/types"
+} from "hyinsit-types"
 import { sendEmail } from "../../utilities/email"
 import { EmailTemplatePurpose } from "../../constants"
-import { groups as groupsSdk } from "@budibase/pro"
+// import { groups as groupsSdk } from "hyinsit-pro"
 
 const PAGE_LIMIT = 8
 
@@ -409,12 +409,13 @@ export const bulkCreate = async (
 
   // now update the groups
   if (Array.isArray(saved) && groups) {
-    const groupPromises = []
+    // const groupPromises = []
     const createdUserIds = saved.map(user => user._id)
     for (let groupId of groups) {
-      groupPromises.push(groupsSdk.addUsers(groupId, createdUserIds))
+      // groupPromises.push(groupsSdk.addUsers(groupId, createdUserIds))
+      console.log("skipping groupsSdk.addUsers()")
     }
-    await Promise.all(groupPromises)
+    // await Promise.all(groupPromises)
   }
 
   return {

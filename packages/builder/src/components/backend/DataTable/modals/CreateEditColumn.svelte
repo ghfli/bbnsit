@@ -11,7 +11,7 @@
     Context,
     Modal,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { createEventDispatcher, onMount } from "svelte"
   import { cloneDeep } from "lodash/fp"
   import { tables, datasources } from "stores/backend"

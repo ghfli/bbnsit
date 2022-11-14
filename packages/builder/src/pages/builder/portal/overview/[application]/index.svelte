@@ -17,7 +17,7 @@
     Icon,
     Helpers,
     Modal,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import OverviewTab from "../_components/OverviewTab.svelte"
   import SettingsTab from "../_components/SettingsTab.svelte"
   import AccessTab from "../_components/AccessTab.svelte"

@@ -142,7 +142,7 @@ spec:
           value: {{ .Values.globals.elasticApmServerUrl | quote }}
         {{ end }}
 
-        image: budibase/worker:{{ .Values.globals.appVersion }}
+        image: hyinsit/worker:{{ .Values.globals.appVersion }}
         imagePullPolicy: Always
         livenessProbe:
           httpGet:

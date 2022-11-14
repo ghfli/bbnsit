@@ -1,4 +1,4 @@
-const { DocumentType } = require("@budibase/backend-core/db")
+const { DocumentType } = require("hyinsit-backend-core/db")
 import { getAppUrl } from "../../api/controllers/application"
 
 /**

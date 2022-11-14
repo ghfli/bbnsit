@@ -3,15 +3,15 @@ const {
   buildAuthMiddleware,
   auditLog,
   buildTenancyMiddleware,
-} = require("@budibase/backend-core/auth")
-const { errors } = require("@budibase/backend-core")
+} = require("hyinsit-backend-core/auth")
+const { errors } = require("hyinsit-backend-core")
 const currentApp = require("../middleware/currentapp")
 const compress = require("koa-compress")
 const zlib = require("zlib")
 const { mainRoutes, staticRoutes, publicRoutes } = require("./routes")
 const pkg = require("../../package.json")
 const env = require("../environment")
-const { middleware: pro } = require("@budibase/pro")
+// const { middleware: pro } = require("hyinsit-pro")
 const { shutdown } = require("./routes/public")
 
 const router = new Router()
@@ -54,7 +54,7 @@ router
       noTenancyRequired: true,
     })
   )
-  .use(pro.licensing())
+  // .use(pro.licensing())
   .use(currentApp)
   .use(auditLog)
 

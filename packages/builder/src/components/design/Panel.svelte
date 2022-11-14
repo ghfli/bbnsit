@@ -1,5 +1,5 @@
 <script>
-  import { Icon, Heading } from "@budibase/bbui"
+  import { Icon, Heading } from "hyinsit-bbui"
 
   export let title
   export let icon

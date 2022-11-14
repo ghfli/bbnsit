@@ -1,4 +1,4 @@
-import { createAPIClient } from "@budibase/frontend-core"
+import { createAPIClient } from "hyinsit-frontend-core"
 import { notificationStore, authStore, devToolsStore } from "../stores"
 import { get } from "svelte/store"
 

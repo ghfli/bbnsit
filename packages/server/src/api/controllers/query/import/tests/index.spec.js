@@ -2,7 +2,7 @@ const TestConfig = require("../../../../../tests/utilities/TestConfiguration")
 const { RestImporter } = require("../index")
 const fs = require("fs")
 const path = require('path')
-const { events} = require("@budibase/backend-core")
+const { events} = require("hyinsit-backend-core")
 
 const getData = (file) => {
   return fs.readFileSync(path.join(__dirname, `../sources/tests/${file}`), "utf8")

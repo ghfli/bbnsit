@@ -1,5 +1,5 @@
-import { migrations, redis } from "@budibase/backend-core"
-import { Migration, MigrationOptions, MigrationName } from "@budibase/types"
+import { migrations, redis } from "hyinsit-backend-core"
+import { Migration, MigrationOptions, MigrationName } from "hyinsit-types"
 import env from "../environment"
 
 // migration functions

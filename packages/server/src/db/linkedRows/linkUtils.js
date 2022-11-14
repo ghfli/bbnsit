@@ -2,7 +2,7 @@ const Sentry = require("@sentry/node")
 const { ViewName, getQueryIndex } = require("../utils")
 const { FieldTypes } = require("../../constants")
 const { createLinkView } = require("../views/staticViews")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 /**
  * Only needed so that boolean parameters are being used for includeDocs

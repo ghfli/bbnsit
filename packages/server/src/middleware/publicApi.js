@@ -1,5 +1,5 @@
-const { Headers } = require("@budibase/backend-core/constants")
-const { getAppIdFromCtx } = require("@budibase/backend-core/utils")
+const { Headers } = require("hyinsit-backend-core/constants")
+const { getAppIdFromCtx } = require("hyinsit-backend-core/utils")
 
 module.exports = function ({ requiresAppId } = {}) {
   return async (ctx, next) => {

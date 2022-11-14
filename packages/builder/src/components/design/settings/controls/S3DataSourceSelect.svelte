@@ -1,5 +1,5 @@
 <script>
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
   import { datasources } from "stores/backend"
 
   export let value = null

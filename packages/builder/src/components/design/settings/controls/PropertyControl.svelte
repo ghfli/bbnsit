@@ -1,5 +1,5 @@
 <script>
-  import { Label } from "@budibase/bbui"
+  import { Label } from "hyinsit-bbui"
   import {
     readableToRuntimeBinding,
     runtimeToReadableBinding,

@@ -1,4 +1,4 @@
-import { getManifest } from "@budibase/string-templates"
+import { getManifest } from "hyinsit-string-templates"
 
 export function handlebarsCompletions() {
   const manifest = getManifest()

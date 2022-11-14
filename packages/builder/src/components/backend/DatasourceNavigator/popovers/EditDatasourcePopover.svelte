@@ -1,8 +1,8 @@
 <script>
   import { goto } from "@roxi/routify"
   import { datasources, queries, tables } from "stores/backend"
-  import { notifications } from "@budibase/bbui"
-  import { ActionMenu, MenuItem, Icon } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
+  import { ActionMenu, MenuItem, Icon } from "hyinsit-bbui"
   import ConfirmDialog from "components/common/ConfirmDialog.svelte"
   import UpdateDatasourceModal from "components/backend/DatasourceNavigator/modals/UpdateDatasourceModal.svelte"
 

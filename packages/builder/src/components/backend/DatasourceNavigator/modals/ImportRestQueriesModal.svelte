@@ -10,7 +10,7 @@
     Heading,
     TextArea,
     Dropzone,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { datasources, queries } from "stores/backend"
   import { writable } from "svelte/store"
 

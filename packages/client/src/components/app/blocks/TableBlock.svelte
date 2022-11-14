@@ -2,8 +2,8 @@
   import { getContext } from "svelte"
   import Block from "components/Block.svelte"
   import BlockComponent from "components/BlockComponent.svelte"
-  import { Heading } from "@budibase/bbui"
-  import { makePropSafe as safe } from "@budibase/string-templates"
+  import { Heading } from "hyinsit-bbui"
+  import { makePropSafe as safe } from "hyinsit-string-templates"
   import { enrichSearchColumns, enrichFilter } from "utils/blocks.js"
 
   export let title

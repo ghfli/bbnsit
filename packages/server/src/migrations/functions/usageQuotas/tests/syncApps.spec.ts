@@ -1,7 +1,7 @@
 import TestConfig from "../../../../tests/utilities/TestConfiguration"
 import * as syncApps from "../syncApps"
-import { quotas } from "@budibase/pro"
-import { QuotaUsageType, StaticQuotaName } from "@budibase/types"
+import { quotas } from "hyinsit-pro"
+import { QuotaUsageType, StaticQuotaName } from "hyinsit-types"
 
 describe("syncApps", () => {
   let config = new TestConfig(false)

@@ -1,5 +1,5 @@
 <script>
-  import { PickerDropdown } from "@budibase/bbui"
+  import { PickerDropdown } from "hyinsit-bbui"
   import { groups } from "stores/portal"
   import { createEventDispatcher } from "svelte"
 

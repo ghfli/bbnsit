@@ -2,7 +2,7 @@
   import { store, selectedScreen } from "builderStore"
   import { onMount } from "svelte"
   import { redirect } from "@roxi/routify"
-  import { Layout, Button, Detail, notifications } from "@budibase/bbui"
+  import { Layout, Button, Detail, notifications } from "hyinsit-bbui"
   import Logo from "assets/bb-space-man.svg"
   import createFromScratchScreen from "builderStore/store/screenTemplates/createFromScratchScreen"
   import { Roles } from "constants/backend"

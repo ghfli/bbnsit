@@ -1,7 +1,7 @@
 <script>
   import "@spectrum-css/card/dist/index-vars.css"
   import { getContext } from "svelte"
-  import { Button } from "@budibase/bbui"
+  import { Button } from "hyinsit-bbui"
 
   export let title
   export let subtitle

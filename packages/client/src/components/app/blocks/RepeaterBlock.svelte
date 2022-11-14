@@ -3,7 +3,7 @@
   import Block from "components/Block.svelte"
   import Placeholder from "components/app/Placeholder.svelte"
   import { getContext } from "svelte"
-  import { makePropSafe as safe } from "@budibase/string-templates"
+  import { makePropSafe as safe } from "hyinsit-string-templates"
 
   export let dataSource
   export let filter

@@ -1,4 +1,4 @@
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 const { DocumentType, SEPARATOR, ViewName, SearchIndexes } = require("../utils")
 const SCREEN_PREFIX = DocumentType.SCREEN + SEPARATOR
 

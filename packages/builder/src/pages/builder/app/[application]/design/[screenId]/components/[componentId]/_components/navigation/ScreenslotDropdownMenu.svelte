@@ -1,6 +1,6 @@
 <script>
   import { store } from "builderStore"
-  import { ActionMenu, MenuItem, Icon, notifications } from "@budibase/bbui"
+  import { ActionMenu, MenuItem, Icon, notifications } from "hyinsit-bbui"
 
   export let component
 

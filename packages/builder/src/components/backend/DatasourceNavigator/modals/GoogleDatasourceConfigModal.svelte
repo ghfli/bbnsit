@@ -1,5 +1,5 @@
 <script>
-  import { ModalContent, Body, Layout } from "@budibase/bbui"
+  import { ModalContent, Body, Layout } from "hyinsit-bbui"
   import { IntegrationNames } from "constants/backend"
   import cloneDeep from "lodash/cloneDeepWith"
   import GoogleButton from "../_components/GoogleButton.svelte"

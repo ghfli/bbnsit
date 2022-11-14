@@ -1,6 +1,6 @@
 import Router from "@koa/router"
 import * as controller from "../../controllers/global/self"
-import { auth } from "@budibase/backend-core"
+import { auth } from "hyinsit-backend-core"
 import { users } from "../validation"
 
 const router = new Router()

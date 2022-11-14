@@ -15,7 +15,7 @@ import redis from "./redis"
 import snowflake from "./snowflake"
 import oracle from "./oracle"
 import { getPlugins } from "../api/controllers/plugin"
-import { SourceName, Integration, PluginType } from "@budibase/types"
+import { SourceName, Integration, PluginType } from "hyinsit-types"
 import { getDatasourcePlugin } from "../utilities/fileSystem"
 const environment = require("../environment")
 const { cloneDeep } = require("lodash")

@@ -1,5 +1,5 @@
 <script>
-  import { Body, notifications } from "@budibase/bbui"
+  import { Body, notifications } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import { API } from "api"
   import ICONS from "../icons"

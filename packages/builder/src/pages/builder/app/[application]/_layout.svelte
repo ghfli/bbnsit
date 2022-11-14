@@ -1,7 +1,7 @@
 <script>
   import { store, automationStore } from "builderStore"
   import { roles, flags } from "stores/backend"
-  import { Icon, Tabs, Tab, Heading, notifications } from "@budibase/bbui"
+  import { Icon, Tabs, Tab, Heading, notifications } from "hyinsit-bbui"
   import RevertModal from "components/deploy/RevertModal.svelte"
   import VersionModal from "components/deploy/VersionModal.svelte"
   import DeployNavigation from "components/deploy/DeployNavigation.svelte"

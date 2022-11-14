@@ -7,7 +7,7 @@ const {
   BUILDER,
   PermissionTypes,
   PermissionLevels,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 
 const router = new Router()
 

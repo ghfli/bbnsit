@@ -1,5 +1,5 @@
 <script>
-  import { IconAvatar } from "@budibase/bbui"
+  import { IconAvatar } from "hyinsit-bbui"
 
   export let group
   export let size = "M"

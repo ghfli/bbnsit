@@ -1,7 +1,7 @@
 jest.mock("nodemailer")
 import { TestConfiguration, mocks, API } from "../../../../tests"
 const sendMailMock = mocks.email.mock()
-import { events } from "@budibase/backend-core"
+import { events } from "hyinsit-backend-core"
 
 describe("/api/global/auth", () => {
   const config = new TestConfiguration()
@@ -51,7 +51,7 @@ describe("/api/global/auth", () => {
   })
 
   describe("oidc", () => {
-    const auth = require("@budibase/backend-core/auth")
+    const auth = require("hyinsit-backend-core/auth")
 
     const passportSpy = jest.spyOn(auth.passport, "authenticate")
     let oidcConf

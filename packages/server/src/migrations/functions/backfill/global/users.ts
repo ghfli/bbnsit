@@ -1,5 +1,5 @@
-import { events, db as dbUtils } from "@budibase/backend-core"
-import { User, CloudAccount } from "@budibase/types"
+import { events, db as dbUtils } from "hyinsit-backend-core"
+import { User, CloudAccount } from "hyinsit-types"
 import { DEFAULT_TIMESTAMP } from ".."
 
 // manually define user doc params - normally server doesn't read users from the db

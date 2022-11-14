@@ -1,7 +1,7 @@
 import { writable, get } from "svelte/store"
 import { API } from "api"
 import { auth, admin } from "stores/portal"
-import { Constants } from "@budibase/frontend-core"
+import { Constants } from "hyinsit-frontend-core"
 import { StripeStatus } from "components/portal/licensing/constants"
 import { TENANT_FEATURE_FLAGS, isEnabled } from "helpers/featureFlags"
 
@@ -53,7 +53,7 @@ export const createLicensingStore = () => {
     setLicense: () => {
       const license = get(auth).user.license
       const isFreePlan = license?.plan.type === Constants.PlanType.FREE
-      const groupsEnabled = license.features.includes(
+      const groupsEnabled = license?.features?.includes(
         Constants.Features.USER_GROUPS
       )
       store.update(state => {
@@ -93,13 +93,13 @@ export const createLicensingStore = () => {
         }
         const monthlyMetrics = getMetrics(
           ["dayPasses", "queries", "automations"],
-          license.quotas.usage.monthly,
-          quota.monthly.current
+          license?.quotas?.usage.monthly,
+          quota?.monthly?.current
         )
         const staticMetrics = getMetrics(
           ["apps", "rows"],
-          license.quotas.usage.static,
-          quota.usageQuota
+          license?.quotas?.usage.static,
+          quota?.usageQuota
         )
 
         const getDaysBetween = (dateStart, dateEnd) => {

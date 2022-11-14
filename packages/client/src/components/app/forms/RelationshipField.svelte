@@ -1,5 +1,5 @@
 <script>
-  import { CoreSelect, CoreMultiselect } from "@budibase/bbui"
+  import { CoreSelect, CoreMultiselect } from "hyinsit-bbui"
   import { getContext } from "svelte"
   import Field from "./Field.svelte"
   import { FieldTypes } from "../../../constants"

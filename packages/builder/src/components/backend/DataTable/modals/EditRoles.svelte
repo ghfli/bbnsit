@@ -1,8 +1,8 @@
 <script>
-  import { ModalContent, Select, Input, Button } from "@budibase/bbui"
+  import { ModalContent, Select, Input, Button } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import { API } from "api"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import ErrorsBox from "components/common/ErrorsBox.svelte"
   import { roles } from "stores/backend"
 

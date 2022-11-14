@@ -8,7 +8,7 @@
     Divider,
     notifications,
     Label,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { API } from "api"
   import { auth, admin } from "stores/portal"
   import { redirect } from "@roxi/routify"

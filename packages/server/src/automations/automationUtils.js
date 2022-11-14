@@ -4,7 +4,7 @@ const {
   decodeJSBinding,
   isJSBinding,
   encodeJSBinding,
-} = require("@budibase/string-templates")
+} = require("hyinsit-string-templates")
 
 /**
  * When values are input to the system generally they will be of type string as this is required for template strings.

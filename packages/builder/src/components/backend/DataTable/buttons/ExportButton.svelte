@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, Modal } from "@budibase/bbui"
+  import { ActionButton, Modal } from "hyinsit-bbui"
   import ExportModal from "../modals/ExportModal.svelte"
 
   export let view

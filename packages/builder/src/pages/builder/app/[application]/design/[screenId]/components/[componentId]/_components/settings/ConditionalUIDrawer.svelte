@@ -7,12 +7,12 @@
     Layout,
     Select,
     DatePicker,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { flip } from "svelte/animate"
   import { dndzone } from "svelte-dnd-action"
   import { generate } from "shortid"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"
-  import { LuceneUtils, Constants } from "@budibase/frontend-core"
+  import { LuceneUtils, Constants } from "hyinsit-frontend-core"
   import { selectedComponent } from "builderStore"
   import { getComponentForSetting } from "components/design/settings/componentSettings"
   import PropertyControl from "components/design/settings/controls/PropertyControl.svelte"

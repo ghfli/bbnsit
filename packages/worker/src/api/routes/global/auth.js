@@ -1,8 +1,8 @@
 const Router = require("@koa/router")
 const authController = require("../../controllers/global/auth")
-const { joiValidator } = require("@budibase/backend-core/auth")
+const { joiValidator } = require("hyinsit-backend-core/auth")
 const Joi = require("joi")
-const { updateTenantId } = require("@budibase/backend-core/tenancy")
+const { updateTenantId } = require("hyinsit-backend-core/tenancy")
 
 const router = new Router()
 

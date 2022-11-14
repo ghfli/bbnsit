@@ -1,7 +1,7 @@
 <script>
-  import { ActionButton, Button, Drawer } from "@budibase/bbui"
+  import { ActionButton, Button, Drawer } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import ButtonActionDrawer from "./ButtonActionDrawer.svelte"
   import { automationStore } from "builderStore"
   import { cloneDeep } from "lodash/fp"

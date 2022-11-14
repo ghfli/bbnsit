@@ -1,5 +1,5 @@
 <script>
-  import { CoreCheckbox } from "@budibase/bbui"
+  import { CoreCheckbox } from "hyinsit-bbui"
   import Field from "./Field.svelte"
 
   export let field

@@ -1,5 +1,5 @@
 <script>
-  import { Icon, Divider } from "@budibase/bbui"
+  import { Icon, Divider } from "hyinsit-bbui"
   import TestDisplay from "./TestDisplay.svelte"
   import { automationStore } from "builderStore"
   import { ActionStepID } from "constants/backend/automations"

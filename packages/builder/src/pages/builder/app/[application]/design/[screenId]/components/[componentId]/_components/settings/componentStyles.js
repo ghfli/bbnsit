@@ -1,4 +1,4 @@
-import { Input, Select } from "@budibase/bbui"
+import { Input, Select } from "hyinsit-bbui"
 import ColorPicker from "components/design/settings/controls/ColorPicker.svelte"
 
 export const margin = {

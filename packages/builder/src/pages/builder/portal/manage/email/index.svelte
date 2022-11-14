@@ -12,7 +12,7 @@
     Body,
     Table,
     Checkbox,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { email, admin } from "stores/portal"
   import { API } from "api"
   import { cloneDeep } from "lodash/fp"

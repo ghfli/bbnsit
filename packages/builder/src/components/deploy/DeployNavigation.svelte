@@ -7,8 +7,8 @@
     Body,
     Button,
     Icon,
-  } from "@budibase/bbui"
-  import { processStringSync } from "@budibase/string-templates"
+  } from "hyinsit-bbui"
+  import { processStringSync } from "hyinsit-string-templates"
   import ConfirmDialog from "components/common/ConfirmDialog.svelte"
   import analytics, { Events, EventSource } from "analytics"
   import { checkIncomingDeploymentStatus } from "components/deploy/utils"

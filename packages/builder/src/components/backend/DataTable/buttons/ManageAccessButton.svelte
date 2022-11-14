@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, Modal } from "@budibase/bbui"
+  import { ActionButton, Modal } from "hyinsit-bbui"
   import { permissions } from "stores/backend"
   import ManageAccessModal from "../modals/ManageAccessModal.svelte"
 

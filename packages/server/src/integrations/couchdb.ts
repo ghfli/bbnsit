@@ -3,7 +3,7 @@ import {
   DatasourceFieldType,
   QueryType,
   IntegrationBase,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 const PouchDB = require("pouchdb")
 

@@ -3,7 +3,7 @@ const yargs = require("yargs")
 const fs = require("fs")
 const { join } = require("path")
 require("../src/db").init()
-const { doWithDB } = require("@budibase/backend-core/db")
+const { doWithDB } = require("hyinsit-backend-core/db")
 // load environment
 const env = require("../src/environment")
 const {

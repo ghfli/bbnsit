@@ -8,7 +8,7 @@
     Select,
     ActionMenu,
     MenuItem,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
   import { lowercase } from "helpers"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"

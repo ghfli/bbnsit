@@ -1,5 +1,5 @@
 const { execSync } = require("child_process")
-const { processStringSync } = require("@budibase/string-templates")
+const { processStringSync } = require("hyinsit-string-templates")
 const automationUtils = require("../automationUtils")
 const environment = require("../../environment")
 

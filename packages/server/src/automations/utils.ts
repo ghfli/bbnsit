@@ -5,17 +5,13 @@ import { queue } from "./bullboard"
 import newid from "../db/newid"
 import { updateEntityMetadata } from "../utilities"
 import { MetadataTypes, WebhookType } from "../constants"
-import { getProdAppID, doWithDB } from "@budibase/backend-core/db"
+import { getProdAppID, doWithDB } from "hyinsit-backend-core/db"
 import { getAutomationMetadataParams } from "../db/utils"
 import { cloneDeep } from "lodash/fp"
-import {
-  getAppDB,
-  getAppId,
-  getProdAppDB,
-} from "@budibase/backend-core/context"
-import { tenancy } from "@budibase/backend-core"
-import { quotas } from "@budibase/pro"
-import { Automation } from "@budibase/types"
+import { getAppDB, getAppId, getProdAppDB } from "hyinsit-backend-core/context"
+import { tenancy } from "hyinsit-backend-core"
+// import { quotas } from "hyinsit-pro"
+import { Automation } from "hyinsit-types"
 
 const REBOOT_CRON = "@reboot"
 const WH_STEP_ID = definitions.WEBHOOK.stepId
@@ -33,7 +29,7 @@ export async function processEvent(job: any) {
     const tenantId = tenancy.getTenantIDFromAppID(job.data.event.appId)
     return await tenancy.doInTenant(tenantId, async () => {
       const runFn = () => Runner.run(job)
-      return quotas.addAutomation(runFn)
+      //      return quotas.addAutomation(runFn)
     })
   } catch (err) {
     const errJson = JSON.stringify(err)

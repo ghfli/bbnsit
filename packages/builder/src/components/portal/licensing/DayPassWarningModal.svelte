@@ -1,5 +1,5 @@
 <script>
-  import { Modal, ModalContent, Body, TooltipWrapper } from "@budibase/bbui"
+  import { Modal, ModalContent, Body, TooltipWrapper } from "hyinsit-bbui"
   import { licensing, auth, admin } from "stores/portal"
 
   export let onDismiss = () => {}

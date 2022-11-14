@@ -1,5 +1,5 @@
 <script>
-  import { Modal, ActionButton } from "@budibase/bbui"
+  import { Modal, ActionButton } from "hyinsit-bbui"
   import CalculateModal from "../modals/CalculateModal.svelte"
 
   export let view = {}

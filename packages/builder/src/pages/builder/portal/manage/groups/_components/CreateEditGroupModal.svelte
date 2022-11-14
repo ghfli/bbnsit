@@ -5,7 +5,7 @@
     ModalContent,
     Input,
     IconPicker,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
 
   export let group
   export let saveGroup

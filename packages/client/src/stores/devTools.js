@@ -1,4 +1,4 @@
-import { createLocalStorageStore } from "@budibase/frontend-core"
+import { createLocalStorageStore } from "hyinsit-frontend-core"
 import { initialise } from "./initialise"
 import { authStore } from "./auth"
 import { API } from "../api"

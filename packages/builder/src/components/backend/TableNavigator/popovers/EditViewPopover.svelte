@@ -10,7 +10,7 @@
     MenuItem,
     Modal,
     ModalContent,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
 
   export let view
 

@@ -1,10 +1,10 @@
 import { store } from "./index"
-import { Helpers } from "@budibase/bbui"
+import { Helpers } from "hyinsit-bbui"
 import {
   decodeJSBinding,
   encodeJSBinding,
   findHBSBlocks,
-} from "@budibase/string-templates"
+} from "hyinsit-string-templates"
 
 /**
  * Recursively searches for a specific component ID
@@ -145,9 +145,9 @@ export const getComponentSettings = componentType => {
   // Ensure whole component name is used
   if (
     !componentType.startsWith("plugin/") &&
-    !componentType.startsWith("@budibase")
+    !componentType.startsWith("hyinsit")
   ) {
-    componentType = `@budibase/standard-components/${componentType}`
+    componentType = `hyinsit-standard-components/${componentType}`
   }
 
   // Check if we have cached this type already

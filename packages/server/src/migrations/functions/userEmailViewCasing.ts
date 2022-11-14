@@ -1,4 +1,4 @@
-const { createNewUserEmailView } = require("@budibase/backend-core/db")
+const { createNewUserEmailView } = require("hyinsit-backend-core/db")
 
 /**
  * Date:

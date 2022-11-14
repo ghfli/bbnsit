@@ -1,6 +1,6 @@
 <script>
   import { users } from "stores/portal"
-  import { Constants } from "@budibase/frontend-core"
+  import { Constants } from "hyinsit-frontend-core"
 
   export let row
 

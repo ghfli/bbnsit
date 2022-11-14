@@ -1,7 +1,7 @@
 import API from "./api"
 import env from "../environment"
 import { Headers } from "../constants"
-import { CloudAccount } from "@budibase/types"
+import { CloudAccount } from "hyinsit-types"
 
 const api = new API(env.ACCOUNT_PORTAL_URL)
 

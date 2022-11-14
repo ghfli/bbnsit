@@ -3,14 +3,14 @@ const {
   getRole,
   isBuiltin,
   getAllRoles,
-} = require("@budibase/backend-core/roles")
+} = require("hyinsit-backend-core/roles")
 const {
   generateRoleID,
   getUserMetadataParams,
   InternalTables,
 } = require("../../db/utils")
-const { getAppDB } = require("@budibase/backend-core/context")
-const { events } = require("@budibase/backend-core")
+const { getAppDB } = require("hyinsit-backend-core/context")
+const { events } = require("hyinsit-backend-core")
 
 const UpdateRolesOptions = {
   CREATED: "created",

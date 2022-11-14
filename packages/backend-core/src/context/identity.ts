@@ -6,7 +6,7 @@ import {
   isCloudAccount,
   Account,
   AccountUserContext,
-} from "@budibase/types"
+} from "hyinsit-types"
 import * as context from "."
 
 export const getIdentity = (): IdentityContext | undefined => {

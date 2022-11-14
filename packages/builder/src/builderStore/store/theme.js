@@ -1,4 +1,4 @@
-import { Constants, createLocalStorageStore } from "@budibase/frontend-core"
+import { Constants, createLocalStorageStore } from "hyinsit-frontend-core"
 
 export const getThemeStore = () => {
   const themeElement = document.documentElement

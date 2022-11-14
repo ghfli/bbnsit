@@ -5,10 +5,10 @@
     RadioGroup,
     Multiselect,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { groups, licensing, admin } from "stores/portal"
   import { emailValidator } from "helpers/validation"
-  import { Constants } from "@budibase/frontend-core"
+  import { Constants } from "hyinsit-frontend-core"
 
   const BYTES_IN_MB = 1000000
   const FILE_SIZE_LIMIT = BYTES_IN_MB * 5

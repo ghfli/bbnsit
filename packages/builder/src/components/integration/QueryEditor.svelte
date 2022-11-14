@@ -1,6 +1,6 @@
 <script>
   import CodeMirror from "./codemirror"
-  import { Label } from "@budibase/bbui"
+  import { Label } from "hyinsit-bbui"
   import { onMount, createEventDispatcher } from "svelte"
   import { themeStore } from "builderStore"
 

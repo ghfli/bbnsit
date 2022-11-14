@@ -1,5 +1,5 @@
 <script>
-  import { Body, ModalContent, notifications } from "@budibase/bbui"
+  import { Body, ModalContent, notifications } from "hyinsit-bbui"
   import { plugins } from "stores/portal"
   import { createEventDispatcher } from "svelte"
 

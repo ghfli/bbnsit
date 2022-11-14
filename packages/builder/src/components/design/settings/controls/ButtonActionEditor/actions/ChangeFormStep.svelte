@@ -1,5 +1,5 @@
 <script>
-  import { Select, Label, Stepper } from "@budibase/bbui"
+  import { Select, Label, Stepper } from "hyinsit-bbui"
   import { currentAsset, store } from "builderStore"
   import { getActionProviderComponents } from "builderStore/dataBinding"
   import { onMount } from "svelte"

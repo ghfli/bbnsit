@@ -1,7 +1,7 @@
 const Router = require("@koa/router")
 const controller = require("../controllers/permission")
 const authorized = require("../../middleware/authorized")
-const { BUILDER } = require("@budibase/backend-core/permissions")
+const { BUILDER } = require("hyinsit-backend-core/permissions")
 const { permissionValidator } = require("./utils/validators")
 
 const router = new Router()

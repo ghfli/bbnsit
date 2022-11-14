@@ -1,4 +1,4 @@
-import { Event, Identity, Group } from "@budibase/types"
+import { Event, Identity, Group } from "hyinsit-types"
 
 export enum EventProcessorType {
   POSTHOG = "posthog",

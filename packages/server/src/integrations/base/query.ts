@@ -1,4 +1,4 @@
-import { QueryJson, Datasource } from "@budibase/types"
+import { QueryJson, Datasource } from "hyinsit-types"
 const { getIntegration } = require("../index")
 
 export async function makeExternalQuery(

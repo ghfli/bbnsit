@@ -10,7 +10,7 @@
     Modal,
     Divider,
     ActionButton,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import CreateAppModal from "components/start/CreateAppModal.svelte"
   import TemplateDisplay from "components/common/TemplateDisplay.svelte"
   import AppLimitModal from "components/portal/licensing/AppLimitModal.svelte"

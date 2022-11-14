@@ -1,5 +1,5 @@
 <script>
-  import { Select, Label, Input, Checkbox } from "@budibase/bbui"
+  import { Select, Label, Input, Checkbox } from "hyinsit-bbui"
   import { automationStore } from "builderStore"
   import SaveFields from "./SaveFields.svelte"
   import { TriggerStepID } from "constants/backend/automations"

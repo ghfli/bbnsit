@@ -18,7 +18,7 @@ describe("/component", () => {
         .set(config.defaultHeaders())
         .expect("Content-Type", /json/)
         .expect(200)
-      expect(res.body["@budibase/standard-components/container"]).toBeDefined()
+      expect(res.body["hyinsit-standard-components/container"]).toBeDefined()
     })
 
     it("should apply authorization to endpoint", async () => {

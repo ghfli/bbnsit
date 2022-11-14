@@ -1,12 +1,5 @@
 <script>
-  import {
-    Label,
-    Input,
-    Layout,
-    Toggle,
-    Button,
-    TextArea,
-  } from "@budibase/bbui"
+  import { Label, Input, Layout, Toggle, Button, TextArea } from "hyinsit-bbui"
   import KeyValueBuilder from "components/integration/KeyValueBuilder.svelte"
   import { capitalise } from "helpers"
   import { IntegrationTypes } from "constants/backend"

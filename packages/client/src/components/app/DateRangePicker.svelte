@@ -1,5 +1,5 @@
 <script>
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
   import { getContext } from "svelte"
   import dayjs from "dayjs"
   import utc from "dayjs/plugin/utc"

@@ -1,6 +1,6 @@
 <script>
   import { store } from "builderStore"
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
 
   export let value
 </script>

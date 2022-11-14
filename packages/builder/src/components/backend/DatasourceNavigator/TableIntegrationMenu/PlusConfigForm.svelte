@@ -9,7 +9,7 @@
     Modal,
     Table,
     Toggle,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { datasources, integrations, tables } from "stores/backend"
   import CreateEditRelationship from "components/backend/Datasources/CreateEditRelationship.svelte"
   import CreateExternalTableModal from "./CreateExternalTableModal.svelte"

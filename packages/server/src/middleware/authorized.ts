@@ -2,16 +2,16 @@ import {
   getUserRoleHierarchy,
   getRequiredResourceRole,
   BUILTIN_ROLE_IDS,
-} from "@budibase/backend-core/roles"
+} from "hyinsit-backend-core/roles"
 const {
   PermissionTypes,
   PermissionLevels,
   doesHaveBasePermission,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 const builderMiddleware = require("./builder")
 const { isWebhookEndpoint } = require("./utils")
-const { buildCsrfMiddleware } = require("@budibase/backend-core/auth")
-const { getAppId } = require("@budibase/backend-core/context")
+const { buildCsrfMiddleware } = require("hyinsit-backend-core/auth")
+const { getAppId } = require("hyinsit-backend-core/context")
 
 function hasResource(ctx: any) {
   return ctx.resourceId != null

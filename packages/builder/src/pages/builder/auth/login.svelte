@@ -9,7 +9,7 @@
     Layout,
     notifications,
     Link,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { goto } from "@roxi/routify"
   import { auth, organisation, oidc, admin } from "stores/portal"
   import GoogleButton from "./_components/GoogleButton.svelte"

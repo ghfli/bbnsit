@@ -1,10 +1,10 @@
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
 const {
   BUILTIN_PERMISSION_IDS,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 const setup = require("./utilities")
 const { basicRole } = setup.structures
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 describe("/roles", () => {
   let request = setup.getRequest()

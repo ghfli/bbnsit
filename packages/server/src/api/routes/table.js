@@ -6,7 +6,7 @@ const {
   BUILDER,
   PermissionLevels,
   PermissionTypes,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 const { tableValidator } = require("./utils/validators")
 
 const router = new Router()

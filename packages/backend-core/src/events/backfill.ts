@@ -19,7 +19,7 @@ import {
   RoleAssignedEvent,
   UserPermissionAssignedEvent,
   AppCreatedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 import * as context from "../context"
 import { CacheKeys } from "../cache/generic"
 import * as cache from "../cache/generic"

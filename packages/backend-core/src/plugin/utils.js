@@ -1,8 +1,4 @@
-const {
-  DatasourceFieldType,
-  QueryType,
-  PluginType,
-} = require("@budibase/types")
+const { DatasourceFieldType, QueryType, PluginType } = require("hyinsit-types")
 const joi = require("joi")
 
 const DATASOURCE_TYPES = [

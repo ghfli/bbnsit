@@ -1,4 +1,4 @@
-import { Event } from "@budibase/types"
+import { Event } from "hyinsit-types"
 import { CacheKeys, TTL } from "../../../cache/generic"
 import * as cache from "../../../cache/generic"
 import * as context from "../../../context"

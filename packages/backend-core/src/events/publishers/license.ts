@@ -11,7 +11,7 @@ import {
   LicenseCheckoutOpenedEvent,
   LicensePaymentFailedEvent,
   LicensePaymentRecoveredEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function tierChanged(account: Account, from: number, to: number) {
   const properties: LicenseTierChangedEvent = {

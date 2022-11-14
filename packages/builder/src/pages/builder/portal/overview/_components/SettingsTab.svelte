@@ -7,9 +7,9 @@
     Page,
     Button,
     Modal,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { store } from "builderStore"
-  import clientPackage from "@budibase/client/package.json"
+  import clientPackage from "hyinsit-client/package.json"
   import VersionModal from "components/deploy/VersionModal.svelte"
   import UpdateAppModal from "components/start/UpdateAppModal.svelte"
   import { AppStatus } from "constants"

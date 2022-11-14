@@ -8,7 +8,7 @@
     Divider,
     Modal,
     Search,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import { plugins, admin } from "stores/portal"
   import PluginRow from "./_components/PluginRow.svelte"

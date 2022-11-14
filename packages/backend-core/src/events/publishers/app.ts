@@ -13,7 +13,7 @@ import {
   AppVersionRevertedEvent,
   AppRevertedEvent,
   AppExportedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export const created = async (app: App, timestamp?: string | number) => {
   const properties: AppCreatedEvent = {

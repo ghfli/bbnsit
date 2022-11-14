@@ -3,7 +3,7 @@ import {
   Integration,
   QueryType,
   IntegrationBase,
-} from "@budibase/types"
+} from "hyinsit-types"
 import { Firestore, WhereFilterOp } from "@google-cloud/firestore"
 
 interface FirebaseConfig {

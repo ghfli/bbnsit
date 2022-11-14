@@ -1,9 +1,9 @@
 const TestConfig = require("../../../tests/utilities/TestConfiguration")
 const { TENANT_ID } = require("../../../tests/utilities/structures")
-const { getGlobalDB, doInTenant } = require("@budibase/backend-core/tenancy")
+const { getGlobalDB, doInTenant } = require("hyinsit-backend-core/tenancy")
 
 // mock email view creation
-const coreDb = require("@budibase/backend-core/db")
+const coreDb = require("hyinsit-backend-core/db")
 const createNewUserEmailView = jest.fn()
 coreDb.createNewUserEmailView = createNewUserEmailView
 

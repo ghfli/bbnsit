@@ -2,9 +2,9 @@ import Router from "@koa/router"
 const compress = require("koa-compress")
 const zlib = require("zlib")
 import { routes } from "./routes"
-import { middleware as pro } from "@budibase/pro"
-import { errors, auth, middleware } from "@budibase/backend-core"
-import { APIError } from "@budibase/types"
+// import { middleware as pro } from "hyinsit-pro"
+import { errors, auth, middleware } from "hyinsit-backend-core"
+import { APIError } from "hyinsit-types"
 
 const PUBLIC_ENDPOINTS = [
   // old deprecated endpoints kept for backwards compat
@@ -95,7 +95,7 @@ router
   .use(auth.buildAuthMiddleware(PUBLIC_ENDPOINTS))
   .use(auth.buildTenancyMiddleware(PUBLIC_ENDPOINTS, NO_TENANCY_ENDPOINTS))
   .use(auth.buildCsrfMiddleware({ noCsrfPatterns: NO_CSRF_ENDPOINTS }))
-  .use(pro.licensing())
+  //.use(pro.licensing())
   // for now no public access is allowed to worker (bar health check)
   .use((ctx, next) => {
     if (ctx.publicEndpoint) {

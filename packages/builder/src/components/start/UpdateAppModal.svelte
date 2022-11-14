@@ -1,6 +1,6 @@
 <script>
   import { writable, get as svelteGet } from "svelte/store"
-  import { notifications, Input, ModalContent, Body } from "@budibase/bbui"
+  import { notifications, Input, ModalContent, Body } from "hyinsit-bbui"
   import { apps } from "stores/portal"
   import { onMount } from "svelte"
   import { createValidationStore } from "helpers/validation/yup"

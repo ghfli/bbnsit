@@ -1,6 +1,6 @@
-import { events } from "@budibase/backend-core"
+import { events } from "hyinsit-backend-core"
 import { getRoleParams } from "../../../../db/utils"
-import { Role } from "@budibase/types"
+import { Role } from "hyinsit-types"
 
 const getRoles = async (appDb: any): Promise<Role[]> => {
   const response = await appDb.allDocs(

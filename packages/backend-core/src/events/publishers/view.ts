@@ -15,7 +15,7 @@ import {
   ViewCalculation,
   Table,
   TableExportFormat,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 /* eslint-disable */
 

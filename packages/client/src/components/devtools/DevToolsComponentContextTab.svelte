@@ -1,5 +1,5 @@
 <script>
-  import { Layout, Select, Body } from "@budibase/bbui"
+  import { Layout, Select, Body } from "hyinsit-bbui"
   import { componentStore } from "stores/index.js"
   import DevToolsStat from "./DevToolsStat.svelte"
 

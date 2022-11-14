@@ -1,7 +1,7 @@
 import * as env from "../../environment"
-import { AutomationResults, Automation, App } from "@budibase/types"
-import { automations } from "@budibase/pro"
-import { db as dbUtils } from "@budibase/backend-core"
+import { AutomationResults, Automation, App } from "hyinsit-types"
+// import { automations } from "hyinsit-pro"
+import { db as dbUtils } from "hyinsit-backend-core"
 
 export async function storeLog(
   automation: Automation,
@@ -11,11 +11,11 @@ export async function storeLog(
   if (env.DISABLE_AUTOMATION_LOGS) {
     return
   }
-  await automations.logs.storeLog(automation, results)
+  //  await automations.logs.storeLog(automation, results)
 }
 
 export async function checkAppMetadata(apps: App[]) {
-  const maxStartDate = await automations.logs.oldestLogDate()
+  // const maxStartDate = await automations.logs.oldestLogDate()
   for (let metadata of apps) {
     if (!metadata.automationErrors) {
       continue
@@ -27,9 +27,9 @@ export async function checkAppMetadata(apps: App[]) {
           continue
         }
         const startDate = error.split(dbUtils.SEPARATOR)[2]
-        if (startDate > maxStartDate) {
-          updated.push(error)
-        }
+        // if (startDate > maxStartDate) {
+        updated.push(error)
+        // }
       }
       metadata.automationErrors[key] = updated
     }

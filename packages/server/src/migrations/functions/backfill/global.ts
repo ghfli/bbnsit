@@ -7,15 +7,15 @@ import {
   migrations,
   accounts,
   db as dbUtils,
-} from "@budibase/backend-core"
-import { QuotaUsage } from "@budibase/pro"
+} from "hyinsit-backend-core"
+// import { QuotaUsage } from "hyinsit-pro"
 import {
   CloudAccount,
   App,
   TenantBackfillSucceededEvent,
   Event,
   User,
-} from "@budibase/types"
+} from "hyinsit-types"
 import env from "../../../environment"
 import { DEFAULT_TIMESTAMP } from "."
 
@@ -31,12 +31,14 @@ const handleError = (e: any, errors?: any) => {
   throw e
 }
 
-const formatUsage = (usage: QuotaUsage) => {
+// const formatUsage = (usage: QuotaUsage) => {
+const formatUsage = (usage: any) => {
   let maxAutomations = 0
   let maxQueries = 0
   let rows = 0
 
   if (usage) {
+    /*
     if (usage.usageQuota) {
       rows = usage.usageQuota.rows
     }
@@ -51,6 +53,7 @@ const formatUsage = (usage: QuotaUsage) => {
         }
       }
     }
+    */
   }
 
   return {

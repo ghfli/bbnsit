@@ -1,8 +1,8 @@
 import { outputProcessing } from "../../utilities/rowProcessor"
 import { InternalTables } from "../../db/utils"
 import { getFullUser } from "../../utilities/users"
-import { roles, context } from "@budibase/backend-core"
-import { groups } from "@budibase/pro"
+import { roles, context } from "hyinsit-backend-core"
+// import { groups } from "hyinsit-pro"
 
 const PUBLIC_ROLE = roles.BUILTIN_ROLE_IDS.PUBLIC
 
@@ -34,8 +34,8 @@ export async function fetchSelf(ctx: any) {
     const db = context.getAppDB()
     // check for group permissions
     if (!user.roleId || user.roleId === PUBLIC_ROLE) {
-      const groupRoleId = await groups.getGroupRoleId(user, appId)
-      user.roleId = groupRoleId || user.roleId
+      // const groupRoleId = await groups.getGroupRoleId(user, appId)
+      // user.roleId = groupRoleId || user.roleId
     }
     // remove the full roles structure
     delete user.roles

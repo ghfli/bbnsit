@@ -1,5 +1,5 @@
 <script>
-  import { Select, Label, Checkbox, Input } from "@budibase/bbui"
+  import { Select, Label, Checkbox, Input } from "hyinsit-bbui"
   import { tables } from "stores/backend"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"
 

@@ -1,7 +1,7 @@
 <script>
   import { automationStore } from "builderStore"
-  import { notifications } from "@budibase/bbui"
-  import { Icon, Input, ModalContent, Modal } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
+  import { Icon, Input, ModalContent, Modal } from "hyinsit-bbui"
 
   let name
   let error = ""

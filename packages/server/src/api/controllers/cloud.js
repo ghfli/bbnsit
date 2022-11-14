@@ -1,12 +1,12 @@
 const env = require("../../environment")
-const { getAllApps, getGlobalDBName } = require("@budibase/backend-core/db")
+const { getAllApps, getGlobalDBName } = require("hyinsit-backend-core/db")
 const {
   exportDB,
   sendTempFile,
   readFileSync,
 } = require("../../utilities/fileSystem")
 const { stringToReadStream } = require("../../utilities")
-const { getGlobalDB } = require("@budibase/backend-core/tenancy")
+const { getGlobalDB } = require("hyinsit-backend-core/tenancy")
 const { create } = require("./application")
 const { getDocParams, DocumentType, isDevAppID } = require("../../db/utils")
 

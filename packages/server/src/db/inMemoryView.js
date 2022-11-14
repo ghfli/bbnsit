@@ -2,7 +2,7 @@ const newid = require("./newid")
 
 // bypass the main application db config
 // use in memory pouchdb directly
-const { getPouch, closeDB } = require("@budibase/backend-core/db")
+const { getPouch, closeDB } = require("hyinsit-backend-core/db")
 const Pouch = getPouch({ inMemory: true })
 
 exports.runView = async (view, calculation, group, data) => {

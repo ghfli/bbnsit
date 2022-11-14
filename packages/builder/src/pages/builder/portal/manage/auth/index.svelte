@@ -20,11 +20,11 @@
     Toggle,
     Tag,
     Tags,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import { API } from "api"
   import { organisation, admin } from "stores/portal"
-  import { Helpers } from "@budibase/bbui"
+  import { Helpers } from "hyinsit-bbui"
 
   const ConfigTypes = {
     Google: "google",

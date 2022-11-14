@@ -1,4 +1,4 @@
-import { Helpers } from "@budibase/bbui"
+import { Helpers } from "hyinsit-bbui"
 import { BaseStructure } from "./BaseStructure"
 
 export class Component extends BaseStructure {

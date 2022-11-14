@@ -1,5 +1,5 @@
 <script>
-  import { Input, Select, Button } from "@budibase/bbui"
+  import { Input, Select, Button } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
 
   const dispatch = createEventDispatcher()

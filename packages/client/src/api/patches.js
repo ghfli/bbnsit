@@ -1,4 +1,4 @@
-import { Constants } from "@budibase/frontend-core"
+import { Constants } from "hyinsit-frontend-core"
 import { FieldTypes } from "../constants"
 
 export const patchAPI = API => {

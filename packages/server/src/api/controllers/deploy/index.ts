@@ -3,22 +3,22 @@ import {
   Replication,
   getProdAppID,
   getDevelopmentAppID,
-} from "@budibase/backend-core/db"
+} from "hyinsit-backend-core/db"
 import { DocumentType, getAutomationParams } from "../../../db/utils"
 import {
   disableAllCrons,
   enableCronTrigger,
   clearMetadata,
 } from "../../../automations/utils"
-import { app as appCache } from "@budibase/backend-core/cache"
+import { app as appCache } from "hyinsit-backend-core/cache"
 import {
   getAppId,
   getAppDB,
   getProdAppDB,
   getDevAppDB,
-} from "@budibase/backend-core/context"
-import { quotas } from "@budibase/pro"
-import { events } from "@budibase/backend-core"
+} from "hyinsit-backend-core/context"
+// import { quotas } from "hyinsit-pro"
+import { events } from "hyinsit-backend-core"
 
 // the max time we can wait for an invalidation to complete before considering it failed
 const MAX_PENDING_TIME_MS = 30 * 60000

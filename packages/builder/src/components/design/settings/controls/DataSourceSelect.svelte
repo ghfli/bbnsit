@@ -9,7 +9,7 @@
     Heading,
     Drawer,
     DrawerContent,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
   import { store, currentAsset } from "builderStore"
   import {
@@ -19,7 +19,7 @@
   import { datasources, integrations } from "stores/backend"
   import BindingBuilder from "components/integration/QueryBindingBuilder.svelte"
   import IntegrationQueryEditor from "components/integration/index.svelte"
-  import { makePropSafe as safe } from "@budibase/string-templates"
+  import { makePropSafe as safe } from "hyinsit-string-templates"
 
   export let value = {}
   export let otherSources

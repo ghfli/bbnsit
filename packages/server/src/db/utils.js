@@ -13,7 +13,7 @@ const {
   generateAppID,
   getQueryIndex,
   ViewName,
-} = require("@budibase/backend-core/db")
+} = require("hyinsit-backend-core/db")
 
 const UNICODE_MAX = "\ufff0"
 

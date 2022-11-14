@@ -1,5 +1,5 @@
 const { Configs } = require("../../constants")
-const { utils } = require("@budibase/backend-core")
+const { utils } = require("hyinsit-backend-core")
 
 exports.oidc = conf => {
   return {

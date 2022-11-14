@@ -9,7 +9,7 @@
     Label,
     notifications,
     Icon,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { tables, views } from "stores/backend"
 
   const CONDITIONS = [

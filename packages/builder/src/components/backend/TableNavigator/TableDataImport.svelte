@@ -1,5 +1,5 @@
 <script>
-  import { Select, InlineAlert, notifications } from "@budibase/bbui"
+  import { Select, InlineAlert, notifications } from "hyinsit-bbui"
   import { FIELDS } from "constants/backend"
   import { API } from "api"
 

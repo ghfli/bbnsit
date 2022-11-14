@@ -1,4 +1,4 @@
-import { Checkbox, Select, Stepper } from "@budibase/bbui"
+import { Checkbox, Select, Stepper } from "hyinsit-bbui"
 import DataSourceSelect from "./controls/DataSourceSelect.svelte"
 import S3DataSourceSelect from "./controls/S3DataSourceSelect.svelte"
 import DataProviderSelect from "./controls/DataProviderSelect.svelte"

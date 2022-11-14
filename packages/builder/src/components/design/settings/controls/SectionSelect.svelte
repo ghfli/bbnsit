@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte"
-  import { ActionButton, Body, Icon, Modal, ModalContent } from "@budibase/bbui"
+  import { ActionButton, Body, Icon, Modal, ModalContent } from "hyinsit-bbui"
 
   const dispatch = createEventDispatcher()
 

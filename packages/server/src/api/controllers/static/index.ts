@@ -1,12 +1,10 @@
-import { enrichPluginURLs } from "../../../utilities/plugins"
-
 require("svelte/register")
 
 const send = require("koa-send")
 const { resolve, join } = require("../../../utilities/centralPath")
 const uuid = require("uuid")
 const { ObjectStoreBuckets } = require("../../../constants")
-const { processString } = require("@budibase/string-templates")
+const { processString } = require("hyinsit-string-templates")
 const {
   loadHandlebarsFile,
   NODE_MODULES_PATH,
@@ -17,8 +15,8 @@ const { clientLibraryPath } = require("../../../utilities")
 const { upload, deleteFiles } = require("../../../utilities/fileSystem")
 const { attachmentsRelativeURL } = require("../../../utilities")
 const { DocumentType } = require("../../../db/utils")
-const { getAppDB, getAppId } = require("@budibase/backend-core/context")
-const { setCookie, clearCookie } = require("@budibase/backend-core/utils")
+const { getAppDB, getAppId } = require("hyinsit-backend-core/context")
+const { setCookie, clearCookie } = require("hyinsit-backend-core/utils")
 const AWS = require("aws-sdk")
 const fs = require("fs")
 const {
@@ -109,7 +107,7 @@ export const serveApp = async function (ctx: any) {
 
   if (!env.isJest()) {
     const App = require("./templates/BudibaseApp.svelte").default
-    const plugins = enrichPluginURLs(appInfo.usedPlugins)
+    const plugins = appInfo.usedPlugins
     const { head, html, css } = App.render({
       title: appInfo.name,
       production: env.isProd(),
@@ -149,7 +147,7 @@ export const serveBuilderPreview = async function (ctx: any) {
 
 export const serveClientLibrary = async function (ctx: any) {
   return send(ctx, "budibase-client.js", {
-    root: join(NODE_MODULES_PATH, "@budibase", "client", "dist"),
+    root: join(NODE_MODULES_PATH, "hyinsit", "client", "dist"),
   })
 }
 

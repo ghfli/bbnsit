@@ -8,7 +8,7 @@
     Modal,
     Helpers,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import ScreenDetailsModal from "./ScreenDetailsModal.svelte"
   import sanitizeUrl from "builderStore/store/screenTemplates/utils/sanitizeUrl"
   import { makeComponentUnique } from "builderStore/componentUtils"

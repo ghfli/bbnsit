@@ -1,7 +1,7 @@
 <script>
-  import { Heading, Button, Icon } from "@budibase/bbui"
+  import { Heading, Button, Icon } from "hyinsit-bbui"
   import AppLockModal from "../common/AppLockModal.svelte"
-  import { processStringSync } from "@budibase/string-templates"
+  import { processStringSync } from "hyinsit-string-templates"
 
   export let app
   export let editApp

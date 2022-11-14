@@ -1,7 +1,7 @@
-const { StaticDatabases, doWithDB } = require("@budibase/backend-core/db")
-const { getTenantId } = require("@budibase/backend-core/tenancy")
-const { deleteTenant } = require("@budibase/backend-core/deprovision")
-const { quotas } = require("@budibase/pro")
+const { StaticDatabases, doWithDB } = require("hyinsit-backend-core/db")
+const { getTenantId } = require("hyinsit-backend-core/tenancy")
+const { deleteTenant } = require("hyinsit-backend-core/deprovision")
+// const { quotas } = require("hyinsit-pro")
 
 exports.exists = async ctx => {
   const tenantId = ctx.request.params
@@ -49,7 +49,7 @@ exports.delete = async ctx => {
 
   try {
     await deleteTenant(tenantId)
-    await quotas.bustCache()
+    //    await quotas.bustCache()
     ctx.status = 204
   } catch (err) {
     ctx.log.error(err)

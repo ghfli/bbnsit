@@ -47,7 +47,7 @@ const createScreen = table => {
       size: "spectrum--medium",
     })
 
-  const fieldGroup = new Component("@budibase/standard-components/fieldgroup")
+  const fieldGroup = new Component("hyinsit-standard-components/fieldgroup")
     .instanceName("Field Group")
     .customProps({
       labelPosition: "left",

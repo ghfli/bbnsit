@@ -25,7 +25,7 @@
 </script>
 
 <script>
-  import { Label } from "@budibase/bbui"
+  import { Label } from "hyinsit-bbui"
   import CodeMirror from "components/integration/codemirror"
   import { themeStore } from "builderStore"
   import { createEventDispatcher, onMount } from "svelte"

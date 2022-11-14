@@ -1,4 +1,4 @@
-import { createLocalStorageStore } from "@budibase/frontend-core"
+import { createLocalStorageStore } from "hyinsit-frontend-core"
 import { get } from "svelte/store"
 
 export const getTemporalStore = () => {

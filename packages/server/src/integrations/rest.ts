@@ -6,7 +6,7 @@ import {
   IntegrationBase,
   PaginationValues,
   RestQueryFields as RestQuery,
-} from "@budibase/types"
+} from "hyinsit-types"
 import {
   RestConfig,
   AuthType,

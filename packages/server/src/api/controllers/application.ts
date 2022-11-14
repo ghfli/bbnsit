@@ -21,14 +21,14 @@ import {
 const {
   BUILTIN_ROLE_IDS,
   AccessController,
-} = require("@budibase/backend-core/roles")
-const { CacheKeys, bustCache } = require("@budibase/backend-core/cache")
+} = require("hyinsit-backend-core/roles")
+const { CacheKeys, bustCache } = require("hyinsit-backend-core/cache")
 const {
   getAllApps,
   isDevAppID,
   getProdAppID,
   Replication,
-} = require("@budibase/backend-core/db")
+} = require("hyinsit-backend-core/db")
 import { USERS_TABLE_SCHEMA } from "../../constants"
 import { removeAppFromUserRoles } from "../../utilities/workerRequests"
 import { clientLibraryPath, stringToReadStream } from "../../utilities"
@@ -38,18 +38,17 @@ import {
   backupClientLibrary,
   revertClientLibrary,
 } from "../../utilities/fileSystem/clientLibrary"
-const { getTenantId, isMultiTenant } = require("@budibase/backend-core/tenancy")
+const { getTenantId, isMultiTenant } = require("hyinsit-backend-core/tenancy")
 import { syncGlobalUsers } from "./user"
-const { app: appCache } = require("@budibase/backend-core/cache")
+const { app: appCache } = require("hyinsit-backend-core/cache")
 import { cleanupAutomations } from "../../automations/utils"
-import { context } from "@budibase/backend-core"
+import { context } from "hyinsit-backend-core"
 import { checkAppMetadata } from "../../automations/logging"
 import { getUniqueRows } from "../../utilities/usageQuota/rows"
-import { quotas, groups } from "@budibase/pro"
-import { errors, events, migrations } from "@budibase/backend-core"
-import { App, Layout, Screen, MigrationType } from "@budibase/types"
+// import { quotas, groups } from "hyinsit-pro"
+import { errors, events, migrations } from "hyinsit-backend-core"
+import { App, Layout, Screen, MigrationType } from "hyinsit-types"
 import { BASE_LAYOUT_PROP_IDS } from "../../constants/layouts"
-import { enrichPluginURLs } from "../../utilities/plugins"
 
 const URL_REGEX_SLASH = /\/|\\/g
 
@@ -202,7 +201,7 @@ export const fetchAppDefinition = async (ctx: any) => {
   ctx.body = {
     layouts,
     screens,
-    libraries: ["@budibase/standard-components"],
+    libraries: ["hyinsit-standard-components"],
   }
 }
 
@@ -211,9 +210,6 @@ export const fetchAppPackage = async (ctx: any) => {
   let application = await db.get(DocumentType.APP_METADATA)
   const layouts = await getLayouts()
   let screens = await getScreens()
-
-  // Enrich plugin URLs
-  application.usedPlugins = enrichPluginURLs(application.usedPlugins)
 
   // Only filter screens if the user is not a builder
   if (!(ctx.user.builder && ctx.user.builder.global)) {
@@ -256,7 +252,7 @@ const performAppCreate = async (ctx: any) => {
     appId,
     type: "app",
     version: packageJson.version,
-    componentLibraries: ["@budibase/standard-components"],
+    componentLibraries: ["hyinsit-standard-components"],
     name: name,
     url: url,
     template: templateKey,
@@ -363,7 +359,8 @@ const appPostCreate = async (ctx: any, app: App) => {
     const rowCount = rows ? rows.length : 0
     if (rowCount) {
       try {
-        await quotas.addRows(rowCount)
+        // await quotas.addRows(rowCount)
+        console.log("skipping quotas.addRows()")
       } catch (err: any) {
         if (err.code && err.code === errors.codes.USAGE_LIMIT_EXCEEDED) {
           // this import resulted in row usage exceeding the quota
@@ -379,7 +376,8 @@ const appPostCreate = async (ctx: any, app: App) => {
 }
 
 export const create = async (ctx: any) => {
-  const newApplication = await quotas.addApp(() => performAppCreate(ctx))
+  // const newApplication = await quotas.addApp(() => performAppCreate(ctx))
+  const newApplication = await performAppCreate(ctx)
   await appPostCreate(ctx, newApplication)
   await bustCache(CacheKeys.CHECKLIST)
   ctx.body = newApplication
@@ -472,7 +470,8 @@ const destroyApp = async (ctx: any) => {
   if (isUnpublish) {
     await events.app.unpublished(app)
   } else {
-    await quotas.removeApp()
+    // await quotas.removeApp()
+    console.log("skipping quotas.removeApp()")
     await events.app.deleted(app)
   }
 
@@ -497,11 +496,14 @@ const preDestroyApp = async (ctx: any) => {
   ctx.rowCount = rows.length
 }
 
-const postDestroyApp = async (ctx: any) => {
+// const postDestroyApp = async (ctx: any) => {
+const postDestroyApp = (ctx: any) => {
   const rowCount = ctx.rowCount
-  await groups.cleanupApp(ctx.params.appId)
+  // await groups.cleanupApp(ctx.params.appId)
+  console.log("skipping groups.cleanupApp()")
   if (rowCount) {
-    await quotas.removeRows(rowCount)
+    // await quotas.removeRows(rowCount)
+    console.log("skipping quotas.removeRows()")
   }
 }
 

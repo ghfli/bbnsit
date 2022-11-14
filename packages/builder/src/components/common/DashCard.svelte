@@ -1,5 +1,5 @@
 <script>
-  import { Icon, Detail } from "@budibase/bbui"
+  import { Icon, Detail } from "hyinsit-bbui"
 
   export let title = ""
   export let actionIcon

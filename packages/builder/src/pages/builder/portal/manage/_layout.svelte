@@ -1,5 +1,5 @@
 <script>
-  import { Page } from "@budibase/bbui"
+  import { Page } from "hyinsit-bbui"
   import { auth } from "stores/portal"
   import { page, redirect } from "@roxi/routify"
 

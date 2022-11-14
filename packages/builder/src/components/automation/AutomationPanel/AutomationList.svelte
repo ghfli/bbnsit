@@ -4,7 +4,7 @@
   import { automationStore } from "builderStore"
   import NavItem from "components/common/NavItem.svelte"
   import EditAutomationPopover from "./EditAutomationPopover.svelte"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
 
   $: selectedAutomationId = $automationStore.selectedAutomation?.automation?._id
 

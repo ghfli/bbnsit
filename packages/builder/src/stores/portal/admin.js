@@ -1,7 +1,7 @@
 import { writable, get } from "svelte/store"
 import { API } from "api"
 import { auth } from "stores/portal"
-import { banner } from "@budibase/bbui"
+import { banner } from "hyinsit-bbui"
 
 export function createAdminStore() {
   const DEFAULT_CONFIG = {

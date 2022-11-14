@@ -8,7 +8,7 @@ import {
   RoleUnassignedEvent,
   RoleUpdatedEvent,
   User,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(role: Role, timestamp?: string | number) {
   const properties: RoleCreatedEvent = {

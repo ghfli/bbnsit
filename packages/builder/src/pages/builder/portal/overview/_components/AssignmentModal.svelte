@@ -5,10 +5,10 @@
     ActionButton,
     Layout,
     Icon,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { roles } from "stores/backend"
   import { groups, users, licensing, apps } from "stores/portal"
-  import { Constants, RoleUtils, fetchData } from "@budibase/frontend-core"
+  import { Constants, RoleUtils, fetchData } from "hyinsit-frontend-core"
   import { API } from "api"
   import { createEventDispatcher } from "svelte"
 

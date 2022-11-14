@@ -7,7 +7,7 @@
     Dropzone,
     Body,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import KeyValueBuilder from "components/integration/KeyValueBuilder.svelte"
   import { plugins } from "stores/portal"
   import { PluginSource } from "constants"

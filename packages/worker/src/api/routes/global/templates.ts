@@ -1,7 +1,7 @@
 import Router from "@koa/router"
 import * as controller from "../../controllers/global/templates"
 import { TemplatePurpose, TemplateTypes } from "../../../constants"
-import { auth as authCore } from "@budibase/backend-core"
+import { auth as authCore } from "hyinsit-backend-core"
 import Joi from "joi"
 const { adminOnly, joiValidator } = authCore
 

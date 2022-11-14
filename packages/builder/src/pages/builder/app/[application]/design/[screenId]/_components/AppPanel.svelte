@@ -2,8 +2,8 @@
   import DevicePreviewSelect from "./DevicePreviewSelect.svelte"
   import AppPreview from "./AppPreview.svelte"
   import { store, sortedScreens } from "builderStore"
-  import { Select } from "@budibase/bbui"
-  import { RoleUtils } from "@budibase/frontend-core"
+  import { Select } from "hyinsit-bbui"
+  import { RoleUtils } from "hyinsit-frontend-core"
 </script>
 
 <div class="app-panel">

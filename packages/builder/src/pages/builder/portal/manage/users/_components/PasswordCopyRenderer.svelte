@@ -1,5 +1,5 @@
 <script>
-  import { InternalRenderer } from "@budibase/bbui"
+  import { InternalRenderer } from "hyinsit-bbui"
 
   export let value
 </script>

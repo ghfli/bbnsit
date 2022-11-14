@@ -4,17 +4,17 @@ const BASE_LAYOUT_PROP_IDS = {
 }
 
 const EMPTY_LAYOUT = {
-  componentLibraries: ["@budibase/standard-components"],
+  componentLibraries: ["hyinsit-standard-components"],
   title: "{{ name }}",
   favicon: "./_shared/favicon.png",
   stylesheets: [],
   props: {
     _id: "30b8822a-d07b-49f4-9531-551e37c6899b",
-    _component: "@budibase/standard-components/layout",
+    _component: "hyinsit-standard-components/layout",
     _children: [
       {
         _id: "7fcf11e4-6f5b-4085-8e0d-9f3d44c98967",
-        _component: "@budibase/standard-components/screenslot",
+        _component: "hyinsit-standard-components/screenslot",
         _instanceName: "Screen slot",
         _styles: {
           normal: {
@@ -51,7 +51,7 @@ const EMPTY_LAYOUT = {
 const BASE_LAYOUTS = [
   {
     _id: BASE_LAYOUT_PROP_IDS.PRIVATE,
-    componentLibraries: ["@budibase/standard-components"],
+    componentLibraries: ["hyinsit-standard-components"],
     title: "{{ name }}",
     favicon: "./_shared/favicon.png",
     stylesheets: [],
@@ -59,11 +59,11 @@ const BASE_LAYOUTS = [
     props: {
       _id: "4f569166-a4f3-47ea-a09e-6d218c75586f",
       _instanceName: "Navigation Layout",
-      _component: "@budibase/standard-components/layout",
+      _component: "hyinsit-standard-components/layout",
       _children: [
         {
           _id: "7fcf11e4-6f5b-4085-8e0d-9f3d44c98967",
-          _component: "@budibase/standard-components/screenslot",
+          _component: "hyinsit-standard-components/screenslot",
           _instanceName: "Screen slot",
           _styles: {
             normal: {
@@ -99,7 +99,7 @@ const BASE_LAYOUTS = [
   },
   {
     _id: BASE_LAYOUT_PROP_IDS.PUBLIC,
-    componentLibraries: ["@budibase/standard-components"],
+    componentLibraries: ["hyinsit-standard-components"],
     title: "{{ name }}",
     favicon: "./_shared/favicon.png",
     stylesheets: [],
@@ -107,11 +107,11 @@ const BASE_LAYOUTS = [
     props: {
       _id: "3723ffa1-f9e0-4c05-8013-98195c788ed6",
       _instanceName: "Empty Layout",
-      _component: "@budibase/standard-components/layout",
+      _component: "hyinsit-standard-components/layout",
       _children: [
         {
           _id: "7fcf11e4-6f5b-4085-8e0d-9f3d44c98967",
-          _component: "@budibase/standard-components/screenslot",
+          _component: "hyinsit-standard-components/screenslot",
           _instanceName: "Screen slot",
           _styles: {
             normal: {

@@ -1,6 +1,6 @@
 <script>
   import Panel from "components/design/Panel.svelte"
-  import { Body, Layout } from "@budibase/bbui"
+  import { Body, Layout } from "hyinsit-bbui"
 </script>
 
 <Panel borderLeft title="Theme" icon="InfoOutline">

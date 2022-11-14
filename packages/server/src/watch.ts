@@ -2,8 +2,8 @@ import path from "path"
 import * as env from "./environment"
 import chokidar from "chokidar"
 import fs from "fs"
-import { tenancy } from "@budibase/backend-core"
-import { DEFAULT_TENANT_ID } from "@budibase/backend-core/constants"
+import { tenancy } from "hyinsit-backend-core"
+import { DEFAULT_TENANT_ID } from "hyinsit-backend-core/constants"
 import { processUploadedPlugin } from "./api/controllers/plugin"
 
 export function watch() {

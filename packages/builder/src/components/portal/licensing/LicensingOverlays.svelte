@@ -7,7 +7,7 @@
   import AccountDowngradedModal from "./AccountDowngradedModal.svelte"
   import { ExpiringKeys } from "./constants"
   import { getBanners } from "./licensingBanners"
-  import { banner } from "@budibase/bbui"
+  import { banner } from "hyinsit-bbui"
   import { TENANT_FEATURE_FLAGS, isEnabled } from "helpers/featureFlags"
 
   const oneDayInSeconds = 86400

@@ -1,7 +1,7 @@
 <script>
   import Editor from "./QueryEditor.svelte"
   import FieldsBuilder from "./QueryFieldsBuilder.svelte"
-  import { Label, Input } from "@budibase/bbui"
+  import { Label, Input } from "hyinsit-bbui"
 
   const QueryTypes = {
     SQL: "sql",

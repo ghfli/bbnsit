@@ -12,7 +12,7 @@ import {
   MigrationOptions,
   MigrationType,
   MigrationNoOpOptions,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export const getMigrationsDoc = async (db: any) => {
   // get the migrations doc

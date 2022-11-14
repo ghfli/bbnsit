@@ -1,6 +1,6 @@
 import { DocumentType } from "../../db/utils"
-import { Plugin } from "@budibase/types"
-import { db as dbCore, context, tenancy } from "@budibase/backend-core"
+import { Plugin } from "hyinsit-types"
+import { db as dbCore, context, tenancy } from "hyinsit-backend-core"
 import { getComponentLibraryManifest } from "../../utilities/fileSystem"
 
 exports.fetchAppComponentDefinitions = async function (ctx: any) {

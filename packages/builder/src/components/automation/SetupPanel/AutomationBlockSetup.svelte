@@ -13,7 +13,7 @@
     Modal,
     Detail,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import CreateWebhookModal from "components/automation/Shared/CreateWebhookModal.svelte"
 
   import { automationStore } from "builderStore"
@@ -28,9 +28,9 @@
   import Editor from "components/integration/QueryEditor.svelte"
   import ModalBindableInput from "components/common/bindings/ModalBindableInput.svelte"
   import FilterDrawer from "components/design/settings/controls/FilterEditor/FilterDrawer.svelte"
-  import { LuceneUtils } from "@budibase/frontend-core"
+  import { LuceneUtils } from "hyinsit-frontend-core"
   import { getSchemaForTable } from "builderStore/dataBinding"
-  import { Utils } from "@budibase/frontend-core"
+  import { Utils } from "hyinsit-frontend-core"
   import { TriggerStepID, ActionStepID } from "constants/backend/automations"
   import { cloneDeep } from "lodash/fp"
 

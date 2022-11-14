@@ -1,4 +1,4 @@
-import { Integration, QueryType, SqlQuery } from "@budibase/types"
+import { Integration, QueryType, SqlQuery } from "hyinsit-types"
 import { Snowflake } from "snowflake-promise"
 
 interface SnowflakeConfig {

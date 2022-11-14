@@ -1,4 +1,4 @@
-import { InviteUsersResponse } from "@budibase/types"
+import { InviteUsersResponse } from "hyinsit-types"
 
 jest.mock("nodemailer")
 import {
@@ -9,7 +9,7 @@ import {
   API,
 } from "../../../../tests"
 const sendMailMock = mocks.email.mock()
-import { events, tenancy } from "@budibase/backend-core"
+import { events, tenancy } from "hyinsit-backend-core"
 
 describe("/api/global/users", () => {
   const config = new TestConfiguration()

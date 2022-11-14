@@ -1,6 +1,6 @@
 <script>
   import { automationStore } from "builderStore"
-  import { Icon, Body, Detail, StatusLight } from "@budibase/bbui"
+  import { Icon, Body, Detail, StatusLight } from "hyinsit-bbui"
   import { externalActions } from "./ExternalActions"
 
   export let block

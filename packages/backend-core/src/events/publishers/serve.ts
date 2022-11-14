@@ -5,7 +5,7 @@ import {
   Event,
   AppPreviewServedEvent,
   AppServedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function servedBuilder(timezone: string) {
   const properties: BuilderServedEvent = {

@@ -1,6 +1,6 @@
 <script>
   import { redirect, params } from "@roxi/routify"
-  import { Icon, Tabs, Tab } from "@budibase/bbui"
+  import { Icon, Tabs, Tab } from "hyinsit-bbui"
   import { BUDIBASE_INTERNAL_DB } from "constants"
   import DatasourceNavigator from "components/backend/DatasourceNavigator/DatasourceNavigator.svelte"
   import CreateDatasourceModal from "components/backend/DatasourceNavigator/modals/CreateDatasourceModal.svelte"

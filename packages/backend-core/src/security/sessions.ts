@@ -7,7 +7,7 @@ import {
   ScannedSession,
   SessionKey,
   CreateSession,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 // a week in seconds
 const EXPIRY_SECONDS = 86400 * 7

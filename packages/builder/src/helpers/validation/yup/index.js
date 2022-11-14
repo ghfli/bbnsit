@@ -1,7 +1,7 @@
 import { capitalise } from "helpers"
 import { object } from "yup"
 import { writable, get } from "svelte/store"
-import { notifications } from "@budibase/bbui"
+import { notifications } from "hyinsit-bbui"
 
 export const createValidationStore = () => {
   const DEFAULT = {

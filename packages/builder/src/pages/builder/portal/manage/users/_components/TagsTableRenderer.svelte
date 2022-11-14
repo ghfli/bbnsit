@@ -1,5 +1,5 @@
 <script>
-  import { Tag, Tags } from "@budibase/bbui"
+  import { Tag, Tags } from "hyinsit-bbui"
   export let value
 
   const displayLimit = 5

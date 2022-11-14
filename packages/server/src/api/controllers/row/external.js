@@ -9,7 +9,7 @@ const {
   breakRowIdField,
 } = require("../../../integrations/utils")
 const ExternalRequest = require("./ExternalRequest")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 const exporters = require("../view/exporters")
 const { apiFileReturn } = require("../../../utilities/fileSystem")
 

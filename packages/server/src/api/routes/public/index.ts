@@ -15,8 +15,8 @@ const { RateLimit, Stores } = require("koa2-ratelimit")
 const {
   PermissionLevels,
   PermissionTypes,
-} = require("@budibase/backend-core/permissions")
-const { getRedisOptions } = require("@budibase/backend-core/redis").utils
+} = require("hyinsit-backend-core/permissions")
+const { getRedisOptions } = require("hyinsit-backend-core/redis").utils
 
 const PREFIX = "/api/public/v1"
 // allow a lot more requests when in test

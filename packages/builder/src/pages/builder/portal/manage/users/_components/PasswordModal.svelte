@@ -1,5 +1,5 @@
 <script>
-  import { Body, ModalContent, Table, Icon } from "@budibase/bbui"
+  import { Body, ModalContent, Table, Icon } from "hyinsit-bbui"
   import PasswordCopyRenderer from "./PasswordCopyRenderer.svelte"
   import { parseToCsv } from "helpers/data/utils"
   import { onMount } from "svelte"

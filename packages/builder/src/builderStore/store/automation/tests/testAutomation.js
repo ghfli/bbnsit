@@ -18,7 +18,7 @@ export default {
         args: {
           text: "A user was created!",
           subject: "New Budibase User",
-          from: "budimaster@budibase.com",
+          from: "budimasterhyinsit.com",
           to: "test@test.com",
         },
         stepId: "SEND_EMAIL",

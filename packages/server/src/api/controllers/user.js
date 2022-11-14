@@ -7,14 +7,14 @@ const { InternalTables } = require("../../db/utils")
 const { getGlobalUsers, getRawGlobalUser } = require("../../utilities/global")
 const { getFullUser } = require("../../utilities/users")
 const { isEqual } = require("lodash")
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
 const {
   getDevelopmentAppID,
   getProdAppIDs,
   dbExists,
-} = require("@budibase/backend-core/db")
-const { UserStatus } = require("@budibase/backend-core/constants")
-const { getAppDB, doInAppContext } = require("@budibase/backend-core/context")
+} = require("hyinsit-backend-core/db")
+const { UserStatus } = require("hyinsit-backend-core/constants")
+const { getAppDB, doInAppContext } = require("hyinsit-backend-core/context")
 
 async function rawMetadata() {
   const db = getAppDB()

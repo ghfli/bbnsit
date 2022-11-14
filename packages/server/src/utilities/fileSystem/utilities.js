@@ -10,7 +10,7 @@ const {
   uploadDirectory,
   downloadTarball,
   downloadTarballDirect,
-} = require("@budibase/backend-core/objectStore")
+} = require("hyinsit-backend-core/objectStore")
 
 /***********************************
  *              NOTE               *

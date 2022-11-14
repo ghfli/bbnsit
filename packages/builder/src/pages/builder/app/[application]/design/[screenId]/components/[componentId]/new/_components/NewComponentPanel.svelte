@@ -9,7 +9,7 @@
     Icon,
     Body,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import structure from "./componentStructure.json"
   import { store, selectedComponent } from "builderStore"
   import { onMount } from "svelte"
@@ -71,7 +71,7 @@
 
     structure.forEach(item => {
       if (typeof item === "string") {
-        const def = definitions[`@budibase/standard-components/${item}`]
+        const def = definitions[`hyinsit-standard-components/${item}`]
         if (def) {
           enrichedStructure.push({
             ...def,
@@ -212,6 +212,7 @@
                     orderMap[component.component]}
                   on:click={() => addComponent(component.component)}
                   on:mouseover={() => (selectedIndex = null)}
+                  on:focus={() => {}}
                 >
                   <Icon name={component.icon} />
                   <Body size="XS">{component.name}</Body>

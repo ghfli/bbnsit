@@ -9,7 +9,7 @@ The generated code will only run in a browser. It is not currently useable in a 
 
 ## Example usage
 ```js
-import { configure, ApplicationsApi } from "@budibase/sdk"
+import { configure, ApplicationsApi } from "hyinsit/sdk"
 
 // Configure the API client
 configure({

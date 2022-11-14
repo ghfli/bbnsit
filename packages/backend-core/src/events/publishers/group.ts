@@ -9,7 +9,7 @@ import {
   GroupUsersDeletedEvent,
   GroupAddedOnboardingEvent,
   UserGroupRoles,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(group: UserGroup, timestamp?: number) {
   const properties: GroupCreatedEvent = {

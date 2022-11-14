@@ -18,8 +18,8 @@ const { makeExternalQuery } = require("../../../integrations/base/query")
 const { cloneDeep } = require("lodash/fp")
 const csvParser = require("../../../utilities/csvParser")
 const { handleRequest } = require("../row/external")
-const { getAppDB } = require("@budibase/backend-core/context")
-const { events } = require("@budibase/backend-core")
+const { getAppDB } = require("hyinsit-backend-core/context")
+const { events } = require("hyinsit-backend-core")
 
 async function makeTableRequest(
   datasource,

@@ -43,7 +43,7 @@ const env = {
   AWS_REGION: process.env.AWS_REGION,
   MINIO_URL: process.env.MINIO_URL,
   INTERNAL_API_KEY: process.env.INTERNAL_API_KEY,
-  MULTI_TENANCY: process.env.MULTI_TENANCY,
+  MULTI_TENANCY: process.env.MULTI_TENANCY === "1",
   ACCOUNT_PORTAL_URL:
     process.env.ACCOUNT_PORTAL_URL || "https://account.budibase.app",
   ACCOUNT_PORTAL_API_KEY: process.env.ACCOUNT_PORTAL_API_KEY || "",

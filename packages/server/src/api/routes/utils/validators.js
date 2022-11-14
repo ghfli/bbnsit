@@ -1,10 +1,10 @@
-const { joiValidator } = require("@budibase/backend-core/auth")
+const { joiValidator } = require("hyinsit-backend-core/auth")
 const { DataSourceOperation } = require("../../../constants")
 const { WebhookType } = require("../../../constants")
 const {
   BUILTIN_PERMISSION_IDS,
   PermissionLevels,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 const Joi = require("joi")
 
 const OPTIONAL_STRING = Joi.string().optional().allow(null).allow("")

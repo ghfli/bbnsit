@@ -1,5 +1,5 @@
 <script>
-  import { Combobox } from "@budibase/bbui"
+  import { Combobox } from "hyinsit-bbui"
   import {
     getDatasourceForProvider,
     getSchemaForDatasource,
@@ -14,7 +14,7 @@
   $: form = findClosestMatchingComponent(
     $currentAsset?.props,
     componentInstance._id,
-    component => component._component === "@budibase/standard-components/form"
+    component => component._component === "hyinsit-standard-components/form"
   )
   $: datasource = getDatasourceForProvider($currentAsset, form)
   $: schema = getSchemaForDatasource($currentAsset, datasource, {

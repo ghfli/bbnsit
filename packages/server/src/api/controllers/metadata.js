@@ -1,7 +1,7 @@
 const { MetadataTypes } = require("../../constants")
 const { generateMetadataID } = require("../../db/utils")
 const { saveEntityMetadata, deleteEntityMetadata } = require("../../utilities")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 exports.getTypes = async ctx => {
   ctx.body = {

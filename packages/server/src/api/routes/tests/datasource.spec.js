@@ -5,7 +5,7 @@ let { basicDatasource } = setup.structures
 let { checkBuilderEndpoint } = require("./utilities/TestFunctions")
 const pg = require("pg")
 const { checkCacheForDynamicVariable } = require("../../../threads/utils")
-const { events } = require("@budibase/backend-core") 
+const { events } = require("hyinsit-backend-core") 
 
 describe("/datasources", () => {
   let request = setup.getRequest()

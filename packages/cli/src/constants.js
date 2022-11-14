@@ -1,4 +1,4 @@
-const { Event } = require("@budibase/types")
+const { Event } = require("hyinsit-types")
 
 exports.CommandWords = {
   BACKUPS: "backups",

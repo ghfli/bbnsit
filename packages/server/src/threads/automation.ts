@@ -8,7 +8,7 @@ import { generateAutomationMetadataID, isProdAppID } from "../db/utils"
 import { definitions as triggerDefs } from "../automations/triggerInfo"
 import { AutomationErrors, MAX_AUTOMATION_RECURRING_ERRORS } from "../constants"
 import { storeLog } from "../automations/logging"
-import { Automation, AutomationStep, AutomationStatus } from "@budibase/types"
+import { Automation, AutomationStep, AutomationStatus } from "hyinsit-types"
 import {
   LoopStep,
   LoopStepType,
@@ -19,9 +19,9 @@ import {
   AutomationMetadata,
 } from "../definitions/automations"
 import { WorkerCallback } from "./definitions"
-const { doInAppContext, getAppDB } = require("@budibase/backend-core/context")
-const { logAlertWithInfo, logWarn } = require("@budibase/backend-core/logging")
-const { processObject } = require("@budibase/string-templates")
+const { doInAppContext, getAppDB } = require("hyinsit-backend-core/context")
+const { logAlertWithInfo, logWarn } = require("hyinsit-backend-core/logging")
+const { processObject } = require("hyinsit-string-templates")
 const FILTER_STEP_ID = actions.ACTION_DEFINITIONS.FILTER.stepId
 const LOOP_STEP_ID = actions.ACTION_DEFINITIONS.LOOP.stepId
 const CRON_STEP_ID = triggerDefs.CRON.stepId

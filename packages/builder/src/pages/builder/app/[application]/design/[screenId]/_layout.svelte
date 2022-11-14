@@ -1,5 +1,5 @@
 <script>
-  import { IconSideNav, IconSideNavItem } from "@budibase/bbui"
+  import { IconSideNav, IconSideNavItem } from "hyinsit-bbui"
   import * as routify from "@roxi/routify"
   import AppPanel from "./_components/AppPanel.svelte"
   import { syncURLToState } from "helpers/urlStateSync"

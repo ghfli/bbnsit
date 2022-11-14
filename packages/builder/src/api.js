@@ -1,8 +1,4 @@
-import {
-  createAPIClient,
-  CookieUtils,
-  Constants,
-} from "@budibase/frontend-core"
+import { createAPIClient, CookieUtils, Constants } from "hyinsit-frontend-core"
 import { store } from "./builderStore"
 import { get } from "svelte/store"
 import { auth } from "./stores/portal"

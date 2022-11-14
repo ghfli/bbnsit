@@ -1,13 +1,13 @@
 <script>
   import DashCard from "components/common/DashCard.svelte"
   import { AppStatus } from "constants"
-  import { Icon, Heading, Link, Avatar, Layout, Body } from "@budibase/bbui"
+  import { Icon, Heading, Link, Avatar, Layout, Body } from "hyinsit-bbui"
   import { store } from "builderStore"
-  import clientPackage from "@budibase/client/package.json"
-  import { processStringSync } from "@budibase/string-templates"
+  import clientPackage from "hyinsit-client/package.json"
+  import { processStringSync } from "hyinsit-string-templates"
   import { users, auth, apps, groups } from "stores/portal"
   import { createEventDispatcher } from "svelte"
-  import { fetchData } from "@budibase/frontend-core"
+  import { fetchData } from "hyinsit-frontend-core"
   import { API } from "api"
   import GroupIcon from "../../manage/groups/_components/GroupIcon.svelte"
 

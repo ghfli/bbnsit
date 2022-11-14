@@ -1,7 +1,7 @@
 <script>
-  import { Label, notifications, Select } from "@budibase/bbui"
+  import { Label, notifications, Select } from "hyinsit-bbui"
   import { permissions, roles } from "stores/backend"
-  import { Constants } from "@budibase/frontend-core"
+  import { Constants } from "hyinsit-frontend-core"
 
   export let query
   export let label

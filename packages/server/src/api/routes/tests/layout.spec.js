@@ -1,7 +1,7 @@
 const { checkBuilderEndpoint } = require("./utilities/TestFunctions")
 const setup = require("./utilities")
 const { basicLayout } = setup.structures
-const { events } = require("@budibase/backend-core")
+const { events } = require("hyinsit-backend-core")
 
 describe("/layouts", () => {
   let request = setup.getRequest()

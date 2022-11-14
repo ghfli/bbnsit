@@ -1,5 +1,5 @@
 <script>
-  import { Body } from "@budibase/bbui"
+  import { Body } from "hyinsit-bbui"
   import { RawRestBodyTypes } from "constants/backend"
   import KeyValueBuilder from "components/integration/KeyValueBuilder.svelte"
   import CodeMirrorEditor, {

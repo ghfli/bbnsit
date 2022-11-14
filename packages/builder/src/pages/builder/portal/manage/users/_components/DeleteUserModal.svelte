@@ -1,6 +1,6 @@
 <script>
   import { goto } from "@roxi/routify"
-  import { Body, ModalContent, notifications } from "@budibase/bbui"
+  import { Body, ModalContent, notifications } from "hyinsit-bbui"
 
   import { users } from "stores/portal"
 

@@ -1,5 +1,5 @@
 <script>
-  import { Body, ModalContent, Table } from "@budibase/bbui"
+  import { Body, ModalContent, Table } from "hyinsit-bbui"
   import { onMount } from "svelte"
 
   export let deleteUsersResponse

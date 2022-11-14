@@ -11,7 +11,7 @@
     Body,
     Modal,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import { apps, organisation, auth, groups, licensing } from "stores/portal"
   import { goto } from "@roxi/routify"
@@ -19,7 +19,7 @@
   import { gradient } from "actions"
   import UpdateUserInfoModal from "components/settings/UpdateUserInfoModal.svelte"
   import ChangePasswordModal from "components/settings/ChangePasswordModal.svelte"
-  import { processStringSync } from "@budibase/string-templates"
+  import { processStringSync } from "hyinsit-string-templates"
   import Spaceman from "assets/bb-space-man.svg"
   import Logo from "assets/bb-emblem.svg"
 

@@ -23,7 +23,7 @@ import {
   joiValidator,
 } from "./middleware"
 import { invalidateUser } from "./cache/user"
-import { User } from "@budibase/types"
+import { User } from "hyinsit-types"
 
 // Strategies
 passport.use(new LocalStrategy(local.options, local.authenticate))
@@ -38,7 +38,7 @@ passport.deserializeUser(async (user: User, done: any) => {
     const dbUser = await db.get(user._id)
     return done(null, dbUser)
   } catch (err) {
-    console.error(`User not found`, err)
+    console.error(`User not found, email=` + user.email, err)
     return done(null, false, { message: "User not found" })
   }
 })

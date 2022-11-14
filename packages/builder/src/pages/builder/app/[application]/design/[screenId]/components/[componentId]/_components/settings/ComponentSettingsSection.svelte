@@ -1,6 +1,6 @@
 <script>
   import { isEmpty } from "lodash/fp"
-  import { Input, DetailSummary, notifications } from "@budibase/bbui"
+  import { Input, DetailSummary, notifications } from "hyinsit-bbui"
   import { store } from "builderStore"
   import PropertyControl from "components/design/settings/controls/PropertyControl.svelte"
   import ResetFieldsButton from "components/design/settings/controls/ResetFieldsButton.svelte"

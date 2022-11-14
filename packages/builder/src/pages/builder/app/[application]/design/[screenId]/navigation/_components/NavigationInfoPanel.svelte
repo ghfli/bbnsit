@@ -1,6 +1,6 @@
 <script>
   import Panel from "components/design/Panel.svelte"
-  import { Body, Layout, Banner } from "@budibase/bbui"
+  import { Body, Layout, Banner } from "hyinsit-bbui"
   import { selectedScreen, store } from "builderStore"
   import { get } from "svelte/store"
 

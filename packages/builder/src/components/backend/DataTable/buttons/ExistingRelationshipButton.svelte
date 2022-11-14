@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, Modal, notifications } from "@budibase/bbui"
+  import { ActionButton, Modal, notifications } from "hyinsit-bbui"
   import CreateEditRelationship from "../../Datasources/CreateEditRelationship.svelte"
   import { datasources, tables } from "../../../../stores/backend"
   import { createEventDispatcher } from "svelte"

@@ -6,7 +6,7 @@ const {
   DocumentType,
   InternalTables,
 } = require("../../../db/utils")
-const { dangerousGetDB } = require("@budibase/backend-core/db")
+const { dangerousGetDB } = require("hyinsit-backend-core/db")
 const userController = require("../user")
 const {
   inputProcessing,
@@ -26,7 +26,7 @@ const {
   getFromMemoryDoc,
 } = require("../view/utils")
 const { cloneDeep } = require("lodash/fp")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 const { finaliseRow, updateRelatedFormula } = require("./staticFormula")
 const exporters = require("../view/exporters")
 const { apiFileReturn } = require("../../../utilities/fileSystem")

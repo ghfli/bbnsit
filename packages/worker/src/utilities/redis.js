@@ -1,5 +1,5 @@
-const { Client, utils } = require("@budibase/backend-core/redis")
-const { newid } = require("@budibase/backend-core/utils")
+const { Client, utils } = require("hyinsit-backend-core/redis")
+const { newid } = require("hyinsit-backend-core/utils")
 
 function getExpirySecondsForDB(db) {
   switch (db) {

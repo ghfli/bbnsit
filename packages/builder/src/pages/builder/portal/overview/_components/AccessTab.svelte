@@ -10,7 +10,7 @@
     notifications,
     Pagination,
     Icon,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { onMount } from "svelte"
 
   import RoleSelect from "components/common/RoleSelect.svelte"
@@ -18,7 +18,7 @@
   import AssignmentModal from "./AssignmentModal.svelte"
   import { roles } from "stores/backend"
   import { API } from "api"
-  import { fetchData } from "@budibase/frontend-core"
+  import { fetchData } from "hyinsit-frontend-core"
 
   export let app
 

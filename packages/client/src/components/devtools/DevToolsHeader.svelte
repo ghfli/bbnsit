@@ -1,5 +1,5 @@
 <script>
-  import { Heading, Button, Select } from "@budibase/bbui"
+  import { Heading, Button, Select } from "hyinsit-bbui"
   import { devToolsStore } from "../../stores"
   import { getContext } from "svelte"
 

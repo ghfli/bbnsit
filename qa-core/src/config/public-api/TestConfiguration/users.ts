@@ -3,7 +3,7 @@ import {
   CreateUserParams,
   SearchInputParams,
   User,
-} from "@budibase/server/api/controllers/public/mapping/types"
+} from "hyinsit-server/api/controllers/public/mapping/types"
 import { Response } from "node-fetch"
 import generateUser from "../fixtures/users"
 

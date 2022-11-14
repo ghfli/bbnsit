@@ -1,6 +1,6 @@
-import { events } from "@budibase/backend-core"
+import { events } from "hyinsit-backend-core"
 import { getTableParams } from "../../../../db/utils"
-import { Table } from "@budibase/types"
+import { Table } from "hyinsit-types"
 
 const getTables = async (appDb: any): Promise<Table[]> => {
   const response = await appDb.allDocs(

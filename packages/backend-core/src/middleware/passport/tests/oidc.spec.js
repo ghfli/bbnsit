@@ -117,7 +117,7 @@ describe("oidc", () => {
     it("uses JWT email to get email", async () => {
       delete profile._json.email
       jwtClaims = {
-        email : "mock@budibase.com"
+        email : "mockhyinsit.com"
       }
 
       await doTest()
@@ -126,7 +126,7 @@ describe("oidc", () => {
     it("uses JWT username to get email", async () => {
       delete profile._json.email
       jwtClaims = {
-        preferred_username : "mock@budibase.com"
+        preferred_username : "mockhyinsit.com"
       }
 
       await doTest()

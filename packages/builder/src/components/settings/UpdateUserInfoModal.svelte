@@ -1,5 +1,5 @@
 <script>
-  import { ModalContent, Body, Input, notifications } from "@budibase/bbui"
+  import { ModalContent, Body, Input, notifications } from "hyinsit-bbui"
   import { writable } from "svelte/store"
   import { auth } from "stores/portal"
 

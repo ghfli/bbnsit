@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte"
-  import { Heading, Detail } from "@budibase/bbui"
+  import { Heading, Detail } from "hyinsit-bbui"
   import IntegrationIcon from "../IntegrationIcon.svelte"
 
   export let integration

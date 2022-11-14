@@ -8,14 +8,8 @@ import {
   InviteUserRequest,
   InviteUsersRequest,
   User,
-} from "@budibase/types"
-import {
-  accounts,
-  cache,
-  errors,
-  events,
-  tenancy,
-} from "@budibase/backend-core"
+} from "hyinsit-types"
+import { accounts, cache, errors, events, tenancy } from "hyinsit-backend-core"
 import { checkAnyUserExists } from "../../../utilities/users"
 
 const MAX_USERS_UPLOAD_LIMIT = 1000
@@ -109,6 +103,7 @@ export const adminUser = async (ctx: any) => {
 
       // events
       let account: CloudAccount | undefined
+      // let account: Account | undefined
       if (!env.SELF_HOSTED && !env.DISABLE_ACCOUNT_PORTAL) {
         account = await accounts.getAccountByTenantId(tenantId)
       }

@@ -3,7 +3,7 @@ import { SEPARATOR, DocumentType } from "../db/constants"
 import cls from "./FunctionContext"
 import { dangerousGetDB, closeDB } from "../db"
 import { baseGlobalDBName } from "../db/tenancy"
-import { IdentityContext } from "@budibase/types"
+import { IdentityContext } from "hyinsit-types"
 import { DEFAULT_TENANT_ID as _DEFAULT_TENANT_ID } from "../constants"
 import { ContextKey } from "./constants"
 import {
@@ -195,10 +195,9 @@ export const setGlobalDB = (tenantId: string | null) => {
 
 export const getGlobalDB = () => {
   const db = cls.getFromContext(ContextKey.GLOBAL_DB)
-  if (!db) {
-    throw new Error("Global DB not found")
-  }
-  return db
+  if (db) return db
+  console.log("global db not found, set it again")
+  return setGlobalDB(getTenantId())
 }
 
 export const isTenantIdSet = () => {
@@ -211,10 +210,13 @@ export const getTenantId = () => {
     return DEFAULT_TENANT_ID
   }
   const tenantId = cls.getFromContext(ContextKey.TENANT_ID)
-  if (!tenantId) {
-    throw new Error("Tenant id not found")
+  if (tenantId) {
+    return tenantId
   }
-  return tenantId
+  // throw new Error("Tenant id not found")
+  // console.log("tenantId not found, set it again")
+  // cls.setOnContext(ContextKey.TENANT_ID, DEFAULT_TENANT_ID)
+  return DEFAULT_TENANT_ID
 }
 
 export const getAppId = () => {

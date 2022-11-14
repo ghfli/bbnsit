@@ -1,5 +1,5 @@
 <script>
-  import { ModalContent, Body, notifications } from "@budibase/bbui"
+  import { ModalContent, Body, notifications } from "hyinsit-bbui"
   import PasswordRepeatInput from "components/common/users/PasswordRepeatInput.svelte"
   import { auth } from "stores/portal"
 

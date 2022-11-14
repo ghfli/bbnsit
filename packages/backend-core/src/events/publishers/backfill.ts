@@ -7,7 +7,7 @@ import {
   TenantBackfillFailedEvent,
   InstallationBackfillSucceededEvent,
   InstallationBackfillFailedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 const env = require("../../environment")
 
 const shouldSkip = !env.SELF_HOSTED && !env.isDev()

@@ -8,7 +8,7 @@
 </script>
 
 <script>
-  import { Popover, ActionButton, Button, Input } from "@budibase/bbui"
+  import { Popover, ActionButton, Button, Input } from "hyinsit-bbui"
   import { createEventDispatcher, tick } from "svelte"
 
   const dispatch = createEventDispatcher()

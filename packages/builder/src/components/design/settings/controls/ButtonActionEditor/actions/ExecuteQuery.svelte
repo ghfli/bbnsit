@@ -1,5 +1,5 @@
 <script>
-  import { Select, Layout, Input, Checkbox } from "@budibase/bbui"
+  import { Select, Layout, Input, Checkbox } from "hyinsit-bbui"
   import { datasources, integrations, queries } from "stores/backend"
   import BindingBuilder from "components/integration/QueryBindingBuilder.svelte"
   import IntegrationQueryEditor from "components/integration/index.svelte"

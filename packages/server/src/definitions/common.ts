@@ -1,4 +1,4 @@
-import { Document } from "@budibase/types"
+import { Document } from "hyinsit-types"
 export {
   Query,
   Datasource,
@@ -7,7 +7,7 @@ export {
   Table,
   Document,
   Row,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export interface Application extends Document {
   _id: string

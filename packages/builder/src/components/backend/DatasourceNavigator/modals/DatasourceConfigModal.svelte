@@ -1,6 +1,6 @@
 <script>
   import { goto } from "@roxi/routify"
-  import { ModalContent, notifications, Body, Layout } from "@budibase/bbui"
+  import { ModalContent, notifications, Body, Layout } from "hyinsit-bbui"
   import IntegrationConfigForm from "components/backend/DatasourceNavigator/TableIntegrationMenu/IntegrationConfigForm.svelte"
   import { IntegrationNames } from "constants/backend"
   import cloneDeep from "lodash/cloneDeepWith"

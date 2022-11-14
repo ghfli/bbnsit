@@ -16,8 +16,8 @@
     Body,
     Icon,
     notifications,
-  } from "@budibase/bbui"
-  import ErrorSVG from "@budibase/frontend-core/assets/error.svg?raw"
+  } from "hyinsit-bbui"
+  import ErrorSVG from "hyinsit-frontend-core/assets/error.svg?raw"
   import { findComponent, findComponentPath } from "builderStore/componentUtils"
   import { isActive, goto } from "@roxi/routify"
   import { Screen } from "builderStore/store/screenTemplates/utils/Screen"
@@ -42,7 +42,7 @@
   const placeholderScreen = new Screen()
     .name("Screen Placeholder")
     .route("/")
-    .component("@budibase/standard-components/screenslot")
+    .component("hyinsit-standard-components/screenslot")
     .instanceName("Content Placeholder")
     .normalStyle({ flex: "1 1 auto" })
     .json()

@@ -1,5 +1,5 @@
 <script>
-  import { notifications, ModalContent, Dropzone, Body } from "@budibase/bbui"
+  import { notifications, ModalContent, Dropzone, Body } from "hyinsit-bbui"
   import { API } from "api"
   import { admin } from "stores/portal"
 

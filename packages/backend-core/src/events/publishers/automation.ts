@@ -10,7 +10,7 @@ import {
   AutomationStepDeletedEvent,
   AutomationTriggerUpdatedEvent,
   AutomationsRunEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(
   automation: Automation,

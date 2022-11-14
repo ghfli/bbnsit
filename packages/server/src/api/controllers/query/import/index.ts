@@ -5,9 +5,9 @@ import { OpenAPI2 } from "./sources/openapi2"
 import { OpenAPI3 } from "./sources/openapi3"
 import { Curl } from "./sources/curl"
 // @ts-ignore
-import { getAppDB } from "@budibase/backend-core/context"
-import { events } from "@budibase/backend-core"
-import { Datasource, Query } from "@budibase/types"
+import { getAppDB } from "hyinsit-backend-core/context"
+import { events } from "hyinsit-backend-core"
+import { Datasource, Query } from "hyinsit-types"
 
 interface ImportResult {
   errorQueries: Query[]

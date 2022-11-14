@@ -10,7 +10,7 @@
     Dropzone,
     notifications,
     Toggle,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { auth, organisation, admin } from "stores/portal"
   import { API } from "api"
   import { writable } from "svelte/store"

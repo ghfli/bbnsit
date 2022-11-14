@@ -1,4 +1,4 @@
-import { Account, AccountMetadata } from "@budibase/types"
+import { Account, AccountMetadata } from "hyinsit-types"
 import TestConfiguration from "../TestConfiguration"
 
 export class AccountAPI {

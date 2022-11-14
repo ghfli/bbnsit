@@ -1,11 +1,5 @@
 <script>
-  import {
-    Icon,
-    Input,
-    Modal,
-    notifications,
-    ModalContent,
-  } from "@budibase/bbui"
+  import { Icon, Input, Modal, notifications, ModalContent } from "hyinsit-bbui"
   import { store } from "builderStore"
   import { API } from "api"
 

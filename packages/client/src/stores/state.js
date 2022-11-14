@@ -1,5 +1,5 @@
 import { writable, get, derived } from "svelte/store"
-import { createLocalStorageStore } from "@budibase/frontend-core"
+import { createLocalStorageStore } from "hyinsit-frontend-core"
 
 const createStateStore = () => {
   const appId = window["##BUDIBASE_APP_ID##"] || "app"

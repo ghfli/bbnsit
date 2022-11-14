@@ -1,5 +1,5 @@
 <script>
-  import { Select, ModalContent, notifications } from "@budibase/bbui"
+  import { Select, ModalContent, notifications } from "hyinsit-bbui"
   import { tables, views } from "stores/backend"
   import { FIELDS } from "constants/backend"
 

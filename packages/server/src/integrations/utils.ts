@@ -1,4 +1,4 @@
-import { SourceName, SqlQuery, Datasource, Table } from "@budibase/types"
+import { SourceName, SqlQuery, Datasource, Table } from "hyinsit-types"
 import { DocumentType, SEPARATOR } from "../db/utils"
 import { FieldTypes, BuildSchemaErrors, InvalidColumns } from "../constants"
 

@@ -3,14 +3,14 @@ const {
   getConfigParams,
   getScopedFullConfig,
   getAllApps,
-} = require("@budibase/backend-core/db")
+} = require("hyinsit-backend-core/db")
 const { Configs } = require("../../../constants")
 const email = require("../../../utilities/email")
 const {
   upload,
   ObjectStoreBuckets,
-} = require("@budibase/backend-core/objectStore")
-const { getGlobalDB, getTenantId } = require("@budibase/backend-core/tenancy")
+} = require("hyinsit-backend-core/objectStore")
+const { getGlobalDB, getTenantId } = require("hyinsit-backend-core/tenancy")
 const env = require("../../../environment")
 const { googleCallbackUrl, oidcCallbackUrl } = require("./auth")
 const {
@@ -18,8 +18,8 @@ const {
   CacheKeys,
   bustCache,
   cache,
-} = require("@budibase/backend-core/cache")
-const { events } = require("@budibase/backend-core")
+} = require("hyinsit-backend-core/cache")
+const { events } = require("hyinsit-backend-core")
 const { checkAnyUserExists } = require("../../../utilities/users")
 
 const BB_TENANT_CDN = "https://tenants.cdn.budi.live"

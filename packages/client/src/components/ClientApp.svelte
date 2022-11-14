@@ -1,9 +1,9 @@
 <script>
   import { writable, get } from "svelte/store"
   import { setContext, onMount } from "svelte"
-  import { Layout, Heading, Body } from "@budibase/bbui"
-  import ErrorSVG from "@budibase/frontend-core/assets/error.svg"
-  import { Constants, CookieUtils } from "@budibase/frontend-core"
+  import { Layout, Heading, Body } from "hyinsit-bbui"
+  import ErrorSVG from "hyinsit-frontend-core/assets/error.svg"
+  import { Constants, CookieUtils } from "hyinsit-frontend-core"
   import Component from "./Component.svelte"
   import SDK from "sdk"
   import {

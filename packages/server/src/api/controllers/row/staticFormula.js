@@ -7,7 +7,7 @@ const {
 const { FieldTypes, FormulaTypes } = require("../../../constants")
 const { isEqual } = require("lodash")
 const { cloneDeep } = require("lodash/fp")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 /**
  * This function runs through a list of enriched rows, looks at the rows which

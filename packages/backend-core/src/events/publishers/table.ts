@@ -9,7 +9,7 @@ import {
   TableDeletedEvent,
   TableExportedEvent,
   TableImportedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(table: Table, timestamp?: string | number) {
   const properties: TableCreatedEvent = {

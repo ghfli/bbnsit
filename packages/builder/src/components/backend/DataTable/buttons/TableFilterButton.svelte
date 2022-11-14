@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte"
-  import { ActionButton, Modal, ModalContent } from "@budibase/bbui"
+  import { ActionButton, Modal, ModalContent } from "hyinsit-bbui"
   import FilterDrawer from "components/design/settings/controls/FilterEditor/FilterDrawer.svelte"
 
   export let schema

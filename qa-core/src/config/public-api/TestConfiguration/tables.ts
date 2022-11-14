@@ -3,7 +3,7 @@ import {
   Table,
   SearchInputParams,
   CreateTableParams,
-} from "@budibase/server/api/controllers/public/mapping/types"
+} from "hyinsit-server/api/controllers/public/mapping/types"
 import { HeadersInit, Response } from "node-fetch"
 import { generateTable } from "../fixtures/tables"
 

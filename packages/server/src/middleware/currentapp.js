@@ -3,17 +3,17 @@ const {
   setCookie,
   getCookie,
   clearCookie,
-} = require("@budibase/backend-core/utils")
-const { Cookies, Headers } = require("@budibase/backend-core/constants")
-const { getRole } = require("@budibase/backend-core/roles")
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
+} = require("hyinsit-backend-core/utils")
+const { Cookies, Headers } = require("hyinsit-backend-core/constants")
+const { getRole } = require("hyinsit-backend-core/roles")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
 const { generateUserMetadataID, isDevAppID } = require("../db/utils")
-const { dbExists } = require("@budibase/backend-core/db")
-const { isUserInAppTenant } = require("@budibase/backend-core/tenancy")
+const { dbExists } = require("hyinsit-backend-core/db")
+const { isUserInAppTenant } = require("hyinsit-backend-core/tenancy")
 const { getCachedSelf } = require("../utilities/global")
 const env = require("../environment")
 const { isWebhookEndpoint } = require("./utils")
-const { doInAppContext } = require("@budibase/backend-core/context")
+const { doInAppContext } = require("hyinsit-backend-core/context")
 
 module.exports = async (ctx, next) => {
   // try to get the appID from the request

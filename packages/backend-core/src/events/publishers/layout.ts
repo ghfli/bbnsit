@@ -4,7 +4,7 @@ import {
   Layout,
   LayoutCreatedEvent,
   LayoutDeletedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(layout: Layout, timestamp?: string | number) {
   const properties: LayoutCreatedEvent = {

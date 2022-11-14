@@ -12,10 +12,10 @@ import {
   Headers,
   sessions,
   auth,
-} from "@budibase/backend-core"
+} from "hyinsit-backend-core"
 import { TENANT_ID, TENANT_1, CSRF_TOKEN } from "./structures"
 import structures from "./structures"
-import { CreateUserResponse, User, AuthToken } from "@budibase/types"
+import { CreateUserResponse, User, AuthToken } from "hyinsit-types"
 
 enum Mode {
   ACCOUNT = "account",

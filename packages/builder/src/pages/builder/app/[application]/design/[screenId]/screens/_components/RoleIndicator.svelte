@@ -1,6 +1,6 @@
 <script>
-  import { RoleUtils } from "@budibase/frontend-core"
-  import { Tooltip, StatusLight } from "@budibase/bbui"
+  import { RoleUtils } from "hyinsit-frontend-core"
+  import { Tooltip, StatusLight } from "hyinsit-bbui"
   import { roles } from "stores/backend"
   import { Roles } from "constants/backend"
 
@@ -20,6 +20,7 @@
   class="container"
   on:mouseover={() => (showTooltip = true)}
   on:mouseleave={() => (showTooltip = false)}
+  on:focus={() => {}}
   style="--color: {color};"
 >
   <StatusLight square {color} />

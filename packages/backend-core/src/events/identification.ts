@@ -16,7 +16,7 @@ import {
   InstallationGroup,
   UserContext,
   Group,
-} from "@budibase/types"
+} from "hyinsit-types"
 import { processors } from "./processors"
 import * as dbUtils from "../db/utils"
 import { Configs } from "../constants"

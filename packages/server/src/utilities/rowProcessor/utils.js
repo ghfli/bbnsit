@@ -4,7 +4,7 @@ const {
   AutoFieldDefaultNames,
   AutoFieldSubTypes,
 } = require("../../constants")
-const { processStringSync } = require("@budibase/string-templates")
+const { processStringSync } = require("hyinsit-string-templates")
 
 /**
  * If the subtype has been lost for any reason this works out what

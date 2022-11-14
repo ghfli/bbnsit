@@ -9,7 +9,7 @@
     notifications,
     Table,
     Modal,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { datasources, integrations, queries, tables } from "stores/backend"
   import IntegrationConfigForm from "components/backend/DatasourceNavigator/TableIntegrationMenu/IntegrationConfigForm.svelte"
   import RestExtraConfigForm from "components/backend/DatasourceNavigator/TableIntegrationMenu/rest/RestExtraConfigForm.svelte"

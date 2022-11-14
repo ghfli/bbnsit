@@ -1,5 +1,5 @@
 <script>
-  import { Select, Body } from "@budibase/bbui"
+  import { Select, Body } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"
   export let parameters

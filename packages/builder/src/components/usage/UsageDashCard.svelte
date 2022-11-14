@@ -6,7 +6,7 @@
     Layout,
     Body,
     TooltipWrapper,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
 
   export let description = ""
   export let title = ""

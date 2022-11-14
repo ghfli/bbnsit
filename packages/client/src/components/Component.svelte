@@ -17,7 +17,7 @@
     getSettingsDefinition,
   } from "utils/componentProps"
   import { builderStore, devToolsStore, componentStore, appStore } from "stores"
-  import { Helpers } from "@budibase/bbui"
+  import { Helpers } from "hyinsit-bbui"
   import { getActiveConditions, reduceConditionActions } from "utils/conditions"
   import Placeholder from "components/app/Placeholder.svelte"
   import ScreenPlaceholder from "components/app/ScreenPlaceholder.svelte"

@@ -1,6 +1,6 @@
 <script>
   import "@spectrum-css/tag/dist/index-vars.css"
-  import { ClearButton } from "@budibase/bbui"
+  import { ClearButton } from "hyinsit-bbui"
   import { getContext } from "svelte"
 
   export let onClick

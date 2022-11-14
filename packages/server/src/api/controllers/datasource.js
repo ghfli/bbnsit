@@ -10,8 +10,8 @@ const { BuildSchemaErrors, InvalidColumns } = require("../../constants")
 const { getIntegration } = require("../../integrations")
 const { getDatasourceAndQuery } = require("./row/utils")
 const { invalidateDynamicVariables } = require("../../threads/utils")
-const { getAppDB } = require("@budibase/backend-core/context")
-const { events } = require("@budibase/backend-core")
+const { getAppDB } = require("hyinsit-backend-core/context")
+const { events } = require("hyinsit-backend-core")
 
 exports.fetch = async function (ctx) {
   // Get internal tables

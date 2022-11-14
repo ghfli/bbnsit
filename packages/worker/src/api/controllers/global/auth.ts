@@ -1,15 +1,15 @@
-const core = require("@budibase/backend-core")
+const core = require("hyinsit-backend-core")
 const { Configs, EmailTemplatePurpose } = require("../../../constants")
 const { sendEmail, isEmailConfigured } = require("../../../utilities/email")
 const { setCookie, getCookie, clearCookie, hash, platformLogout } = core.utils
 const { Cookies, Headers } = core.constants
 const { passport, ssoCallbackUrl, google, oidc } = core.auth
 const { checkResetPasswordCode } = require("../../../utilities/redis")
-const { getGlobalDB } = require("@budibase/backend-core/tenancy")
+const { getGlobalDB } = require("hyinsit-backend-core/tenancy")
 const env = require("../../../environment")
-import { events, users as usersCore, context } from "@budibase/backend-core"
+import { events, users as usersCore, context } from "hyinsit-backend-core"
 import sdk from "../../../sdk"
-import { User } from "@budibase/types"
+import { User } from "hyinsit-types"
 
 export const googleCallbackUrl = async (config: any) => {
   return ssoCallbackUrl(getGlobalDB(), config, "google")
@@ -131,7 +131,7 @@ export const logout = async (ctx: any) => {
 
 export const datasourcePreAuth = async (ctx: any, next: any) => {
   const provider = ctx.params.provider
-  const middleware = require(`@budibase/backend-core/middleware`)
+  const middleware = require(`hyinsit-backend-core/middleware`)
   const handler = middleware.datasource[provider]
 
   setCookie(
@@ -150,7 +150,7 @@ export const datasourcePreAuth = async (ctx: any, next: any) => {
 export const datasourceAuth = async (ctx: any, next: any) => {
   const authStateCookie = getCookie(ctx, Cookies.DatasourceAuth)
   const provider = authStateCookie.provider
-  const middleware = require(`@budibase/backend-core/middleware`)
+  const middleware = require(`hyinsit-backend-core/middleware`)
   const handler = middleware.datasource[provider]
   return handler.postAuth(passport, ctx, next)
 }

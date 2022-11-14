@@ -1,5 +1,5 @@
 <script>
-  import { Menu, Icon, MenuSection, MenuItem } from "@budibase/bbui"
+  import { Menu, Icon, MenuSection, MenuItem } from "hyinsit-bbui"
 
   export let heading
   export let tables

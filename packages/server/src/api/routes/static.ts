@@ -6,7 +6,7 @@ import {
   BUILDER,
   PermissionTypes,
   PermissionLevels,
-} from "@budibase/backend-core/permissions"
+} from "hyinsit-backend-core/permissions"
 import * as env from "../../environment"
 import { paramResource } from "../../middleware/resourceId"
 
@@ -20,7 +20,7 @@ router.param("file", async (file: any, ctx: any, next: any) => {
   }
   // test serves from require
   if (env.isTest()) {
-    ctx.devPath = require.resolve("@budibase/client").split(ctx.file)[0]
+    ctx.devPath = require.resolve("hyinsit-client").split(ctx.file)[0]
   } else if (env.isDev()) {
     // Serving the client library from your local dir in dev
     ctx.devPath = budibaseTempDir()

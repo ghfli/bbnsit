@@ -1,10 +1,10 @@
 <script>
   import { createEventDispatcher } from "svelte"
   import { tables, rows } from "stores/backend"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import RowFieldControl from "../RowFieldControl.svelte"
   import { API } from "api"
-  import { ModalContent } from "@budibase/bbui"
+  import { ModalContent } from "hyinsit-bbui"
   import ErrorsBox from "components/common/ErrorsBox.svelte"
   import { FIELDS } from "constants/backend"
 

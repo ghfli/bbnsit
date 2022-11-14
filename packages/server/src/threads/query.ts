@@ -3,13 +3,13 @@ threadUtils.threadSetup()
 import { WorkerCallback, QueryEvent, QueryVariable } from "./definitions"
 const ScriptRunner = require("../utilities/scriptRunner")
 const { getIntegration } = require("../integrations")
-const { processStringSync } = require("@budibase/string-templates")
-const { doInAppContext, getAppDB } = require("@budibase/backend-core/context")
+const { processStringSync } = require("hyinsit-string-templates")
+const { doInAppContext, getAppDB } = require("hyinsit-backend-core/context")
 const {
   refreshOAuthToken,
   updateUserOAuth,
-} = require("@budibase/backend-core/auth")
-const { user: userCache } = require("@budibase/backend-core/cache")
+} = require("hyinsit-backend-core/auth")
+const { user: userCache } = require("hyinsit-backend-core/cache")
 const { getGlobalIDFromUserMetadataID } = require("../db/utils")
 const { cloneDeep } = require("lodash/fp")
 

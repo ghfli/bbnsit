@@ -24,10 +24,10 @@ import {
 } from "../../../integrations/utils"
 import { getViews, saveView } from "../view/utils"
 import viewTemplate from "../view/viewBuilder"
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 import { cloneDeep } from "lodash/fp"
-import { quotas } from "@budibase/pro"
-import { events } from "@budibase/backend-core"
+// import { quotas } from "hyinsit-pro"
+import { events } from "hyinsit-backend-core"
 
 export async function clearColumns(table: any, columnNames: any) {
   const db = getAppDB()
@@ -148,7 +148,7 @@ export async function handleDataImport(user: any, table: any, dataImport: any) {
     finalData.push(row)
   }
 
-  await quotas.addRows(finalData.length, () => db.bulkDocs(finalData))
+  // await quotas.addRows(finalData.length, () => db.bulkDocs(finalData))
   await events.rows.imported(table, "csv", finalData.length)
   return table
 }

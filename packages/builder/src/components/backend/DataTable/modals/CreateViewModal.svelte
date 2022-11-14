@@ -1,5 +1,5 @@
 <script>
-  import { Input, notifications, ModalContent } from "@budibase/bbui"
+  import { Input, notifications, ModalContent } from "hyinsit-bbui"
   import { goto } from "@roxi/routify"
   import { views as viewsStore } from "stores/backend"
   import { tables } from "stores/backend"

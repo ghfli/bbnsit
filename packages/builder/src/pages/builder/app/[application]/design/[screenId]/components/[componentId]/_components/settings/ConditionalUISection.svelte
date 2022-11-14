@@ -5,7 +5,7 @@
     Drawer,
     Button,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { store } from "builderStore"
   import ConditionalUIDrawer from "./ConditionalUIDrawer.svelte"
 

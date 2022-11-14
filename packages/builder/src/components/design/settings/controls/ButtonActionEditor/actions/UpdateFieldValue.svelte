@@ -1,5 +1,5 @@
 <script>
-  import { Select, Label, Combobox } from "@budibase/bbui"
+  import { Select, Label, Combobox } from "hyinsit-bbui"
   import { onMount } from "svelte"
   import DrawerBindableInput from "components/common/bindings/DrawerBindableInput.svelte"
   import { currentAsset, store } from "builderStore"

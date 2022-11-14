@@ -1,18 +1,8 @@
-FROM node:14-alpine
+FROM node:19-alpine3.15
 
-LABEL com.centurylinklabs.watchtower.lifecycle.pre-check="scripts/watchtower-hooks/pre-check.sh"
-LABEL com.centurylinklabs.watchtower.lifecycle.pre-update="scripts/watchtower-hooks/pre-update.sh"
-LABEL com.centurylinklabs.watchtower.lifecycle.post-update="scripts/watchtower-hooks/post-update.sh"
-LABEL com.centurylinklabs.watchtower.lifecycle.post-check="scripts/watchtower-hooks/post-check.sh"
+WORKDIR /bbworker
 
-WORKDIR /app
-
-# copy files and install dependencies
-COPY . ./
-# handle node-gyp
-RUN apk add --no-cache --virtual .gyp python3 make g++ \
-    && yarn && apk del .gyp
-RUN yarn global add pm2
+COPY release ./
 
 EXPOSE 4001
 

@@ -17,7 +17,7 @@
     Table,
     Tabs,
     TextArea,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import KeyValueBuilder from "components/integration/KeyValueBuilder.svelte"
   import EditableLabel from "components/common/inputs/EditableLabel.svelte"
   import CodeMirrorEditor, {

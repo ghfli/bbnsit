@@ -2,9 +2,9 @@
   import { onMount, onDestroy } from "svelte"
   import Spinner from "components/common/Spinner.svelte"
   import { slide } from "svelte/transition"
-  import { Heading, Button, Modal, ModalContent } from "@budibase/bbui"
+  import { Heading, Button, Modal, ModalContent } from "hyinsit-bbui"
   import { API } from "api"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import CreateWebhookDeploymentModal from "./CreateWebhookDeploymentModal.svelte"
   import { store } from "builderStore"
   import {

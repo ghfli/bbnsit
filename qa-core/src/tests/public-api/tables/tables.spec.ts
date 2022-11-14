@@ -1,4 +1,4 @@
-import { Table } from "@budibase/server/api/controllers/public/mapping/types"
+import { Table } from "hyinsit-server/api/controllers/public/mapping/types"
 import { generateTable } from "../../../config/public-api/fixtures/tables"
 import TestConfiguration from "../../../config/public-api/TestConfiguration"
 import PublicAPIClient from "../../../config/public-api/TestConfiguration/PublicAPIClient"

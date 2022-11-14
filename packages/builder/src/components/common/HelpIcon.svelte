@@ -1,5 +1,5 @@
 <script>
-  import { Icon, Body } from "@budibase/bbui"
+  import { Icon, Body } from "hyinsit-bbui"
 </script>
 
 <a target="_blank" href="https://github.com/Budibase/budibase/discussions">

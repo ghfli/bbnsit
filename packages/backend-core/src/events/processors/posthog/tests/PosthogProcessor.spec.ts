@@ -1,6 +1,6 @@
 import "../../../../../tests/utilities/TestConfiguration"
 import PosthogProcessor from "../PosthogProcessor"
-import { Event, IdentityType, Hosting } from "@budibase/types"
+import { Event, IdentityType, Hosting } from "hyinsit-types"
 const tk = require("timekeeper")
 import * as cache from "../../../../cache/generic"
 import { CacheKeys } from "../../../../cache/generic"

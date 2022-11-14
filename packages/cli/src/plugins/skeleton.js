@@ -4,7 +4,7 @@ const fs = require("fs")
 const os = require("os")
 const { join } = require("path")
 const tar = require("tar")
-const { processStringSync } = require("@budibase/string-templates")
+const { processStringSync } = require("hyinsit-string-templates")
 
 const HBS_FILES = ["package.json.hbs", "schema.json.hbs", "README.md.hbs"]
 

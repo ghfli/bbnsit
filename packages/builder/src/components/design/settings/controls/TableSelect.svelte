@@ -1,5 +1,5 @@
 <script>
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
   import { tables as tablesStore } from "stores/backend"
 

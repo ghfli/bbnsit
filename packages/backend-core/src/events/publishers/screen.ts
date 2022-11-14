@@ -4,7 +4,7 @@ import {
   Screen,
   ScreenCreatedEvent,
   ScreenDeletedEvent,
-} from "@budibase/types"
+} from "hyinsit-types"
 
 export async function created(screen: Screen, timestamp?: string | number) {
   const properties: ScreenCreatedEvent = {

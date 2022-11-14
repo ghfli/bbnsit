@@ -1,6 +1,6 @@
 import { DEFAULT_TIMESTAMP } from "./index"
-import { events, tenancy, installation } from "@budibase/backend-core"
-import { Installation } from "@budibase/types"
+import { events, tenancy, installation } from "hyinsit-backend-core"
+import { Installation } from "hyinsit-types"
 import * as global from "./global"
 import env from "../../../environment"
 

@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, notifications } from "@budibase/bbui"
+  import { ActionButton, notifications } from "hyinsit-bbui"
   import OidcLogo from "assets/oidc-logo.png"
   import Auth0Logo from "assets/auth0-logo.png"
   import MicrosoftLogo from "assets/microsoft-logo.png"

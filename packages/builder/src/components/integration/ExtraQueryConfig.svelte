@@ -1,5 +1,5 @@
 <script>
-  import { Select, Label, Input } from "@budibase/bbui"
+  import { Select, Label, Input } from "hyinsit-bbui"
 
   /**
    * This component takes the query object and populates the 'extra' property

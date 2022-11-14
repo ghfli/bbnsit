@@ -1,5 +1,5 @@
 <script>
-  import { Select, Label } from "@budibase/bbui"
+  import { Select, Label } from "hyinsit-bbui"
   import { currentAsset } from "builderStore"
   import { findAllMatchingComponents } from "builderStore/componentUtils"
 

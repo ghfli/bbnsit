@@ -1,5 +1,5 @@
 <script>
-  import { Modal, Button } from "@budibase/bbui"
+  import { Modal, Button } from "hyinsit-bbui"
   import CreateEditRow from "../modals/CreateEditRow.svelte"
 
   export let row

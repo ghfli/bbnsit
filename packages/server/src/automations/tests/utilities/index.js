@@ -1,6 +1,6 @@
 const TestConfig = require("../../../tests/utilities/TestConfiguration")
 const { TENANT_ID } = require("../../../tests/utilities/structures")
-const { doInTenant } = require("@budibase/backend-core/tenancy")
+const { doInTenant } = require("hyinsit-backend-core/tenancy")
 const actions = require("../../actions")
 const emitter = require("../../../events/index")
 const env = require("../../../environment")

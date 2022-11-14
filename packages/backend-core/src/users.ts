@@ -6,7 +6,7 @@ import {
 } from "./db/utils"
 import { queryGlobalView } from "./db/views"
 import { UNICODE_MAX } from "./db/constants"
-import { BulkDocsResponse, User } from "@budibase/types"
+import { BulkDocsResponse, User } from "hyinsit-types"
 import { getGlobalDB } from "./context"
 import PouchDB from "pouchdb"
 

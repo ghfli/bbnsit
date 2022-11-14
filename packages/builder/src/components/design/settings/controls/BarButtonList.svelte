@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, ActionGroup } from "@budibase/bbui"
+  import { ActionButton, ActionGroup } from "hyinsit-bbui"
 
   export let value
   export let onChange

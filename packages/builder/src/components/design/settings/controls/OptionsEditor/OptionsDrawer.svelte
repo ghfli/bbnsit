@@ -7,7 +7,7 @@
     Layout,
     Body,
     Label,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { generate } from "shortid"
 
   export let options = []

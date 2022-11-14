@@ -1,5 +1,5 @@
 <script>
-  import { Modal, ModalContent, Body, TooltipWrapper } from "@budibase/bbui"
+  import { Modal, ModalContent, Body, TooltipWrapper } from "hyinsit-bbui"
   import { auth, admin, licensing } from "stores/portal"
   import { onMount } from "svelte"
 

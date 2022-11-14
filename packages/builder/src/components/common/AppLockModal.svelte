@@ -8,9 +8,9 @@
     ProgressCircle,
     Layout,
     Body,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { auth, apps } from "stores/portal"
-  import { processStringSync } from "@budibase/string-templates"
+  import { processStringSync } from "hyinsit-string-templates"
   import { API } from "api"
 
   export let app

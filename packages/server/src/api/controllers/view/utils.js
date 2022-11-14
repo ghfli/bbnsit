@@ -6,7 +6,7 @@ const {
   SEPARATOR,
 } = require("../../../db/utils")
 const env = require("../../../environment")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 const viewBuilder = require("./viewBuilder")
 
 exports.getView = async viewName => {

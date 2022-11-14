@@ -2,17 +2,17 @@ const {
   getMultiIDParams,
   getGlobalIDFromUserMetadataID,
 } = require("../db/utils")
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
-const { getProdAppID } = require("@budibase/backend-core/db")
-const { getGlobalUserParams } = require("@budibase/backend-core/db")
-const { user: userCache } = require("@budibase/backend-core/cache")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
+const { getProdAppID } = require("hyinsit-backend-core/db")
+const { getGlobalUserParams } = require("hyinsit-backend-core/db")
+const { user: userCache } = require("hyinsit-backend-core/cache")
 const {
   getGlobalDB,
   isUserInAppTenant,
-} = require("@budibase/backend-core/tenancy")
+} = require("hyinsit-backend-core/tenancy")
 const env = require("../environment")
-const { getAppId } = require("@budibase/backend-core/context")
-const { groups } = require("@budibase/pro")
+const { getAppId } = require("hyinsit-backend-core/context")
+// const { groups } = require("hyinsit-pro")
 
 exports.updateAppRole = (user, { appId } = {}) => {
   appId = appId || getAppId()
@@ -46,7 +46,7 @@ async function checkGroupRoles(user, { appId } = {}) {
   if (user.roleId && user.roleId !== BUILTIN_ROLE_IDS.PUBLIC) {
     return user
   }
-  user.roleId = await groups.getGroupRoleId(user, appId)
+  user.roleId = appId
   return user
 }
 

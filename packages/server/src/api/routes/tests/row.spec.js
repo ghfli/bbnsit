@@ -1,16 +1,16 @@
 const { outputProcessing } = require("../../../utilities/rowProcessor")
 const setup = require("./utilities")
 const { basicRow } = setup.structures
-const { doInAppContext } = require("@budibase/backend-core/context")
-const { doInTenant } = require("@budibase/backend-core/tenancy")
+const { doInAppContext } = require("hyinsit-backend-core/context")
+const { doInTenant } = require("hyinsit-backend-core/tenancy")
 const {
   quotas,
-} = require("@budibase/pro")
+} = require("hyinsit-pro")
 const {
   QuotaUsageType,
   StaticQuotaName,
   MonthlyQuotaName,
-} = require("@budibase/types")
+} = require("hyinsit-types")
 
 describe("/rows", () => {
   let request = setup.getRequest()

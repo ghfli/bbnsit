@@ -2,7 +2,7 @@
 jest.mock("nodemailer")
 import { TestConfiguration, structures, mocks, API } from "../../../../tests"
 mocks.email.mock()
-import { Configs, events } from "@budibase/backend-core"
+import { Configs, events } from "hyinsit-backend-core"
 
 describe("configs", () => {
   const config = new TestConfiguration()

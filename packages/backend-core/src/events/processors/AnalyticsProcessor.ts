@@ -1,4 +1,4 @@
-import { Event, Identity, Group, IdentityType } from "@budibase/types"
+import { Event, Identity, Group, IdentityType } from "hyinsit-types"
 import { EventProcessor } from "./types"
 import env from "../../environment"
 import * as analytics from "../analytics"

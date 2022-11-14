@@ -1,7 +1,7 @@
 <script>
   import { getContext } from "svelte"
-  import { ProgressCircle, Pagination } from "@budibase/bbui"
-  import { fetchData, LuceneUtils } from "@budibase/frontend-core"
+  import { ProgressCircle, Pagination } from "hyinsit-bbui"
+  import { fetchData, LuceneUtils } from "hyinsit-frontend-core"
 
   export let dataSource
   export let filter

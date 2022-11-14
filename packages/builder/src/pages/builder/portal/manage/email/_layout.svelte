@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte"
   import { email } from "stores/portal"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
 
   onMount(async () => {
     try {

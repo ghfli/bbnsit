@@ -1,5 +1,5 @@
 <script>
-  import { Button, ActionButton, Drawer } from "@budibase/bbui"
+  import { Button, ActionButton, Drawer } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
   import ValidationDrawer from "./ValidationDrawer.svelte"
 

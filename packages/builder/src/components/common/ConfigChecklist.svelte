@@ -5,7 +5,7 @@
     MenuItem,
     Heading,
     ProgressCircle,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { admin } from "stores/portal"
   import { goto } from "@roxi/routify"
   import { onMount } from "svelte"

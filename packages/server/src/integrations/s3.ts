@@ -1,4 +1,4 @@
-import { Integration, QueryType, IntegrationBase } from "@budibase/types"
+import { Integration, QueryType, IntegrationBase } from "hyinsit-types"
 const AWS = require("aws-sdk")
 
 interface S3Config {

@@ -1,5 +1,5 @@
 export const email = "test@test.com"
-import { AdminUser, BuilderUser, User } from "@budibase/types"
+import { AdminUser, BuilderUser, User } from "hyinsit-types"
 import { v4 as uuid } from "uuid"
 
 export const newEmail = () => {

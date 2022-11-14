@@ -2,7 +2,7 @@ const { getRoutingInfo } = require("../../utilities/routing")
 const {
   getUserRoleHierarchy,
   BUILTIN_ROLE_IDS,
-} = require("@budibase/backend-core/roles")
+} = require("hyinsit-backend-core/roles")
 
 const URL_SEPARATOR = "/"
 

@@ -1,5 +1,5 @@
 <script>
-  import { Input, ModalContent, Modal, Body } from "@budibase/bbui"
+  import { Input, ModalContent, Modal, Body } from "hyinsit-bbui"
   import { createEventDispatcher } from "svelte"
 
   const dispatch = createEventDispatcher()

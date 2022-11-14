@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton } from "@budibase/bbui"
+  import { ActionButton } from "hyinsit-bbui"
   import GoogleLogo from "assets/google-logo.png"
   import { auth, organisation } from "stores/portal"
 

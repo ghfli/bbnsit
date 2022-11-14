@@ -1,7 +1,7 @@
 import Router from "@koa/router"
 import * as controller from "../controllers/application"
 import authorized from "../../middleware/authorized"
-import { BUILDER } from "@budibase/backend-core/permissions"
+import { BUILDER } from "hyinsit-backend-core/permissions"
 import { applicationValidator } from "./utils/validators"
 
 const router = new Router()

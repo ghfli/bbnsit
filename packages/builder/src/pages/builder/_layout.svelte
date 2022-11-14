@@ -2,7 +2,7 @@
   import { isActive, redirect, params } from "@roxi/routify"
   import { admin, auth, licensing } from "stores/portal"
   import { onMount } from "svelte"
-  import { CookieUtils, Constants } from "@budibase/frontend-core"
+  import { CookieUtils, Constants } from "hyinsit-frontend-core"
   import { API } from "api"
 
   let loaded = false

@@ -1,5 +1,5 @@
 <script>
-  import { Layout, Icon, ActionButton, InlineAlert } from "@budibase/bbui"
+  import { Layout, Icon, ActionButton, InlineAlert } from "hyinsit-bbui"
   import StatusRenderer from "./StatusRenderer.svelte"
   import DateTimeRenderer from "components/common/renderers/DateTimeRenderer.svelte"
   import TestDisplay from "components/automation/AutomationBuilder/TestDisplay.svelte"

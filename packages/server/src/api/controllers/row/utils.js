@@ -3,7 +3,7 @@ const { cloneDeep } = require("lodash/fp")
 const { InternalTables } = require("../../../db/utils")
 const userController = require("../user")
 const { FieldTypes } = require("../../../constants")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 const { makeExternalQuery } = require("../../../integrations/base/query")
 const { removeKeyNumbering } = require("../../../integrations/base/utils")
 

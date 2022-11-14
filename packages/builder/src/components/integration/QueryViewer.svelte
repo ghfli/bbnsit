@@ -12,8 +12,8 @@
     Heading,
     Tabs,
     Tab,
-  } from "@budibase/bbui"
-  import { notifications, Divider } from "@budibase/bbui"
+  } from "hyinsit-bbui"
+  import { notifications, Divider } from "hyinsit-bbui"
   import ExtraQueryConfig from "./ExtraQueryConfig.svelte"
   import IntegrationQueryEditor from "components/integration/index.svelte"
   import ExternalDataSourceTable from "components/backend/DataTable/ExternalDataSourceTable.svelte"

@@ -9,7 +9,7 @@ import {
   getTenantIDFromAppID,
 } from "../context"
 import env from "../environment"
-import { PlatformUser } from "@budibase/types"
+import { PlatformUser } from "hyinsit-types"
 
 const TENANT_DOC = StaticDatabases.PLATFORM_INFO.docs.tenants
 const PLATFORM_INFO_DB = StaticDatabases.PLATFORM_INFO.name

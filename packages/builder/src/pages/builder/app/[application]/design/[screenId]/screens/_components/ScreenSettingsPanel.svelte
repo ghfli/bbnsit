@@ -1,7 +1,7 @@
 <script>
   import Panel from "components/design/Panel.svelte"
   import { get } from "svelte/store"
-  import { Helpers } from "@budibase/bbui"
+  import { Helpers } from "hyinsit-bbui"
   import {
     Input,
     Layout,
@@ -11,7 +11,7 @@
     Banner,
     Select,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import PropertyControl from "components/design/settings/controls/PropertyControl.svelte"
   import RoleSelect from "components/design/settings/controls/RoleSelect.svelte"
   import { selectedScreen, store } from "builderStore"

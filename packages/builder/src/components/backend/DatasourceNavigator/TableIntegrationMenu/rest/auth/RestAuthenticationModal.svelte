@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte"
-  import { ModalContent, Layout, Select, Body, Input } from "@budibase/bbui"
+  import { ModalContent, Layout, Select, Body, Input } from "hyinsit-bbui"
   import { AUTH_TYPE_LABELS, AUTH_TYPES } from "./authTypes"
   import BindableCombobox from "components/common/bindings/BindableCombobox.svelte"
   import { getAuthBindings } from "builderStore/dataBinding"

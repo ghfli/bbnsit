@@ -11,7 +11,7 @@
     Modal,
     clickOutside,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import ConfigChecklist from "components/common/ConfigChecklist.svelte"
   import { organisation, auth, admin as adminStore } from "stores/portal"
   import { onMount } from "svelte"

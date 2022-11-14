@@ -1,4 +1,4 @@
-const accounts = require("@budibase/backend-core/accounts")
+const accounts = require("hyinsit-backend-core/accounts")
 const env = require("../../../environment")
 
 exports.fetch = async ctx => {

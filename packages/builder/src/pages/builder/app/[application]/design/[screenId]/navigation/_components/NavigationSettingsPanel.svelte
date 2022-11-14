@@ -10,7 +10,7 @@
     ColorPicker,
     Input,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import NavigationLinksEditor from "./NavigationLinksEditor.svelte"
   import { store } from "builderStore"
   import { DefaultAppTheme } from "constants"

@@ -5,11 +5,11 @@ import { save as saveDatasource } from "../datasource"
 import { RestImporter } from "./import"
 import { invalidateDynamicVariables } from "../../../threads/utils"
 import { QUERY_THREAD_TIMEOUT } from "../../../environment"
-import { getAppDB } from "@budibase/backend-core/context"
-import { quotas } from "@budibase/pro"
-import { events } from "@budibase/backend-core"
-import { getCookie } from "@budibase/backend-core/utils"
-import { Cookies, Configs } from "@budibase/backend-core/constants"
+import { getAppDB } from "hyinsit-backend-core/context"
+// import { quotas } from "hyinsit-pro"
+import { events } from "hyinsit-backend-core"
+import { getCookie } from "hyinsit-backend-core/utils"
+import { Cookies, Configs } from "hyinsit-backend-core/constants"
 
 const Runner = new Thread(ThreadType.QUERY, {
   timeoutMs: QUERY_THREAD_TIMEOUT || 10000,
@@ -153,8 +153,8 @@ export async function preview(ctx: any) {
           auth: { ...authConfigCtx },
         },
       })
-    const { rows, keys, info, extra } = await quotas.addQuery(runFn)
     const schemaFields: any = {}
+    /* const { rows, keys, info, extra } = await quotas.addQuery(runFn)
     if (rows?.length > 0) {
       for (let key of [...new Set(keys)] as string[]) {
         const field = rows[0][key]
@@ -188,6 +188,7 @@ export async function preview(ctx: any) {
       info,
       extra,
     }
+    */
   } catch (err) {
     ctx.throw(400, err)
   }
@@ -234,7 +235,7 @@ async function execute(
         },
       })
 
-    const { rows, pagination, extra } = await quotas.addQuery(runFn)
+    /* const { rows, pagination, extra } = {} //await quotas.addQuery(runFn)
     // remove the raw from execution incase transformer being used to hide data
     if (extra?.raw) {
       delete extra.raw
@@ -244,6 +245,8 @@ async function execute(
     } else {
       ctx.body = { data: rows, pagination, ...extra }
     }
+    */
+    console.log("skipping quotas.addQuery()")
   } catch (err) {
     ctx.throw(400, err)
   }

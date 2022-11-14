@@ -7,9 +7,9 @@
     Select,
     Detail,
     Body,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { tables } from "stores/backend"
-  import { Helpers } from "@budibase/bbui"
+  import { Helpers } from "hyinsit-bbui"
   import { writable } from "svelte/store"
 
   export let save

@@ -5,10 +5,10 @@ const {
   checkDebounce,
   setDebounce,
 } = require("../utilities/redis")
-const { doWithDB } = require("@budibase/backend-core/db")
+const { doWithDB } = require("hyinsit-backend-core/db")
 const { DocumentType, getGlobalIDFromUserMetadataID } = require("../db/utils")
-const { PermissionTypes } = require("@budibase/backend-core/permissions")
-const { app: appCache } = require("@budibase/backend-core/cache")
+const { PermissionTypes } = require("hyinsit-backend-core/permissions")
+const { app: appCache } = require("hyinsit-backend-core/cache")
 
 const DEBOUNCE_TIME_SEC = 30
 

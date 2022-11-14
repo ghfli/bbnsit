@@ -1,5 +1,5 @@
 <script>
-  import { Label, Select, Body, Multiselect } from "@budibase/bbui"
+  import { Label, Select, Body, Multiselect } from "hyinsit-bbui"
   import {
     findAllMatchingComponents,
     findComponent,

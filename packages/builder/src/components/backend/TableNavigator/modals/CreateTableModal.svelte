@@ -1,7 +1,7 @@
 <script>
   import { goto, url } from "@roxi/routify"
   import { tables } from "stores/backend"
-  import { notifications } from "@budibase/bbui"
+  import { notifications } from "hyinsit-bbui"
   import {
     Input,
     Label,
@@ -9,7 +9,7 @@
     Toggle,
     Divider,
     Layout,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import TableDataImport from "../TableDataImport.svelte"
   import { buildAutoColumn, getAutoColumnInformation } from "builderStore/utils"
 

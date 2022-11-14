@@ -1,6 +1,6 @@
 <script>
   import { tables } from "stores/backend"
-  import { Select } from "@budibase/bbui"
+  import { Select } from "hyinsit-bbui"
   import DrawerBindableInput from "../../common/bindings/DrawerBindableInput.svelte"
   import AutomationBindingPanel from "../../common/bindings/ServerBindingPanel.svelte"
   import { createEventDispatcher } from "svelte"

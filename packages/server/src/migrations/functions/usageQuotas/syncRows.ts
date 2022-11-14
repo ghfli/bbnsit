@@ -1,8 +1,8 @@
-import { getTenantId } from "@budibase/backend-core/tenancy"
-import { getAllApps } from "@budibase/backend-core/db"
+import { getTenantId } from "hyinsit-backend-core/tenancy"
+import { getAllApps } from "hyinsit-backend-core/db"
 import { getUniqueRows } from "../../../utilities/usageQuota/rows"
-import { quotas } from "@budibase/pro"
-import { QuotaUsageType, StaticQuotaName } from "@budibase/types"
+// import { quotas } from "hyinsit-pro"
+// import { QuotaUsageType, StaticQuotaName } from "hyinsit-types"
 
 export const run = async () => {
   // get all rows in all apps
@@ -16,5 +16,5 @@ export const run = async () => {
   // sync row count
   const tenantId = getTenantId()
   console.log(`[Tenant: ${tenantId}] Syncing row count: ${rowCount}`)
-  await quotas.setUsage(rowCount, StaticQuotaName.ROWS, QuotaUsageType.STATIC)
+  // await quotas.setUsage(rowCount, StaticQuotaName.ROWS, QuotaUsageType.STATIC)
 }

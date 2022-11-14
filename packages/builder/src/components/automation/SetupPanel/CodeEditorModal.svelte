@@ -1,5 +1,5 @@
 <script>
-  import { Button, Modal, ModalContent } from "@budibase/bbui"
+  import { Button, Modal, ModalContent } from "hyinsit-bbui"
 
   let modal
 

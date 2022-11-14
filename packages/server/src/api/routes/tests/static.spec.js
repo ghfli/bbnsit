@@ -14,7 +14,7 @@ jest.mock("aws-sdk", () => ({
 }))
 
 const setup = require("./utilities")
-const { events, constants } = require("@budibase/backend-core")
+const { events, constants } = require("hyinsit-backend-core")
 
 describe("/static", () => {
   let request = setup.getRequest()

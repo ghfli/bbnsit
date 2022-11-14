@@ -19,14 +19,14 @@ const Koa = require("koa")
 const destroyable = require("server-destroy")
 const koaBody = require("koa-body")
 const koaSession = require("koa-session")
-const { passport } = require("@budibase/backend-core/auth")
-const { logAlert } = require("@budibase/backend-core/logging")
+const { passport } = require("hyinsit-backend-core/auth")
+const { logAlert } = require("hyinsit-backend-core/logging")
 const logger = require("koa-pino-logger")
 const http = require("http")
 const api = require("./api")
 const redis = require("./utilities/redis")
 const Sentry = require("@sentry/node")
-import { events, pinoSettings } from "@budibase/backend-core"
+import { events, pinoSettings } from "hyinsit-backend-core"
 
 // this will setup http and https proxies form env variables
 bootstrap()

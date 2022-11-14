@@ -5,7 +5,7 @@ const {
   BUILDER,
   PermissionLevels,
   PermissionTypes,
-} = require("@budibase/backend-core/permissions")
+} = require("hyinsit-backend-core/permissions")
 const { bodyResource, paramResource } = require("../../middleware/resourceId")
 const {
   middleware: appInfoMiddleware,

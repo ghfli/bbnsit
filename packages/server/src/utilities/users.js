@@ -1,8 +1,8 @@
 const { InternalTables } = require("../db/utils")
 const { getGlobalUser } = require("../utilities/global")
-const { getAppDB } = require("@budibase/backend-core/context")
-const { getProdAppID } = require("@budibase/backend-core/db")
-const { BUILTIN_ROLE_IDS } = require("@budibase/backend-core/roles")
+const { getAppDB } = require("hyinsit-backend-core/context")
+const { getProdAppID } = require("hyinsit-backend-core/db")
+const { BUILTIN_ROLE_IDS } = require("hyinsit-backend-core/roles")
 
 exports.getFullUser = async (ctx, userId) => {
   const global = await getGlobalUser(userId)

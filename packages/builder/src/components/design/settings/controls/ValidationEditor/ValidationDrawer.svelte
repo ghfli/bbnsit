@@ -9,7 +9,7 @@
     Body,
     Input,
     DatePicker,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { currentAsset, selectedComponent } from "builderStore"
   import { findClosestMatchingComponent } from "builderStore/componentUtils"
   import { getSchemaForDatasource } from "builderStore/dataBinding"

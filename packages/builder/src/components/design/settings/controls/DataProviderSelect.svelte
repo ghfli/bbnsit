@@ -1,6 +1,6 @@
 <script>
-  import { Select } from "@budibase/bbui"
-  import { makePropSafe } from "@budibase/string-templates"
+  import { Select } from "hyinsit-bbui"
+  import { makePropSafe } from "hyinsit-string-templates"
   import { currentAsset, store } from "builderStore"
   import { findComponentPath } from "builderStore/componentUtils"
   import { createEventDispatcher, onMount } from "svelte"

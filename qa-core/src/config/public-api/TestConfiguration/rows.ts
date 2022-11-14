@@ -3,7 +3,7 @@ import {
   CreateRowParams,
   Row,
   SearchInputParams,
-} from "@budibase/server/api/controllers/public/mapping/types"
+} from "hyinsit-server/api/controllers/public/mapping/types"
 import { HeadersInit, Response } from "node-fetch"
 import { generateRow } from "../fixtures/tables"
 

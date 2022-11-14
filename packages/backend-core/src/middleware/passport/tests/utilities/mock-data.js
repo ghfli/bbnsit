@@ -3,7 +3,7 @@
 const mockClientID = "mockClientID"
 const mockClientSecret = "mockClientSecret"
 
-const mockEmail = "mock@budibase.com"
+const mockEmail = "mockhyinsit.com"
 const mockAccessToken = "mockAccessToken"
 const mockRefreshToken = "mockRefreshToken"
 

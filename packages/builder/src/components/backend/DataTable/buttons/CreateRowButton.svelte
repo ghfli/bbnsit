@@ -1,5 +1,5 @@
 <script>
-  import { ActionButton, Modal } from "@budibase/bbui"
+  import { ActionButton, Modal } from "hyinsit-bbui"
   import CreateEditRow from "../modals/CreateEditRow.svelte"
 
   export let modalContentComponent = CreateEditRow

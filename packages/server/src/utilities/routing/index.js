@@ -1,6 +1,6 @@
 const { createRoutingView } = require("../../db/views/staticViews")
 const { ViewName, getQueryIndex, UNICODE_MAX } = require("../../db/utils")
-const { getAppDB } = require("@budibase/backend-core/context")
+const { getAppDB } = require("hyinsit-backend-core/context")
 
 exports.getRoutingInfo = async () => {
   const db = getAppDB()

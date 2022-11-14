@@ -20,8 +20,8 @@
     Body,
     Layout,
     notifications,
-  } from "@budibase/bbui"
-  import { fetchData } from "@budibase/frontend-core"
+  } from "hyinsit-bbui"
+  import { fetchData } from "hyinsit-frontend-core"
   import { API } from "api"
 
   let hideAutocolumns = true

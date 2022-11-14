@@ -1,4 +1,4 @@
-import { Account, AccountMetadata } from "@budibase/types"
+import { Account, AccountMetadata } from "hyinsit-types"
 import sdk from "../../../sdk"
 
 export const save = async (ctx: any) => {

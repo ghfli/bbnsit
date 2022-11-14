@@ -5,13 +5,13 @@ import {
   DocumentType,
   context,
   db,
-} from "@budibase/backend-core"
+} from "hyinsit-backend-core"
 import TestConfig from "../../tests/utilities/TestConfiguration"
 import structures from "../../tests/utilities/structures"
 import { MIGRATIONS } from "../"
 import * as helpers from "./helpers"
 
-const { mocks } = require("@budibase/backend-core/tests")
+const { mocks } = require("hyinsit-backend-core/tests")
 const timestamp = mocks.date.MOCK_DATE.toISOString()
 
 const clearMigrations = async () => {

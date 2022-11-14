@@ -3,7 +3,7 @@ import {
   BulkUserRequest,
   InviteUsersRequest,
   User,
-} from "@budibase/types"
+} from "hyinsit-types"
 import TestConfiguration from "../TestConfiguration"
 
 export class UserAPI {

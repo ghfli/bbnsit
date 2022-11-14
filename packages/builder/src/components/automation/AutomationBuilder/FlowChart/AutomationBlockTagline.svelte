@@ -1,5 +1,5 @@
 <script>
-  import { processStringSync } from "@budibase/string-templates"
+  import { processStringSync } from "hyinsit-string-templates"
   import { get } from "lodash/fp"
   import { tables } from "stores/backend"
 

@@ -8,9 +8,9 @@
     Input,
     Layout,
     Select,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { generate } from "shortid"
-  import { LuceneUtils, Constants } from "@budibase/frontend-core"
+  import { LuceneUtils, Constants } from "hyinsit-frontend-core"
   import { getContext } from "svelte"
 
   export let schemaFields

@@ -9,10 +9,10 @@
     Input,
     Label,
     notifications,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { auth, admin } from "stores/portal"
   import { redirect } from "@roxi/routify"
-  import { processStringSync } from "@budibase/string-templates"
+  import { processStringSync } from "hyinsit-string-templates"
   import DeleteLicenseKeyModal from "../../../../components/portal/licensing/DeleteLicenseKeyModal.svelte"
   import { API } from "api"
   import { onMount } from "svelte"

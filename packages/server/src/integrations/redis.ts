@@ -1,4 +1,4 @@
-import { DatasourceFieldType, Integration, QueryType } from "@budibase/types"
+import { DatasourceFieldType, Integration, QueryType } from "hyinsit-types"
 import Redis from "ioredis"
 
 interface RedisConfig {

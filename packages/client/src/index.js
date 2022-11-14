@@ -6,7 +6,7 @@ import {
   devToolsStore,
   environmentStore,
 } from "./stores"
-import loadSpectrumIcons from "@budibase/bbui/spectrum-icons-rollup.js"
+import loadSpectrumIcons from "hyinsit-bbui/spectrum-icons-rollup.js"
 import { get } from "svelte/store"
 import { initWebsocket } from "./websocket.js"
 

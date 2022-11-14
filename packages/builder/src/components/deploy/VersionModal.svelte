@@ -6,10 +6,10 @@
     Body,
     Button,
     StatusLight,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { store } from "builderStore"
   import { API } from "api"
-  import clientPackage from "@budibase/client/package.json"
+  import clientPackage from "hyinsit-client/package.json"
 
   export function show() {
     updateModal.show()

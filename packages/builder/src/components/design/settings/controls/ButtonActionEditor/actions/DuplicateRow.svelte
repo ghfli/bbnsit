@@ -1,5 +1,5 @@
 <script>
-  import { Select, Label, Body, Checkbox, Input } from "@budibase/bbui"
+  import { Select, Label, Body, Checkbox, Input } from "hyinsit-bbui"
   import { store, currentAsset } from "builderStore"
   import { tables } from "stores/backend"
   import {

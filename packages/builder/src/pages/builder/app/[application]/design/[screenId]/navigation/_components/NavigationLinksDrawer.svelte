@@ -6,7 +6,7 @@
     Layout,
     Input,
     Combobox,
-  } from "@budibase/bbui"
+  } from "hyinsit-bbui"
   import { flip } from "svelte/animate"
   import { dndzone } from "svelte-dnd-action"
   import { generate } from "shortid"

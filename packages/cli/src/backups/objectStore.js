@@ -4,7 +4,7 @@ const {
   retrieve,
   uploadDirectory,
   makeSureBucketExists,
-} = require("@budibase/backend-core/objectStore")
+} = require("hyinsit-backend-core/objectStore")
 const fs = require("fs")
 const { join } = require("path")
 const { TEMP_DIR, MINIO_DIR } = require("./utils")
