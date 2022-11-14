@@ -1,7 +1,7 @@
 {
   "name": "hyinsit-server",
   "email": "hihyinsit.com",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Budibase Web Server",
   "main": "src/index.ts",
   "repository": {
@@ -77,10 +77,6 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@apidevtools/swagger-parser": "10.0.3",
-    "hyinsit-backend-core": "0.1.0",
-    "hyinsit-client": "0.1.0",
-    "hyinsit-string-templates": "0.1.0",
-    "hyinsit-types": "0.1.0",
     "@bull-board/api": "3.7.0",
     "@bull-board/koa": "3.9.4",
     "@elastic/elasticsearch": "7.10.0",
@@ -106,6 +102,10 @@
     "global-agent": "3.0.0",
     "google-auth-library": "7.12.0",
     "google-spreadsheet": "3.2.0",
+    "hyinsit-backend-core": "^0.1.1",
+    "hyinsit-client": "^0.1.1",
+    "hyinsit-string-templates": "^0.1.1",
+    "hyinsit-types": "^0.1.1",
     "jimp": "0.16.1",
     "joi": "17.6.0",
     "js-yaml": "4.1.0",
