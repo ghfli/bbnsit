@@ -1,6 +1,6 @@
 {
   "name": "hyinsit-backend-core",
-  "version": "100.0.0",
+  "version": "100.0.1",
   "description": "Budibase backend core libraries used in server and worker",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
