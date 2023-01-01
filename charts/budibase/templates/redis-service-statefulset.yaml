@@ -1,0 +1,74 @@
+{{- if .Values.services.redis.enabled }}
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: redis-service
+  name: redis-service
+spec:
+  replicas: {{ .Values.services.redis.replicaCount }}
+  selector:
+    matchLabels:
+      io.kompose.service: redis-service
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: redis-service
+    spec:
+      containers:
+      - args:
+        - redis-server
+        - --requirepass
+        - {{ .Values.services.redis.password }}
+        image: redis
+        imagePullPolicy: ""
+        name: redis-service
+        ports:
+        - containerPort: {{ .Values.services.redis.port }}
+        {{ with .Values.services.redis.resources }}
+        resources:
+        {{- toYaml . | nindent 10 }}
+        {{ end }}
+        volumeMounts:
+        - mountPath: /data
+          name: redis-data
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      {{ if .Values.imagePullSecrets }}
+      imagePullSecrets:
+      {{- toYaml .Values.imagePullSecrets | nindent 6 }}
+      {{ end }}
+      restartPolicy: Always
+      serviceAccountName: ""
+  volumeClaimTemplates:
+  - metadata:
+      name: redis-data
+      creationTimestamp: null
+      labels:
+        io.kompose.service: redis-data
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: {{ .Values.services.redis.storage }}
+      {{ if .Values.services.redis.storageClass }}
+      storageClassName: {{ .Values.services.redis.storageClass }}
+      {{- end }}
+    status: {}
+status: {}
+{{- end }}

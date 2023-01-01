@@ -1,0 +1,147 @@
+---
+# Source: local-volume-static-provisioner/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: lvp-local-volume-static-provisioner
+  namespace: kube-system
+  labels:
+    helm.sh/chart: local-volume-static-provisioner-1.0.0
+    app.kubernetes.io/name: local-volume-static-provisioner
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/instance: lvp
+---
+# Source: local-volume-static-provisioner/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lvp-local-volume-static-provisioner-config
+  namespace: kube-system
+  labels:
+    helm.sh/chart: local-volume-static-provisioner-1.0.0
+    app.kubernetes.io/name: local-volume-static-provisioner
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/instance: lvp
+data:
+  storageClassMap: |
+    fast-disks:
+      hostDir: /mnt/fast-disks
+      mountDir: /mnt/fast-disks
+      blockCleanerCommand:
+        - "/scripts/shred.sh"
+        - "2"
+      volumeMode: Filesystem
+      fsType: ext4
+      namePattern: "*"
+---
+# Source: local-volume-static-provisioner/templates/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: lvp-local-volume-static-provisioner-node-clusterrole
+  labels:
+    helm.sh/chart: local-volume-static-provisioner-1.0.0
+    app.kubernetes.io/name: local-volume-static-provisioner
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/instance: lvp
+rules:
+- apiGroups: [""]
+  resources: ["persistentvolumes"]
+  verbs: ["get", "list", "watch", "create", "delete"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["storageclasses"]
+  verbs: ["get", "list", "watch"]
+- apiGroups: [""]
+  resources: ["events"]
+  verbs: ["watch"]
+- apiGroups: ["", "events.k8s.io"]
+  resources: ["events"]
+  verbs: ["create", "update", "patch"]
+- apiGroups: [""]
+  resources: ["nodes"]
+  verbs: ["get"]
+---
+# Source: local-volume-static-provisioner/templates/rbac.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: lvp-local-volume-static-provisioner-node-binding
+  labels:
+    helm.sh/chart: local-volume-static-provisioner-1.0.0
+    app.kubernetes.io/name: local-volume-static-provisioner
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/instance: lvp
+subjects:
+- kind: ServiceAccount
+  name: lvp-local-volume-static-provisioner
+  namespace: kube-system
+roleRef:
+  kind: ClusterRole
+  name: lvp-local-volume-static-provisioner-node-clusterrole
+  apiGroup: rbac.authorization.k8s.io
+---
+# Source: local-volume-static-provisioner/templates/daemonset_linux.yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: lvp-local-volume-static-provisioner
+  namespace: kube-system
+  labels:
+    helm.sh/chart: local-volume-static-provisioner-1.0.0
+    app.kubernetes.io/name: local-volume-static-provisioner
+    app.kubernetes.io/managed-by: Helm
+    app.kubernetes.io/instance: lvp
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: local-volume-static-provisioner
+      app.kubernetes.io/instance: lvp
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: local-volume-static-provisioner
+        app.kubernetes.io/instance: lvp
+      annotations:
+        checksum/config: 650c98035490886b7e2b13b68481b347f80ff9c4a70ed7fe180d1bfbb55f59f2
+    spec:
+      serviceAccountName: lvp-local-volume-static-provisioner
+      nodeSelector:
+        kubernetes.io/os: linux
+      containers:
+        - name: provisioner
+          image: k8s.gcr.io/sig-storage/local-volume-provisioner:v2.4.0
+          securityContext:
+            privileged: true
+          env:
+          - name: MY_NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+          - name: MY_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+          - name: JOB_CONTAINER_IMAGE
+            value: k8s.gcr.io/sig-storage/local-volume-provisioner:v2.4.0
+          ports:
+          - name: metrics
+            containerPort: 8080
+          volumeMounts:
+            - name: provisioner-config
+              mountPath: /etc/provisioner/config
+              readOnly: true
+            - name: provisioner-dev
+              mountPath: /dev
+            - name: fast-disks
+              mountPath: /mnt/fast-disks
+              mountPropagation: HostToContainer
+      volumes:
+        - name: provisioner-config
+          configMap:
+            name: lvp-local-volume-static-provisioner-config
+        - name: provisioner-dev
+          hostPath:
+            path: /dev
+        - name: fast-disks
+          hostPath:
+            path: /mnt/fast-disks

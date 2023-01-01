@@ -1,6 +1,6 @@
 {
   "name": "hyinsit-server",
-  "email": "hihyinsit.com",
+  "email": "hi@hyinsit.com",
   "version": "100.0.1",
   "description": "Budibase Web Server",
   "main": "src/index.ts",

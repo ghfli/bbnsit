@@ -50,7 +50,7 @@ ingress:
     nginx.ingress.kubernetes.io/client-max-body-size: 150M
     nginx.ingress.kubernetes.io/proxy-body-size: 50m
   hosts:
-    - host: # change if using custom domain
+    - host: hyi.newstartit.com # change if using custom domain
       paths:
         - path: /
           pathType: Prefix
@@ -59,6 +59,11 @@ ingress:
               name: proxy-service
               port:
                 number: 10000
+  tls:
+    # Secrets must be manually created in the namespace.
+    - secretName: hyi-tls-secret
+      hosts:
+        - hyi.newstartit.com
 
 autoscaling:
   enabled: false
@@ -149,13 +154,14 @@ services:
     port: 6379
     replicaCount: 1
     url: "" # only change if pointing to existing redis cluster and enabled: false
-    password: "budibase" # recommended to override if using built-in redis
-    storage: 100Mi
+    password: "hyibbnsit" # recommended to override if using built-in redis
+    storage: 256Mi
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
     ## If undefined (the default) or set to null, no storageClassName spec is
     ##   set, choosing the default provisioner.
-    storageClass: ""
+    # storageClass: ""
+    storageClass: "fast-disks"
     resources: {}
 
   objectStore:
@@ -167,13 +173,16 @@ services:
     secretKey: "" # AWS_SECRET_ACCESS_KEY if using S3 or existing minio secret
     region: "" # AWS_REGION if using S3 or existing minio secret
     url: "http://minio-service:9000" # only change if pointing to existing minio cluster or S3 and minio: false
-    storage: 100Mi
+    storage: 32Gi
     ## If defined, storageClassName: <storageClass>
     ## If set to "-", storageClassName: "", which disables dynamic provisioning
     ## If undefined (the default) or set to null, no storageClassName spec is
     ##   set, choosing the default provisioner.
-    storageClass: ""
+    storageClass: "nfs-csi"
     resources: {}
+    # storageClass: "fast-disks"
+    # commment out nodeName or customize it to the preferred node in your own cluster
+    # nodeName: vmi1097963
 
 # Override values in couchDB subchart
 couchdb:
@@ -208,11 +217,12 @@ couchdb:
   ## provisioning of Persistent Volumes; leaving it unset will invoke the default
   ## provisioner.
   persistentVolume:
-    enabled: false
+    enabled: true
     accessModes:
       - ReadWriteOnce
-    size: 10Gi
-    storageClass: ""
+    size: 16Gi
+    # storageClass: "nfs-csi"
+    storageClass: "fast-disks"
 
   ## The CouchDB image
   image:
@@ -295,7 +305,7 @@ couchdb:
   ## ref: http://docs.couchdb.org/en/latest/config/index.html
   couchdbConfig:
     couchdb:
-      uuid: budibase-couchdb # REQUIRED: Unique identifier for this CouchDB server instance
+      uuid: bc88b7e0-8dc8-4149-bf69-12920cb72385 # REQUIRED: Unique identifier for this CouchDB server instance
     # cluster:
     #   q: 8 # Create 8 shards for each database
     chttpd:

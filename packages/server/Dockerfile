@@ -1,6 +1,12 @@
-FROM node:19-alpine3.15
+FROM node:19.2
 
-WORKDIR /app
+WORKDIR /bbserver
+
+COPY . ./
+
+# handle node-gyp
+RUN apt-get update && apt-get install -y python3 make g++ \
+    && yarn --ignore-engines && yarn build
 
 ENV PORT=4001
 ENV COUCH_DB_URL=https://couchdb.budi.live:5984
@@ -9,9 +15,6 @@ ENV SERVICE=app-service
 ENV POSTHOG_TOKEN=phc_bIjZL7oh2GEUd2vqvTBH8WvrX0fWTFQMs6H5KQxiUxU
 ENV TENANT_FEATURE_FLAGS=*:LICENSING,*:USER_GROUPS
 ENV ACCOUNT_PORTAL_URL=https://account.budibase.app
-
-# copy files and install dependencies
-COPY dist node_modules package.json client builder build docker_run.sh ./
 
 EXPOSE 4001
 
