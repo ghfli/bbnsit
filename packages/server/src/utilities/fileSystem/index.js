@@ -289,7 +289,7 @@ exports.getComponentLibraryManifest = async library => {
     const path = require.resolve(library).split(lib)[0]
     return require(join(path, lib, filename))
   } else if (env.isDev()) {
-    const path = join(NODE_MODULES_PATH, "hyinsit", "client", filename)
+    const path = join(NODE_MODULES_PATH, "hyinsit-client", filename)
     // always load from new so that updates are refreshed
     delete require.cache[require.resolve(path)]
     return require(path)

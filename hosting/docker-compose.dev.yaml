@@ -38,10 +38,11 @@ services:
       - "host.docker.internal:host-gateway"
 
   couchdb-service:
-    platform: linux/amd64
+    # platform: linux/amd64
     container_name: budi-couchdb-dev
     restart: on-failure
-    image: ibmcom/couchdb3
+    # image: ibmcom/couchdb3
+    image: couchdb
     environment:
       - COUCHDB_PASSWORD=${COUCH_DB_PASSWORD}
       - COUCHDB_USER=${COUCH_DB_USER}

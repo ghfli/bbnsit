@@ -14,6 +14,9 @@ const CONFIG = {
   cwd: path.resolve(process.cwd(), "../../hosting"),
   config: "docker-compose.dev.yaml",
   log: true,
+  executablePath: "/snap/bin/docker-compose",
+  // composeOptions: ["--verbose"],
+  env: path.join(process.cwd(), ".env"),
 }
 
 const Commands = {
@@ -37,8 +40,12 @@ async function init() {
   if (!fs.existsSync(envFilePath)) {
     const envFileJson = {
       PORT: 4001,
-      MINIO_URL: "http://localhost:4004",
-      COUCH_DB_URL: "http://budibase:budibase@localhost:4005",
+      MINIO_PORT: 9000,
+      MAIN_PORT: 10000,
+      COUCH_DB_PORT: 5984,
+      REDIS_PORT: 6379,
+      MINIO_URL: "http://localhost:9000",
+      COUCH_DB_URL: "http://budibase:budibase@localhost:5984",
       REDIS_URL: "localhost:6379",
       WORKER_URL: "http://localhost:4002",
       INTERNAL_API_KEY: "budibase",
@@ -73,7 +80,9 @@ async function init() {
 async function up() {
   console.log("Spinning up your budibase dev environment... 🔧✨")
   await init()
+  console.log("init() done")
   await compose.upAll(CONFIG)
+  console.log("compose.upAll() done")
 
   // We always ensure to restart the proxy service in case of nginx conf changes
   await compose.restartOne("proxy-service", CONFIG)
