@@ -28,8 +28,11 @@ export async function processEvent(job: any) {
     // need to actually await these so that an error can be captured properly
     const tenantId = tenancy.getTenantIDFromAppID(job.data.event.appId)
     return await tenancy.doInTenant(tenantId, async () => {
-      const runFn = () => Runner.run(job)
+      // const runFn = () => Runner.run(job)
       //      return quotas.addAutomation(runFn)
+      console.log("begin to run job ...")
+      Runner.run(job)
+      console.log("job done.")
     })
   } catch (err) {
     const errJson = JSON.stringify(err)
