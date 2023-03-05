@@ -1,6 +1,6 @@
 {
   "name": "hyinsit-cli",
-  "version": "100.0.1",
+  "version": "100.0.2",
   "description": "Budibase CLI, for developers, self hosting and migrations.",
   "main": "src/index.js",
   "bin": {
@@ -34,7 +34,7 @@
     "dotenv": "16.0.1",
     "download": "8.0.0",
     "find-free-port": "^2.0.0",
-    "hyinsit-backend-core": "^100.0.1",
+    "hyinsit-backend-core": "^100.0.2",
     "hyinsit-string-templates": "^100.0.0",
     "hyinsit-types": "^100.0.0",
     "inquirer": "8.0.0",

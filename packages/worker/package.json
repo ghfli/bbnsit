@@ -1,7 +1,7 @@
 {
   "name": "hyinsit-worker",
   "email": "hihyinsit.com",
-  "version": "100.0.1",
+  "version": "100.0.2",
   "description": "Budibase background service",
   "main": "src/index.ts",
   "repository": {
@@ -46,7 +46,7 @@
     "elastic-apm-node": "3.38.0",
     "global-agent": "3.0.0",
     "got": "11.8.3",
-    "hyinsit-backend-core": "^100.0.1",
+    "hyinsit-backend-core": "^100.0.2",
     "hyinsit-string-templates": "^100.0.0",
     "hyinsit-types": "^100.0.0",
     "joi": "17.6.0",

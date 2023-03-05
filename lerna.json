@@ -1,9 +1,7 @@
 {
-  "version": "100.0.1",
+  "version": "100.0.2",
   "npmClient": "yarn",
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "command": {
     "publish": {
       "ignoreChanges": [
