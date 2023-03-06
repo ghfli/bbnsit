@@ -53,5 +53,6 @@
     "copyfiles": "^2.4.1",
     "eslint": "^7.20.0",
     "renamer": "^4.0.0"
-  }
+  },
+  "gitHead": "8ada1846a0d74650dc4faf8cc0da25d57a22b9fc"
 }
