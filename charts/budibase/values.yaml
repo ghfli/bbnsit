@@ -138,6 +138,7 @@ services:
   couchdb:
     enabled: true
     # url: "" # only change if pointing to existing couch server
+    url: "http://couchdb-service:5984"
     # user: "" # only change if pointing to existing couch server
     # password: "" # only change if pointing to existing couch server
     port: 5984
