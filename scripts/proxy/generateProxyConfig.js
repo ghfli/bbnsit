@@ -41,7 +41,7 @@ const Configs = {
     apps: "app-service.budibase.svc.cluster.local",
     worker: "worker-service.budibase.svc.cluster.local",
     minio: "minio-service.budibase.svc.cluster.local",
-    couchdb: "budibase-svc-couchdb",
+    couchdb: "couchdb-service.budibase.svc.cluster.local",
     resolver: "kube-dns.kube-system.svc.cluster.local"
   },
   preprod: {
