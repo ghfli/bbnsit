@@ -2,7 +2,11 @@
 apiVersion: v1
 kind: Service
 metadata:
+{{- if .Values.svcname }}
+  name: {{ .Values.svcname }}
+{{- else }}
   name: {{ template "couchdb.svcname" . }}
+{{- end }}
   labels:
     app: {{ template "couchdb.name" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}

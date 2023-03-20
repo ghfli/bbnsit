@@ -187,7 +187,7 @@ services:
 # Override values in couchDB subchart
 couchdb:
   # if uncommented, update this svcname for couchdb in scripts/proxy/generateProxyConfig.js::Configs too
-  svcname: couchdb-service
+  svcname: "couchdb-service"
 
   ## clusterSize is the initial size of the CouchDB cluster.
   clusterSize: 3
