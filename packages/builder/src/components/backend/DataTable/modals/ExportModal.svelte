@@ -24,7 +24,10 @@
         viewName: view,
         format: exportFormat,
       })
-      download(data, `export.${exportFormat}`)
+      download(
+        new Blob([data], { type: "text/plain" }),
+        `export.${exportFormat}`
+      )
     } catch (error) {
       notifications.error(`Unable to export ${exportFormat.toUpperCase()} data`)
     }

@@ -1,0 +1,16 @@
+
+build and release docker images:
+    yarn hyinsit
+
+install/uninstall into microk8s through helm:
+    cd charts/budibase
+    script -c "microk8s helm install hyi . -n budibase --debug"
+    script -c "microk8s helm uninstall hyi -n budibase --debug"
+
+check pod/svc:
+    microk8s kubectl get pod -A -o wide
+    microk8s kubectl get svc -A -o wide
+
+get velero backups/schedules
+    velero get backups
+    velero get schedules
